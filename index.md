@@ -1,7 +1,6 @@
 ---
 layout: single
 title: "Portfolio"
-classes: wide
 ---
 
 **Unity/C# developer focused on gameplay & tools. Shipped VR/AR. Building a PC title for Steam.**
@@ -9,7 +8,7 @@ classes: wide
 [Featured](#featured) · [Recent Shipped](#recent-shipped) · [What People Say](#what-people-say)
 
 ## Showreel
-<!-- TODO: Replace Video -->
+<!-- TODO: Replace Video With edited showreel -->
 {% include video id="c2SiiC7Ii_4" provider="youtube" caption="30s showreel: VR/AR systems, tools, and perf."%}
 
 ## Featured {#featured}
@@ -43,19 +42,18 @@ Shipped to both stores with platform-tight performance and crash-free stability.
 
 <!-- CTAs -->
 [Meta Quest](https://www.meta.com/en-gb/experiences/aberwla/9575081185844250/){: .btn .btn--primary target="_blank" rel="noopener" }
-[Pico Store](https://store-global.picoxr.com/global/detail/1/7477528258796486711){: .btn target="_blank" rel="noopener" }
+[Pico Store](https://store-global.picoxr.com/global/detail/1/7477528258796486711){: .btn .btn--primary target="_blank" rel="noopener" }
 
----
+## Systems (WIP) {#systems}
 
-<!-- ## Systems (preview)
+A growing list of **production-ready Unity systems** (demo scene • README • MIT).  
+**Status:** in development.
+<!-- TODO: Decide on what systems -->
+- Save/Load — _coming soon_
+- Addressables Build Switcher — _coming soon_
+- XR Interaction Extensions — _coming soon_
 
-Short, production-ready Unity systems used across VR/mobile/PC. First drops below.
-
-- Save/Load (coming soon)
-- Addressables Build Switcher (coming soon)
-- XR Interaction Extensions (coming soon) -->
-
-<!-- [See all systems →](/systems/) -->
+<!-- [See Systems →]({{ '/systems.html' | relative_url }}) -->
 
 ## Recent Shipped {#recent-shipped}
 
