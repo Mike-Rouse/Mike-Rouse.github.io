@@ -2,7 +2,6 @@
 layout: single
 ---
 
-
 ## Featured
 
 Work-in-progress desktop PC title targeting Steam. Wishlist link coming soon.
