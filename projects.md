@@ -3,6 +3,7 @@ title: "Projects"
 layout: single
 permalink: /projects/
 ---
+{% include details.html %}
 
 ## In Development {#in-development}
 
