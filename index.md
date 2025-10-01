@@ -3,13 +3,6 @@ layout: single
 title: "Portfolio"
 ---
 
-{%- capture TEST -%}
-- A
-- B
-{%- endcapture -%}
-{%- include details title="Test details include" content=TEST -%}
-
-
 <!-- TODO: Refine this. -->
 **Unity/C# developer focused on gameplay & tools. Shipped VR/AR. Building a PC title for Steam.**
 
