@@ -1,0 +1,7 @@
+main:
+  - title: "Systems"
+    url: /systems/
+  - title: "Projects"
+    url: /projects/
+  - title: "About"
+    url: /about/
