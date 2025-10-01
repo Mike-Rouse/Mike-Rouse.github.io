@@ -15,7 +15,7 @@ permalink: /projects/
 {%- capture NOTES_VAR -%}
 Small, atmospheric haunted-house project to learn the full Steam release pipeline (builds, depots, page assets, checklists).
 {%- endcapture -%}
-{%- include details title="Notes" content=NOTES_VAR -%}
+{%- include custom-details title="Notes" content=NOTES_VAR -%}
 
 {%- comment -%}
 When the Coming Soon page is live, uncomment this Proof block:
@@ -23,7 +23,7 @@ When the Coming Soon page is live, uncomment this Proof block:
 {%- capture PROOF_VAR -%}
 {% include button url="STEAM_URL" text="View on Steam" target="_blank" %}
 {%- endcapture -%}
-{% include details title="Proof" content=PROOF_VAR %}
+{% include custom-details title="Proof" content=PROOF_VAR %}
 {%- endcomment -%}
 
 ChatGPT said:
@@ -38,7 +38,7 @@ Here’s your filled WIP block in the no-HTML, Minimal Mistakes–friendly forma
 {%- capture PITCH_VAR -%}
 Survive, evade, resist, and escape a land cursed by varied entities. Focus on atmosphere, tension, and readable stealth/combat loops.
 {%- endcapture -%}
-{%- include details title="Pitch" content=PITCH_VAR -%}
+{%- include custom-details title="Pitch" content=PITCH_VAR -%}
 
 {%- capture PRODUCTION_VAR -%}
 
@@ -46,7 +46,7 @@ Survive, evade, resist, and escape a land cursed by varied entities. Focus on at
 - Steam release ops planning (page assets, store copy, age rating, privacy/DPA)  
 - Build pipeline setup (branches/depots, versioning, release checklist)
 {%- endcapture -%}
-{%- include details title="Production" content=PRODUCTION_VAR -%}
+{%- include custom-details title="Production" content=PRODUCTION_VAR -%}
 
 {%- comment -%}
 When you have proof, uncomment one (or both) of these:
@@ -54,12 +54,12 @@ When you have proof, uncomment one (or both) of these:
 {%- capture PROOF_CLIP -%}
 {% include video id="YOUTUBE_ID" provider="youtube" caption="30–60s vertical slice preview." %}
 {%- endcapture -%}
-{% include details title="Proof (clip)" content=PROOF_CLIP %}
+{% include custom-details title="Proof (clip)" content=PROOF_CLIP %}
 
 {%- capture PROOF_STEAM -%}
 {% include button url="STEAM_COMING_SOON_URL" text="View on Steam" target="_blank" %}
 {%- endcapture -%}
-{% include details title="Proof (Steam page)" content=PROOF_STEAM %}
+{% include custom-details title="Proof (Steam page)" content=PROOF_STEAM %}
 {%- endcomment -%}
 
 ## Projects {#projects-chronological}
@@ -74,7 +74,7 @@ When you have proof, uncomment one (or both) of these:
 - WHAT I OWNED bullet 2  
 - WHAT I OWNED bullet 3
 {%- endcapture -%}
-{%- include details title="What I owned" content=owned_framework -%}
+{%- include custom-details title="What I owned" content=owned_framework -%}
 
 ---
 
@@ -88,7 +88,7 @@ When you have proof, uncomment one (or both) of these:
 - WHAT I OWNED bullet 2  
 - WHAT I OWNED bullet 3
 {%- endcapture -%}
-{%- include details title="What I owned" content=owned_cognetic -%}
+{%- include custom-details title="What I owned" content=owned_cognetic -%}
 
 ---
 
@@ -103,7 +103,7 @@ When you have proof, uncomment one (or both) of these:
 - WHAT I OWNED bullet 2  
 - WHAT I OWNED bullet 3
 {%- endcapture -%}
-{%- include details title="What I owned" content=owned_aberwla -%}
+{%- include custom-details title="What I owned" content=owned_aberwla -%}
 
 ---
 
@@ -118,7 +118,7 @@ When you have proof, uncomment one (or both) of these:
 - WHAT I OWNED bullet 2  
 - WHAT I OWNED bullet 3
 {%- endcapture -%}
-{%- include details title="What I owned" content=owned_centrica -%}
+{%- include custom-details title="What I owned" content=owned_centrica -%}
 
 ---
 
@@ -132,7 +132,7 @@ When you have proof, uncomment one (or both) of these:
 - WHAT I OWNED bullet 2  
 - WHAT I OWNED bullet 3
 {%- endcapture -%}
-{%- include details title="What I owned" content=owned_msparc -%}
+{%- include custom-details title="What I owned" content=owned_msparc -%}
 
 ---
 
@@ -146,7 +146,7 @@ When you have proof, uncomment one (or both) of these:
 - WHAT I OWNED bullet 2  
 - WHAT I OWNED bullet 3
 {%- endcapture -%}
-{%- include details title="What I owned" content=owned_waves -%}
+{%- include custom-details title="What I owned" content=owned_waves -%}
 
 ---
 
@@ -160,4 +160,4 @@ When you have proof, uncomment one (or both) of these:
 - WHAT I OWNED bullet 2  
 - WHAT I OWNED bullet 3
 {%- endcapture -%}
-{%- include details title="What I owned" content=owned_storimon -%}
+{%- include custom-details title="What I owned" content=owned_storimon -%}
