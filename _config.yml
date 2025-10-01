@@ -9,6 +9,10 @@ plugins:
   - jekyll-include-cache
   - jekyll-seo-tag
 
+search: true
+lunr:
+  search_within_pages: true
+
 collections:
   projects:
     output: true
@@ -18,13 +22,17 @@ collections:
     permalink: /systems/:name/
 
 defaults:
-  - scope: { path: "", type: "projects" }
-    values: { layout: single }
-  - scope: { path: "", type: "systems" }
-    values: { layout: single }
-  - scope: { path: "" }
-    values: { layout: single }
-
-search: true
-lunr:
-  search_within_pages: true
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: single
+  - scope:
+      path: ""
+      type: "systems"
+    values:
+      layout: single
+  - scope:
+      path: ""
+    values:
+      layout: single
