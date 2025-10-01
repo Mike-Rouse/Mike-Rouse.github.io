@@ -12,6 +12,11 @@ plugins:
   - jekyll-include-cache
   - jekyll-seo-tag
 
+sass:
+  style: compressed
+include:
+  - assets/css
+
 search: true
 lunr:
   search_within_pages: true
