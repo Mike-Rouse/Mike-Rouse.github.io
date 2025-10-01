@@ -3,14 +3,15 @@ title: "Systems"
 layout: single
 ---
 
-## Systems Showcase
-
-Short, production-ready Unity systems used across VR/mobile/PC. First drops below.
+Short, production-ready Unity systems used across VR/mobile/PC. Each system links to a repo with a demo scene, quick start, and MIT license.
 
 {% assign items = site.systems | sort: "order" %}
+{% if items.size == 0 %}
+_Status: first two in development. Planned: Save/Load, Addressables Build Switcher, XR Interaction Extensions._
+{% else %}
+## Available Systems
 {% for s in items %}
-
 - **[{{ s.title }}]({{ s.url | relative_url }})** — {{ s.summary }}
+  {% if s.repo %} · [Code]({{ s.repo }}){% endif %}
 {% endfor %}
-
-_Status: first two in development. Repos will appear here when demos are ready._
+{% endif %}
