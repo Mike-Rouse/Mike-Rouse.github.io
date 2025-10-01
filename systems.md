@@ -1,10 +1,7 @@
 ---
-title: Systems
-layout: collection
+title: "Systems"
+layout: single
 permalink: /systems/
-collection: systems
-entries_layout: grid
-classes: wide
 ---
 
 Short, production-ready Unity systems used across VR/mobile/PC. Each system links to a repo with a demo scene, quick start, and MIT license.

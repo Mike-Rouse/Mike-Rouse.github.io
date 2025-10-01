@@ -4,6 +4,9 @@ description: "Gameplay • Tools • C# • VR"
 remote_theme: mmistakes/minimal-mistakes
 minimal_mistakes_skin: "dark"
 
+url: "https://mike-rouse.github.io"
+baseurl: "" 
+
 plugins:
   - jekyll-remote-theme
   - jekyll-include-cache
@@ -13,25 +16,7 @@ search: true
 lunr:
   search_within_pages: true
 
-collections:
-  projects:
-    output: true
-    permalink: /projects/:name/
-  systems:
-    output: true
-    permalink: /systems/:name/
-
 defaults:
-  - scope:
-      path: ""
-      type: "projects"
-    values:
-      layout: single
-  - scope:
-      path: ""
-      type: "systems"
-    values:
-      layout: single
   - scope:
       path: ""
     values:
