@@ -3,6 +3,7 @@ layout: single
 title: "Portfolio"
 ---
 
+<!-- TODO: Refine this. -->
 **Unity/C# developer focused on gameplay & tools. Shipped VR/AR. Building a PC title for Steam.**
 
 [Featured](#featured) · [Recent Shipped](#recent-shipped) · [What People Say](#what-people-say)
@@ -16,8 +17,9 @@ title: "Portfolio"
 **Aberwla — Welsh-language VR with multiple minigames (Meta Quest & Pico).**  
 Shipped to both stores with platform-tight performance and crash-free stability.
 
+<!-- TODO: Add Aberwla Trailer? -->
 <!-- Optional: a focused 60–90s Aberwla gameplay video -->
-{%- comment -%} {% include video id="YOUTUBE_VIDEO_ID" provider="youtube" caption="Aberwla gameplay overview." %} {%- endcomment -%}
+<!-- {%- comment -%} {% include video id="c2SiiC7Ii_4" provider="youtube" caption="Aberwla gameplay overview." %} {%- endcomment -%} -->
 
 ### What I owned
 
@@ -63,7 +65,9 @@ A growing list of **production-ready Unity systems** (demo scene • README • 
 
 [See all projects →]({{ '/projects.html' | relative_url }})
 
-## What people say {#what-people-say}
+## What People Say {#what-people-say}
 
-> “Mike owned our VR releases end-to-end… exceptional attention to detail.”  
-> — Anna, MD · Animated Technologies · _Full on LinkedIn_
+> “Mike took ownership of all our VR projects and transformed VR/AR into a core business line. Exceptionally detail-oriented and consistently exceeded expectations.”  
+> — Anna Burke, Managing Director, Animated Technologies · [_Full on LinkedIn_](https://www.linkedin.com/in/m-rouse/)
+> “Mike kept the work organised and balanced, made collaboration easy, and created a great team environment. Planning and breakdown made delivery smooth.”  
+> — Peter Cole, VR/AR Developer · [_Full on LinkedIn_](https://www.linkedin.com/in/m-rouse/)
