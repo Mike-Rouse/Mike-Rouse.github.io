@@ -2,11 +2,12 @@ title: "Mike Rouse - Unity Developer"
 description: "Gameplay • Tools • C# • VR"
 
 remote_theme: mmistakes/minimal-mistakes
+minimal_mistakes_skin: "dark"
+
 plugins:
+  - jekyll-remote-theme
   - jekyll-include-cache
   - jekyll-seo-tag
-
-minimal_mistakes_skin: "dark"
 
 collections:
   projects:
