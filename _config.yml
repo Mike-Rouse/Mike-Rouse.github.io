@@ -1,5 +1,29 @@
-title: "Mike Rouse – Unity Developer"
-description: "Gameplay • Tools • C#"
-remote_theme: pages-themes/minimal@v0.2.0
+title: "Mike Rouse - Unity Developer"
+description: "Gameplay • Tools • C# • VR"
+
+remote_theme: mmistakes/minimal-mistakes
 plugins:
-- jekyll-remote-theme
+  - jekyll-include-cache
+  - jekyll-seo-tag
+
+minimal_mistakes_skin: "dark"
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+  systems:
+    output: true
+    permalink: /systems/:name/
+
+defaults:
+  - scope: { path: "", type: "projects" }
+    values: { layout: single }
+  - scope: { path: "", type: "systems" }
+    values: { layout: single }
+  - scope: { path: "" }
+    values: { layout: single }
+
+search: true
+lunr:
+  search_within_pages: true
