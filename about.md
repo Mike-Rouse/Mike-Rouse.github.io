@@ -4,16 +4,21 @@ layout: single
 permalink: /about/
 ---
 
+<!-- TODO: Refine this -->
 Unity/C# gameplay & tools developer with broad Unity coverage (gameplay/editor tools, lighting/baking, audio, performance). Shipped cross‑platform VR and mobile AR. Currently building a PC title for Steam.
 
+<!-- TODO: Fix Warning -->
 **Proof points**
 
 - Meta Quest/Pico targets: ~72 FPS
 - Crash‑free sessions: ≥99% (Unity Cloud Diagnostics)
 - End‑to‑end store releases (Meta/Pico/Android/iOS): requirements → submissions → hotfixes
 
+<!-- TODO: Fix Warning -->
 **Contact**
 
+<!-- TODO: Reaplace bare URLs -->
+<!-- TODO: Refine sections. Email + LinkedIn + Github? This enough? -->
 - Email: m.rouse@outlook.com
 - LinkedIn: https://www.linkedin.com/in/m-rouse/
 <!-- - GitHub: https://github.com/ -->
