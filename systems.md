@@ -4,19 +4,8 @@ layout: single
 permalink: /systems/
 ---
 
-Short, production-ready Unity systems used across VR/mobile/PC. Each system links to a repo with a demo scene, quick start, and MIT license.
+Short, production-ready Unity systems used across VR/mobile/PC.
 
-{% assign items = site.systems | sort: "order" %}
-{% if items.size == 0 %}
-_Status: first two in development. Planned: Save/Load, Addressables Build Switcher, XR Interaction Extensions._
-{% else %}
-
-## Available Systems
-
-{% for s in items %}
-
-- **[{{ s.title }}]({{ s.url | relative_url }})** — {{ s.summary }}
-
-  {% if s.repo %} · [Code]({{ s.repo }}){% endif %}
-{% endfor %}
-{% endif %}
+- Save/Load (coming soon)
+- Addressables Build Switcher (coming soon)
+- XR Interaction Extensions (coming soon)

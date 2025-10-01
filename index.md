@@ -6,10 +6,11 @@ title: "Portfolio"
 **Unity/C# developer focused on gameplay & tools. Shipped VR/AR. Building a PC title for Steam.**
 
 <!-- TODO Add showreel video-->
-> Add your 30–60s showreel here later (YouTube/Vimeo embed).
+<!-- > Add your 30–60s showreel here later (YouTube/Vimeo embed). -->
 
 ## Featured
 
+<!-- TODO: Aberwla-->
 Work-in-progress desktop PC title targeting Steam. Wishlist link coming soon.
 
 - What it is: one-liner.
