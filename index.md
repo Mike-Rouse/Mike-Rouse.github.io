@@ -17,9 +17,7 @@ title: "Portfolio"
 **Aberwla — Welsh-language VR with multiple minigames (Meta Quest & Pico).**  
 Shipped to both stores with platform-tight performance and crash-free stability.
 
-<!-- TODO: Add Aberwla Trailer? -->
-<!-- Optional: a focused 60–90s Aberwla gameplay video -->
-<!-- {%- comment -%} {% include video id="c2SiiC7Ii_4" provider="youtube" caption="Aberwla gameplay overview." %} {%- endcomment -%} -->
+{% include video id="c2SiiC7Ii_4" provider="youtube" caption="Aberwla gameplay trailer." %}
 
 ### What I owned
 
@@ -48,12 +46,14 @@ Shipped to both stores with platform-tight performance and crash-free stability.
 
 ## Systems (WIP) {#systems}
 
-A growing list of **production-ready Unity systems** (demo scene • README • MIT).  
+Examples of **production-ready Unity systems**
+(demo scene • README • MIT)
+
 **Status:** in development.
 <!-- TODO: Decide on what systems -->
-- Save/Load — _coming soon_
-- Addressables Build Switcher — _coming soon_
-- XR Interaction Extensions — _coming soon_
+- First Person Interaction System — *coming soon*
+- Addressables Build Switcher — *coming soon*
+- XR Interaction Extensions — *coming soon*
 
 <!-- [See Systems →]({{ '/systems.html' | relative_url }}) -->
 
@@ -63,7 +63,7 @@ A growing list of **production-ready Unity systems** (demo scene • README • 
 - **Aberwla — Quest/Pico — 2025** — [Meta](https://www.meta.com/en-gb/experiences/aberwla/9575081185844250/) · [Pico](https://store-global.picoxr.com/global/detail/1/7477528258796486711)
 - **Centrica Energy Storage — Android/iOS — 2024** — [Play Store](https://play.google.com/store/apps/details?id=com.AnimatedTechnologiesLtd.Centrica) · [App Store](https://apps.apple.com/gb/app/centrica-energy-storage/id6473838618)
 
-[See all projects →]({{ '/projects.html' | relative_url }})
+[See all projects →]({{ '/projects/' | relative_url }})
 
 ## What People Say {#what-people-say}
 

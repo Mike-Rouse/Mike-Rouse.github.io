@@ -23,8 +23,6 @@ When the Coming Soon page is live, uncomment one of these proofs:
 {% include video id="YOUTUBE_ID" provider="youtube" caption="30s loop: key interaction." %}
 {% endcomment %}
 
----
-
 ### Untitled Horror Game (PC / Steam) — **WIP** {#untitled-horror}
 
 **Platform:** PC (Steam) · **Scope:** ~4–5 hours  
@@ -104,7 +102,7 @@ When you have proof, uncomment one (or both):
 ---
 
 ### M-SParc (2023)
-
+<!-- TODO: Add iOS Link-->
 [Google Play](https://play.google.com/store/apps/details?id=com.AnimatedTechnologies.spARc)
 
 {%- capture owned_msparc -%}
@@ -118,7 +116,7 @@ When you have proof, uncomment one (or both):
 ---
 
 ### Beneath The Waves – Dan Y Môr (2023)
-
+<!-- TODO: Add iOS Link-->
 [Google Play](https://play.google.com/store/apps/details?id=com.AnimatedTechnologies.BeneathTheWaves)
 
 {%- capture owned_waves -%}
@@ -132,8 +130,20 @@ When you have proof, uncomment one (or both):
 ---
 
 ### Stori Môn (2023)
-
+<!-- TODO: Add iOS Link-->
 [Google Play](https://play.google.com/store/apps/details?id=com.AnimatedTechnologies.AngleseyAR)
+
+{%- capture owned_storimon -%}
+
+- WHAT I OWNED bullet 1  
+- WHAT I OWNED bullet 2  
+- WHAT I OWNED bullet 3
+{%- endcapture -%}
+{%- include custom-details.html title="What I owned" content=owned_storimon -%}
+
+---
+
+### ITL
 
 {%- capture owned_storimon -%}
 
