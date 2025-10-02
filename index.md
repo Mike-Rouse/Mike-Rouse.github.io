@@ -52,10 +52,14 @@ Examples of **production-ready Unity systems**
 **Status:** in development.
 <!-- TODO: Decide on what systems -->
 - First Person Interaction System — *coming soon*
-- Addressables Build Switcher — *coming soon*
-- XR Interaction Extensions — *coming soon*
-
-<!-- [See Systems →]({{ '/systems.html' | relative_url }}) -->
+- Inner Dialogue System — *coming soon*
+- Quests/Objectives System — *coming soon*
+<!-- These are probably a bit on the beginner side. Add in systems from Side Project -->
+<!-- - Health System — *coming soon*
+- Experience System — *coming soon*
+- Enemy AI (Behaviour Trees) — *coming soon*
+- Inventory System — *coming soon*
+- Unity Mod Support — *coming soon* -->
 
 ## Recent Shipped {#recent-shipped}
 
