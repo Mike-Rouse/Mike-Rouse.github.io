@@ -4,7 +4,7 @@ title: "Portfolio"
 ---
 
 <!-- TODO: Refine this. -->
-**Unity/C# developer focused on gameplay & tools. Shipped VR/AR. Building a PC title for Steam.**
+*Unity/C# developer focused on gameplay & tools. Shipped VR/AR. Building a PC title for Steam.*
 
 [Featured](#featured) · [Recent Shipped](#recent-shipped) · [What People Say](#what-people-say)
 
