@@ -3,7 +3,6 @@ title: "Projects"
 layout: single
 permalink: /projects/
 ---
-{% include custom-details.html %}
 
 ## In Development {#in-development}
 
@@ -11,56 +10,38 @@ permalink: /projects/
 
 **Platform:** PC (Steam) · **Scope:** 15–20 minutes  
 **Status:** Coming Soon page prep · **Next milestone:** Full release (**Oct 2025**)
+Small, atmospheric haunted-house project to learn the full Steam release pipeline.
 
-{%- capture NOTES_VAR -%}
-Small, atmospheric haunted-house project to learn the full Steam release pipeline (builds, depots, page assets, checklists).
-{%- endcapture -%}
-{%- include custom-details.html title="Notes" content=NOTES_VAR -%}
+- **Release target**: short playable loop for public build
+- **Store assets**: capsule/header/screens + concise store copy
+- **Proof**: 30–60s clip for the Coming Soon page
 
-{%- comment -%}
-When the Coming Soon page is live, uncomment this Proof block:
+{% comment %}
+When the Coming Soon page is live, uncomment one of these proofs:
 
-{%- capture PROOF_VAR -%}
 {% include button url="STEAM_URL" text="View on Steam" target="_blank" %}
-{%- endcapture -%}
-{% include custom-details.html title="Proof" content=PROOF_VAR %}
-{%- endcomment -%}
+{% include video id="YOUTUBE_ID" provider="youtube" caption="30s loop: key interaction." %}
+{% endcomment %}
 
-ChatGPT said:
-
-Here’s your filled WIP block in the no-HTML, Minimal Mistakes–friendly format. Paste it into projects.md under In Development.
+---
 
 ### Untitled Horror Game (PC / Steam) — **WIP** {#untitled-horror}
 
 **Platform:** PC (Steam) · **Scope:** ~4–5 hours  
 **Status:** Vertical slice → **Q3 2026** · **Next milestone:** Slice content lock (**Jan 2026**)
 
-{%- capture PITCH_VAR -%}
-Survive, evade, resist, and escape a land cursed by varied entities. Focus on atmosphere, tension, and readable stealth/combat loops.
-{%- endcapture -%}
-{%- include custom-details.html title="Pitch" content=PITCH_VAR -%}
+Survive, evade, resist, and escape a land cursed by varied entities—focus on atmosphere, tension, and readable stealth/escape loops.
 
-{%- capture PRODUCTION_VAR -%}
+- **Vertical slice**: gameplay prototypes for creation of store assets.
+- **Core loop**: sight/sound stealth, hide/evade/confront with clear feedback
+- **Atmosphere**: lighting/fog/audio pass for tension.
 
-- Company formation (**Ltd**) and **ICO registration** in progress  
-- Steam release ops planning (page assets, store copy, age rating, privacy/DPA)  
-- Build pipeline setup (branches/depots, versioning, release checklist)
-{%- endcapture -%}
-{%- include custom-details.html title="Production" content=PRODUCTION_VAR -%}
+{% comment %}
+When you have proof, uncomment one (or both):
 
-{%- comment -%}
-When you have proof, uncomment one (or both) of these:
-
-{%- capture PROOF_CLIP -%}
 {% include video id="YOUTUBE_ID" provider="youtube" caption="30–60s vertical slice preview." %}
-{%- endcapture -%}
-{% include custom-details.html title="Proof (clip)" content=PROOF_CLIP %}
-
-{%- capture PROOF_STEAM -%}
 {% include button url="STEAM_COMING_SOON_URL" text="View on Steam" target="_blank" %}
-{%- endcapture -%}
-{% include custom-details.html title="Proof (Steam page)" content=PROOF_STEAM %}
-{%- endcomment -%}
+{% endcomment %}
 
 ## Projects {#projects-chronological}
 

@@ -1,3 +1,35 @@
 .mm-details { margin: 0.75rem 0 1.25rem; }
 .mm-details > summary { cursor: pointer; font-weight: 600; }
 .mm-details__body { margin-top: 0.5rem; }
+
+/* Global scale: keep readable body, tone down headings */
+html { font-size: 100%; }             /* 16px base */
+body { font-size: 1rem; line-height: 1.6; }
+
+/* Content width for better scan (≈ 70–75 characters per line) */
+.page__content { max-width: 72ch; }
+
+/* Home “wide” pages can be a bit wider */
+.page .page__inner-wrap { max-width: 72ch; }
+.layout--single.wide .page__inner-wrap,
+.layout--single .page__inner-wrap { max-width: 80ch; }
+
+/* Headings (compact but clear) */
+.page__title { font-size: clamp(1.6rem, 2vw + 1rem, 2rem); margin-bottom: .6rem; }
+.page__content h2 { font-size: clamp(1.25rem, 1.4vw + 1rem, 1.6rem); margin: 1.2rem 0 .5rem; }
+.page__content h3 { font-size: 1.15rem; margin: 1rem 0 .4rem; }
+.page__content h4 { font-size: 1.05rem; margin: .8rem 0 .3rem; }
+
+/* Lists spacing a touch tighter */
+.page__content ul, .page__content ol { margin-top: .4rem; margin-bottom: .9rem; }
+.page__content li { margin: .2rem 0; }
+
+/* Buttons a hair smaller */
+.btn { font-size: .95rem; padding: .5rem .8rem; }
+
+/* Quote size down slightly */
+blockquote { font-size: .98rem; }
+
+/* Optional: reduce masthead height a bit */
+.masthead { padding: .4rem 0; }
+.site-title { font-size: 1rem; }
