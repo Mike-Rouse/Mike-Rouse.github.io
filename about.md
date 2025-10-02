@@ -44,12 +44,10 @@ Outside work I’m usually on a hill, putting time into my Steam side project, o
 ## Recommendations
 
 > “I had the privilege of working with Mike as his manager during his three years at Animated Technologies, where he served as our Lead Developer. Mike was instrumental in establishing and expanding our VR and AR service offerings, transforming what was once a new venture into a core component of our business.”  
-— **Anna Burke**, Managing Director, Animated Technologies · [_Full on LinkedIn_](https://www.linkedin.com/in/m-rouse/)  
-***
+**— Anna Burke**, Managing Director, Animated Technologies · [_Full on LinkedIn_](https://www.linkedin.com/in/m-rouse/)  
 
 > “I worked closely with Mike in a small VR development team, and he did a great job managing tasks and balancing the workload between us. His planning and breakdown of tasks made the work smooth and easy to manage.”  
-— **Peter Cole**, VR/AR Developer · [_Full on LinkedIn_](https://www.linkedin.com/in/m-rouse/)  
-***
+**— Peter Cole**, VR/AR Developer · [_Full on LinkedIn_](https://www.linkedin.com/in/m-rouse/)  
 
 > “He has a deep expertise in Unity and C# and I can vouch for his experience shipping production builds for VR and Mobile AR. He also consistently delivered reliable gameplay systems, editor tools, and performance-optimised builds.”  
-— **Josef Roberts**, Project Manager · [_Full on LinkedIn_](https://www.linkedin.com/in/m-rouse/)  
+**— Josef Roberts**, Project Manager · [_Full on LinkedIn_](https://www.linkedin.com/in/m-rouse/)  

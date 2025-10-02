@@ -3,8 +3,7 @@ layout: single
 title: "Portfolio"
 ---
 
-<!-- TODO: Refine this. -->
-*Unity/C# developer focused on gameplay & tools. Shipped VR/AR. Building a PC title for Steam.*
+*Unity/C# gameplay & tools developer. Shipped on mobile and VR/AR. Currently building a PC title for Steam.*
 
 [Featured](#featured) · [Recent Shipped](#recent-shipped) · [What People Say](#what-people-say)
 
@@ -21,7 +20,7 @@ Shipped to both stores with platform-tight performance and crash-free stability.
 
 ### What I owned
 
-- End-to-end releases on **Meta & Pico** (requirements → store assets → privacy policy → submissions → hotfixes in **48–72h**).
+- End-to-end releases on **Meta & Pico**: requirements → feature & minigame design → greybox prototypes → production builds (perf/UX polish) → age ratings → store assets/copy → privacy policy → submissions → hotfixes **48–72h**.
 - **Quest↔Pico build switch tooling** (Addressables + scripting defines) → ~**40% faster** build prep; eliminated hand-switch errors.
 - Core gameplay; **multiplayer** (Normcore); baked lighting; spatial audio pipeline; profiling & optimisation to budgets.
 
@@ -40,7 +39,6 @@ Shipped to both stores with platform-tight performance and crash-free stability.
 - Addressables packaging; baked lighting & occlusion; LOD discipline.  
 - Spatial audio with perf-aware routing.
 
-<!-- CTAs -->
 [Meta Quest](https://www.meta.com/en-gb/experiences/aberwla/9575081185844250/){: .btn .btn--primary target="_blank" rel="noopener" }
 [Pico Store](https://store-global.picoxr.com/global/detail/1/7477528258796486711){: .btn .btn--primary target="_blank" rel="noopener" }
 
@@ -50,16 +48,9 @@ Examples of **production-ready Unity systems**
 (demo scene • README • MIT)
 
 **Status:** in development.
-<!-- TODO: Decide on what systems -->
-- First Person Interaction System — *coming soon*
-- Inner Dialogue System — *coming soon*
-- Quests/Objectives System — *coming soon*
-<!-- These are probably a bit on the beginner side. Add in systems from Side Project -->
-<!-- - Health System — *coming soon*
-- Experience System — *coming soon*
-- Enemy AI (Behaviour Trees) — *coming soon*
-- Inventory System — *coming soon*
-- Unity Mod Support — *coming soon* -->
+
+- AI Perception & Behaviours — *preview coming*
+- Save/Load & Checkpoint System — *preview coming*
 
 ## Recent Shipped {#recent-shipped}
 
@@ -71,8 +62,8 @@ Examples of **production-ready Unity systems**
 
 ## What People Say {#what-people-say}
 
-> “Mike took ownership of all our VR projects and transformed VR/AR into a core business line. Exceptionally detail-oriented and consistently exceeded expectations.”  
-> — Anna Burke, Managing Director, Animated Technologies · [_Full on LinkedIn_](https://www.linkedin.com/in/m-rouse/)
+> “Mike was instrumental in establishing and expanding our VR and AR service offerings, transforming what was once a new venture into a core component of our business.”  
+**— Anna Burke**, Managing Director, Animated Technologies · [*Full on LinkedIn*](https://www.linkedin.com/in/m-rouse/)  
 
-> “Mike kept the work organised and balanced, made collaboration easy, and created a great team environment. Planning and breakdown made delivery smooth.”  
-> — Peter Cole, VR/AR Developer · [_Full on LinkedIn_](https://www.linkedin.com/in/m-rouse/)
+> “He kept everything organized and made collaboration easy and helped make a great working environment. His planning and breakdown of tasks made the work smooth and easy to manage.”  
+**— Peter Cole**, VR/AR Developer · [*Full on LinkedIn*](https://www.linkedin.com/in/m-rouse/)  
