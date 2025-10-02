@@ -69,5 +69,6 @@ A growing list of **production-ready Unity systems** (demo scene • README • 
 
 > “Mike took ownership of all our VR projects and transformed VR/AR into a core business line. Exceptionally detail-oriented and consistently exceeded expectations.”  
 > — Anna Burke, Managing Director, Animated Technologies · [_Full on LinkedIn_](https://www.linkedin.com/in/m-rouse/)
+
 > “Mike kept the work organised and balanced, made collaboration easy, and created a great team environment. Planning and breakdown made delivery smooth.”  
 > — Peter Cole, VR/AR Developer · [_Full on LinkedIn_](https://www.linkedin.com/in/m-rouse/)
