@@ -2,37 +2,50 @@
 ---
 ---
 
-/* (Optional) rescale the theme globally – do this BEFORE imports
-$type-size-1: 2.1em;
-$type-size-2: 1.6em;
-$type-size-3: 1.3em;
-$type-size-4: 1.1em;
-$type-size-5: 1.0em;
-$type-size-6: 0.9em;
-*/
-
-/* 1) Bring back the selected skin from _config.yml */
+/* 1) Load the selected skin first */
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 
-/* 2) Then import the theme */
+/* 2) Then the theme */
 @import "minimal-mistakes";
 
-/* 3) Put your overrides AFTER the imports so they actually win */
+/* 3) Hard overrides AFTER imports so we beat all theme media queries */
 
-/* Headings cap (Ruby Sass safe) */
-.layout--single .page__title,
-.layout--single .page__content h1,
-.layout--single .page__content h2,
-.layout--single .page__content h3,
-.layout--single .page__content h4,
-.layout--single .page__content h5,
-.layout--single .page__content h6 {
-  font-size: clamp(1rem, calc(#{unquote("2vw + 0.6rem")}), 1.4rem);
-  line-height: 1.3;
-}
-
-/* Body text – tighten a touch */
+/* BODY — cap at ~12pt (16px) and keep it there */
+.layout--single .page__content,
 .layout--single .page__content p,
 .layout--single .page__content li {
-  font-size: clamp(0.95rem, calc(#{unquote("0.4vw + 0.85rem")}), 1rem);
+  font-size: 1rem !important;      /* 16px */
+  line-height: 1.6 !important;
+}
+
+/* HEADINGS — scaled appropriately for a 16px body */
+.layout--single .page__title {      /* page H1 above content */
+  font-size: 1.5rem !important;     /* 24px */
+  line-height: 1.25 !important;
+}
+
+.layout--single .page__content h1 {
+  font-size: 1.5rem !important;     /* 24px */
+  line-height: 1.25 !important;
+}
+
+.layout--single .page__content h2 {
+  font-size: 1.25rem !important;    /* 20px */
+  line-height: 1.3 !important;
+}
+
+.layout--single .page__content h3 {
+  font-size: 1.125rem !important;   /* 18px */
+  line-height: 1.35 !important;
+}
+
+.layout--single .page__content h4 {
+  font-size: 1rem !important;       /* 16px */
+  line-height: 1.4 !important;
+}
+
+.layout--single .page__content h5,
+.layout--single .page__content h6 {
+  font-size: 0.95rem !important;    /* ~15px */
+  line-height: 1.4 !important;
 }
