@@ -1,20 +1,16 @@
 <style>
-  /* TEMP: visual smoke test so we KNOW this file is loaded */
-  html::before {
-    content: "custom head loaded";
-    position: fixed; top: 0; left: 0; z-index: 9999;
-    background: #222; color: #fff; font: 12px/1.4 system-ui, sans-serif;
-    padding: 2px 6px; pointer-events: none;
-  }
+  /* 1) Stop the theme's rem scaling on big screens */
+  html { font-size: 16px !important; }  /* 12pt cap */
 
-  /* FORCE the type scale for single layout */
+  /* 2) Body text */
   .layout--single .page__content,
   .layout--single .page__content p,
   .layout--single .page__content li {
-    font-size: 1rem !important;      /* 12pt ≈ 16px */
+    font-size: 1rem !important;       /* = 16px now, because we fixed html */
     line-height: 1.6 !important;
   }
 
+  /* 3) Headings scaled off 16px */
   .layout--single .page__title,
   .layout--single .page__content h1 { font-size: 1.5rem !important; line-height: 1.25 !important; } /* 24px */
   .layout--single .page__content h2 { font-size: 1.25rem !important; line-height: 1.3  !important; } /* 20px */

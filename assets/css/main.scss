@@ -2,13 +2,3 @@
 ---
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
-
-/* DEBUG MARKER — easy to find in the built CSS */
-:root { --build-marker: MR-123; }
-
-/* Sledgehammer sizes so you *will* see it if this file is loaded */
-body { font-size: 16px !important; }                 /* 12pt */
-.page__title, .page__content h1 { font-size: 24px !important; }
-.page__content h2 { font-size: 20px !important; }
-.page__content h3 { font-size: 18px !important; }
-.page__content h4 { font-size: 16px !important; }
