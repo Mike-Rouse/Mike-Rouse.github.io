@@ -1,7 +1,10 @@
-.page__title      { font-size: clamp(1.25rem, 2vw + 1rem, 1.5rem) !important; }
-.page__content h2 { font-size: clamp(1.15rem, 1.5vw + 1rem, 1.25rem) !important; }
-.page__content h3 { font-size: clamp(1.05rem, 1vw + 1rem, 1.1rem) !important; }
-.page__content h4 { font-size: 1rem !important; }
+.layout--single .page__title,
+.layout--single .page__content h2,
+.layout--single .page__content h3,
+.layout--single .page__content h4 {
+  font-size: clamp(1.25rem, 2vw + 1rem, 1.5rem) !important;
+}
+
 body {
-  font-size: 1rem !important; /* 1rem = 16px = 12pt */
+  font-size: 1rem !important;
 }
