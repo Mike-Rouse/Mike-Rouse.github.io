@@ -1,35 +1,17 @@
 ---
-# Only the main Sass file needs front matter
 ---
-
-@charset "utf-8";
-
-/* (A) Optionally tighten the theme’s type scale globally.
-   These variables drive heading/body sizes across the site. */
-$type-size-1: 2.1em;   // h1-ish
-$type-size-2: 1.7em;   // h2-ish
-$type-size-3: 1.35em;  // h3-ish
-$type-size-4: 1.15em;  // body lead, etc.
-$type-size-5: 1em;     // body
-$type-size-6: 0.9em;
-
-/* You can tweak these numbers, but keep their order descending. */
-
-/* Import theme AFTER variable overrides */
+/* optional: your type scale overrides here, then... */
 @import "minimal-mistakes";
 
-/* (B) Add hard caps with clamp for your single layout */
+/* SAFE clamp: prevent Ruby Sass from doing math */
 .layout--single .page__title,
 .layout--single .page__content h1,
 .layout--single .page__content h2,
 .layout--single .page__content h3,
 .layout--single .page__content h4 {
-  /* cap on big monitors, still responsive */
-  font-size: clamp(1rem, 2vw + 0.6rem, 1.6rem);
+  /* middle value wrapped in calc(), math injected as a string */
+  font-size: clamp(1rem, calc(#{unquote("2vw + 0.6rem")}), 1.6rem);
   line-height: 1.3;
 }
 
-/* Body base size (won’t be ignored now) */
-body {
-  font-size: 1rem;
-}
+body { font-size: 1rem; }
