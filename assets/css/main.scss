@@ -1,17 +1,38 @@
+/* assets/css/main.scss */
 ---
 ---
-/* optional: your type scale overrides here, then... */
+
+/* (Optional) rescale the theme globally – do this BEFORE imports
+$type-size-1: 2.1em;
+$type-size-2: 1.6em;
+$type-size-3: 1.3em;
+$type-size-4: 1.1em;
+$type-size-5: 1.0em;
+$type-size-6: 0.9em;
+*/
+
+/* 1) Bring back the selected skin from _config.yml */
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+
+/* 2) Then import the theme */
 @import "minimal-mistakes";
 
-/* SAFE clamp: prevent Ruby Sass from doing math */
+/* 3) Put your overrides AFTER the imports so they actually win */
+
+/* Headings cap (Ruby Sass safe) */
 .layout--single .page__title,
 .layout--single .page__content h1,
 .layout--single .page__content h2,
 .layout--single .page__content h3,
-.layout--single .page__content h4 {
-  /* middle value wrapped in calc(), math injected as a string */
-  font-size: clamp(1rem, calc(#{unquote("2vw + 0.6rem")}), 1.6rem);
+.layout--single .page__content h4,
+.layout--single .page__content h5,
+.layout--single .page__content h6 {
+  font-size: clamp(1rem, calc(#{unquote("2vw + 0.6rem")}), 1.4rem);
   line-height: 1.3;
 }
 
-body { font-size: 1rem; }
+/* Body text – tighten a touch */
+.layout--single .page__content p,
+.layout--single .page__content li {
+  font-size: clamp(0.95rem, calc(#{unquote("0.4vw + 0.85rem")}), 1rem);
+}
