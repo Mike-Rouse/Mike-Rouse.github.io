@@ -36,7 +36,7 @@ blockquote { font-size: .96rem; }
   .page__content h2 { font-size: 1.3rem; }
 }
 
-/* ——— NEW: stop text growing on wide screens ——— */
+/* ——— Stop text growing on wide screens ——— */
 @media (min-width: 64em) {  /* ~1024px, matches theme breakpoint */
-  html { font-size: 100% !important; } /* lock base at 16px */
+  html { font-size: 12pt !important; } /* lock base at 16px */
 }
