@@ -14,8 +14,8 @@ plugins:
 
 sass:
   style: compressed
-include:
-  - assets/css
+# include:
+#   - assets/css
 
 search: true
 lunr:
