@@ -3,15 +3,18 @@
 .mm-details > summary { cursor: pointer; font-weight: 600; }
 .mm-details__body { margin-top: 0.5rem; }
 
-/* ——— Typography scale (compact, still readable) ——— */
-html { font-size: 100%; }           /* keep 16px base for a11y */
+/* ——— Typography (compact, capped on desktop) ——— */
+/* Base stays 16px; we'll lock it on wide screens below */
+html { font-size: 100%; }
+
+/* Paragraphs: small but readable on desktop */
 body { font-size: 0.85rem; line-height: 1.4; }  /* ~13.6px */
 
-/* Headings (dialed down) */
-.page__title { font-size: clamp(1.5rem, 1.6vw + 1rem, 1.9rem); margin-bottom: .6rem; }
-.page__content h2 { font-size: clamp(1.15rem, 1.2vw + 1rem, 1.45rem); margin: 1.1rem 0 .5rem; }
-.page__content h3 { font-size: 1.08rem; margin: .9rem 0 .4rem; }
-.page__content h4 { font-size: 1.0rem;  margin: .7rem 0 .3rem; }
+/* Headings: cap desktop max ≈ 13pt (1.083rem) */
+.page__title      { font-size: clamp(1.00rem, 1.2vw + 0.80rem, 1.083rem); margin-bottom: .6rem; }
+.page__content h2 { font-size: clamp(0.95rem, 1.0vw + 0.80rem, 1.083rem); margin: 1.1rem 0 .5rem; }
+.page__content h3 { font-size: 1.05rem; margin: .9rem 0 .4rem; }   /* below cap for hierarchy */
+.page__content h4 { font-size: 1.00rem; margin: .7rem 0 .3rem; }
 
 /* Lists slightly tighter */
 .page__content ul, .page__content ol { margin-top: .35rem; margin-bottom: .8rem; }
@@ -21,7 +24,7 @@ body { font-size: 0.85rem; line-height: 1.4; }  /* ~13.6px */
 blockquote { font-size: .96rem; }
 .btn { font-size: .93rem; padding: .45rem .75rem; }
 
-/* ——— Content width (choose ONE place to constrain) ——— */
+/* ——— Content width ——— */
 .page .page__inner-wrap { max-width: 72ch; }
 .layout--single.wide .page__inner-wrap { max-width: 80ch; }
 
@@ -29,14 +32,16 @@ blockquote { font-size: .96rem; }
 .masthead { padding: .35rem 0; }
 .site-title { font-size: .95rem; }
 
-/* Small screens: don't over-shrink headings; keep comfortable body size */
+/* Mobile: keep text comfy and allow larger headings */
 @media (max-width: 640px) {
-  body { font-size: 1rem; } /* back to 16px on mobile for readability */
+  body { font-size: 1rem; }          /* ~16px on phones */
   .page__title { font-size: 1.6rem; }
   .page__content h2 { font-size: 1.3rem; }
 }
 
-/* ——— Stop text growing on wide screens ——— */
-@media (min-width: 64em) {  /* ~1024px, matches theme breakpoint */
-  html { font-size: 12pt !important; } /* lock base at 16px */
+/* ——— Stop text inflating on wide screens ——— */
+/* Minimal Mistakes bumps the root size at larger breakpoints.
+   Lock it so rem-based sizes don't grow past our caps. */
+@media (min-width: 64em) {  /* ~1024px */
+  html { font-size: 100% !important; }
 }
