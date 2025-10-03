@@ -1,37 +1,7 @@
-/* ===== Custom CSS (Minimal Mistakes) ===== */
-/* Compact, capped typography + a few niceties. */
-
-/* Details include spacing (optional) */
-.mm-details { margin: 0.75rem 0 1.25rem; }
-.mm-details > summary { cursor: pointer; font-weight: 600; }
-.mm-details__body { margin-top: 0.5rem; }
-
-/* Typography (compact + capped) */
-/* Lock root so rem sizes don’t inflate on wide screens */
-html { font-size: 100% !important; }   /* 16px base everywhere */
-
-/* Paragraphs (desktop) */
-body { font-size: 0.85rem; line-height: 1.4; }  /* ~13.6px */
-
-/* Headings (fluid with hard ceiling ~13pt ≈ 1.083rem) */
-.page__title      { font-size: clamp(1.00rem, 1.2vw + 0.80rem, 1.083rem); margin-bottom: .6rem; }
-.page__content h2 { font-size: clamp(0.95rem, 1.0vw + 0.80rem, 1.083rem); margin: 1.1rem 0 .5rem; }
-.page__content h3 { font-size: 1.05rem; margin: .9rem 0 .4rem; }
-.page__content h4 { font-size: 1.00rem; margin: .7rem 0 .3rem; }
-
-/* Mobile: keep text comfy */
-@media (max-width: 640px) {
-  body { font-size: 1rem; }       /* ~16px on phones */
-  .page__title { font-size: 1.6rem; }
-  .page__content h2 { font-size: 1.3rem; }
+.page__title      { font-size: clamp(1.25rem, 2vw + 1rem, 1.5rem) !important; }
+.page__content h2 { font-size: clamp(1.15rem, 1.5vw + 1rem, 1.25rem) !important; }
+.page__content h3 { font-size: clamp(1.05rem, 1vw + 1rem, 1.1rem) !important; }
+.page__content h4 { font-size: 1rem !important; }
+body {
+  font-size: 1rem !important; /* 1rem = 16px = 12pt */
 }
-
-/* Content width (readable line length) */
-.page .page__inner-wrap { max-width: 72ch; }
-.layout--single.wide .page__inner-wrap { max-width: 80ch; }
-
-/* Optional small tweaks */
-blockquote { font-size: .96rem; }
-.btn { font-size: .93rem; padding: .45rem .75rem; }
-.masthead { padding: .35rem 0; }
-.site-title { font-size: .95rem; }
