@@ -1,33 +1,55 @@
 <style>
-  /* Fix rem growth at wide viewports */
-  html { font-size: 16px !important; } /* ~12pt base */
-
-  /* Body text */
+  /* 0) Keep your base */
+  html { font-size: 16px !important; }
   .layout--single .page__content,
   .layout--single .page__content p,
-  .layout--single .page__content li {
-    font-size: 1rem !important;      /* now = 16px */
-    line-height: 1.4 !important;
+  .layout--single .page__content li { font-size: 1rem !important; line-height: 1.55 !important; }
+
+  /* 1) Comfortable measure on very large screens (~72ch) */
+  @media (min-width: 1280px) {
+    .layout--single .page {
+      max-width: 72ch !important;
+    }
   }
 
-  /* Headings */
+  /* 2) Clearer hierarchy */
   .layout--single .page__title,
-  .layout--single .page__content h1 { font-size: 1.5rem !important; line-height: 1.25 !important; } /* 24px */
-  .layout--single .page__content h2 { font-size: 1.25rem !important; line-height: 1.3  !important; } /* 20px */
-  .layout--single .page__content h3 { font-size: 1.125rem !important;line-height: 1.35 !important; } /* 18px */
-  .layout--single .page__content h4 { font-size: 1rem !important;     line-height: 1.4  !important; } /* 16px */
-  .layout--single .page__content h5,
-  .layout--single .page__content h6 { font-size: 0.95rem !important;  line-height: 1.4  !important; } /* ~15px */
+  .layout--single .page__content h1 { font-size: 1.6rem !important; line-height: 1.25 !important; } /* 25.6px */
+  .layout--single .page__content h2 { font-size: 1.375rem !important; line-height: 1.3 !important; } /* 22px */
+  .layout--single .page__content h3 { font-size: 1.1875rem !important; line-height: 1.35 !important; } /* 19px */
+  .layout--single .page__content h4 { font-size: 1rem !important; line-height: 1.4 !important; } /* 16px */
 
-  /* Masthead site title (the header link) */
-  .greedy-nav .site-title {
-    font-size: 26px !important;  /* ~1.625rem off the fixed 16px root */
-    line-height: 1.1 !important;
-    letter-spacing: 0.2px;
+  /* 3) Vertical rhythm: consistent spacing around headings & lists */
+  .layout--single .page__content h1,
+  .layout--single .page__content h2,
+  .layout--single .page__content h3,
+  .layout--single .page__content h4 {
+    margin-top: 1.8em !important;
+    margin-bottom: 0.6em !important;
   }
 
-  /* Keep it tidy on small phones */
-  @media (max-width: 420px) {
-    .greedy-nav .site-title { font-size: 20px !important; }
+  .layout--single .page__content p { margin: 0.9em 0 !important; }
+
+  .layout--single .page__content ul,
+  .layout--single .page__content ol {
+    margin: 0.9em 0 1.1em !important;
+    padding-left: 1.25em !important;
   }
+  .layout--single .page__content li + li { margin-top: 0.35em !important; }
+
+  /* 4) Make the lead-in intro feel intentional */
+  .layout--single .page__content > p:first-of-type {
+    opacity: 0.9;
+    margin-bottom: 1.1em !important;
+  }
+
+  /* 5) Tighten embeds (YouTube) so they don’t create giant gutters */
+  .layout--single .page__content .video-container,
+  .layout--single .page__content iframe[src*="youtube"] {
+    margin: 0.6em 0 1em !important;
+  }
+
+  /* 6) Masthead title (you already added this; nudging a hair larger is fine) */
+  .greedy-nav .site-title { font-size: 27px !important; line-height: 1.1 !important; letter-spacing: 0.2px; }
+  @media (max-width: 420px) { .greedy-nav .site-title { font-size: 20px !important; } }
 </style>
