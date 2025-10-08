@@ -1,0 +1,45 @@
+<style>
+  /* keep your base as-is */
+  html { font-size: 16px !important; }
+
+  /* Body text */
+  .layout--single .page__content,
+  .layout--single .page__content p,
+  .layout--single .page__content li {
+    font-size: 1rem !important;
+    line-height: 1.5 !important; /* was 1.4 */
+  }
+
+  /* Headings — final sizes */
+  .layout--single .page__title,
+  .layout--single .page__content h1 { font-size: 1.75rem !important; line-height: 1.25 !important; } /* 28px */
+  .layout--single .page__content h2 { font-size: 1.375rem !important; line-height: 1.3  !important; } /* 22px */
+  .layout--single .page__content h3 { font-size: 1.1875rem !important; line-height: 1.35 !important; } /* 19px */
+  .layout--single .page__content h4 { font-size: 1rem !important;     line-height: 1.4  !important; }  /* 16px */
+  .layout--single .page__content h5,
+  .layout--single .page__content h6 { font-size: 0.95rem !important;  line-height: 1.4  !important; }  /* ~15px */
+
+  /* Vertical rhythm around headings & lists */
+  .layout--single .page__content h1,
+  .layout--single .page__content h2,
+  .layout--single .page__content h3,
+  .layout--single .page__content h4 { margin-top: 1.6em !important; margin-bottom: 0.6em !important; }
+  .layout--single .page__content p { margin: 0.9em 0 !important; }
+  .layout--single .page__content ul,
+  .layout--single .page__content ol { margin: 0.9em 0 1.1em !important; padding-left: 1.25em !important; }
+  .layout--single .page__content li + li { margin-top: 0.4em !important; }
+
+  /* Masthead site title */
+  .greedy-nav .site-title {
+    font-size: 30px !important;
+    line-height: 1.1 !important; /* was 1.3 */
+    letter-spacing: 0.2px;
+  }
+
+  /* Tiny phones: keep H1/H2 from shouting */
+  @media (max-width: 360px) {
+    .layout--single .page__title,
+    .layout--single .page__content h1 { font-size: 1.6rem !important; }  /* 25.6px */
+    .layout--single .page__content h2 { font-size: 1.3rem  !important; }  /* ~20.8px */
+  }
+</style>

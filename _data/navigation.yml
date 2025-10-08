@@ -1,0 +1,12 @@
+main:
+  - title: "Work"
+    url: /
+  - title: "Projects"
+    url: /projects/
+  - title: "About"
+    url: /about/
+  # - title: '<i class="fab fa-steam" aria-hidden="true"></i> Steam'
+  #   url: https://store.steampowered.com/
+  #   external: true
+  # - title: "CV"
+  #   url: /cv.pdf

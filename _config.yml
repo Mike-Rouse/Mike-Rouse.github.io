@@ -1,0 +1,48 @@
+author:
+  name: "Mike Rouse"
+  avatar: "/assets/images/headshot.webp"
+  links:
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://www.linkedin.com/in/m-rouse/"
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/mike-rouse"
+    - label: "Email"
+      icon: "fas fa-envelope"
+      url: "mailto:m.rouse@outlook.com"
+    # - label: "Steam"
+    #   icon: "fab fa-steam"
+    #   url: "https://store.steampowered.com/app/YOUR_APP_ID"
+
+title: "Mike Rouse - Unity Developer"
+description: "Gameplay • Tools • C# • VR"
+
+remote_theme: mmistakes/minimal-mistakes
+minimal_mistakes_skin: "dark"
+
+url: "https://mike-rouse.github.io"
+baseurl: "" 
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
+  - jekyll-seo-tag
+
+locale: en-GB
+
+sass:
+  style: compressed
+
+atom_feed:
+  hide: true
+
+search: true
+lunr:
+  search_within_pages: true
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: single

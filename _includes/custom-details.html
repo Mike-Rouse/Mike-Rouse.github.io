@@ -1,0 +1,7 @@
+{% assign body = include.content | default: include.text | default: "" %}
+<details{% if include.open %} open{% endif %} class="mm-details">
+  <summary>{{ include.title | default: "Details" }}</summary>
+  <div class="mm-details__body">
+    {{ body | markdownify }}
+  </div>
+</details>
