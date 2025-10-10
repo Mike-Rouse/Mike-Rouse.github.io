@@ -10,16 +10,24 @@ Shipped on VR/AR & mobile · PC title in development.*{: #top }
 
 ## In Development {#in-development}
 
-### 3:10am — PC (Steam)
+### 3:10am — PC (Steam) {#3-10am}
 
-*Small, atmospheric haunted-house short to learn the full Steam release pipeline.*
+*Small, atmospheric haunted-house game to learn the full Steam release pipeline.*
+
+{% include video id="F-aJi8AOgAU" provider="youtube" caption="3:10am — PC gameplay clip (controller + interaction + inner monologue)." %}
+
+**Goal:** Ship a small, engaging PC horror slice with a tight loop, readable interactions, and strong audio-visual atmosphere; take it through the full Steam release pipeline (capsules, depots, build updates).
+
+**How:** Responsive first-person controls (**gamepad + KBM**), clear interaction prompts (Use/Open/Inspect), a simple, flexible ability system (e.g., flashlight), single-slot save with autosave on exit, core settings (FOV/AA/audio), and focused content/performance passes for smooth frame pacing.
+
+**Proof:** 20s gameplay clip above. Next: Steam “Coming Soon” page → public downloadable build → post-launch hotfix flow.
 
 **Scope:** 15–20 minutes  
 **Target milestone:** Full release **Oct 2025**  
 **Next:** Public “Coming Soon” page
+
 <!-- TODO: Add store page trailer + Steam Page Link -->
 <!-- **Proof:** store page trailer + Steam Page Link -->
-
 {% comment %}
 When ready, switch the two lines above to:
 **Proof:** {% include video id="YOUTUBE_ID" provider="youtube" caption="Steam Page Trailer." %}
@@ -44,6 +52,13 @@ When proof exists:
 **Proof:** {% include video id="YOUTUBE_ID" provider="youtube" caption="Steam Page Trailer." %}
 or
 **Proof:** {% include button url="STEAM_COMING_SOON_URL" text="View on Steam" target="_blank" %}
+{% endcomment %}
+
+<!-- TODO: Make VR/AR Showreel. Add to page nav -->
+<!-- ## Shipped VR/AR Showreel {#showreel} -->
+
+{% comment %}
+{% include video id="YOUTUBE_ID" provider="youtube" caption="30s showreel: VR/AR systems, tools, and perf."%}
 {% endcomment %}
 
 ## Released Projects {#projects-chronological}

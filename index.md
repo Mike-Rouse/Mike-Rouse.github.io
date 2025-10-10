@@ -6,7 +6,8 @@ title: "Unity Gameplay & Tools — VR/AR Shipped · PC in Development"
 Shipped on VR/AR & mobile · PC title in development*{: #top }
 
 {: .notice--info}
-**Now:** Currently building a small PC title; store page incoming.
+**Now:** Currently building a small PC title; store page incoming.  
+[Watch 3:10am PC clip →](/projects/#3-10am)
 
 <!-- TODO: Re-add showreel to nav when it exists -->
 <!-- [Showreel](#showreel) ·  -->[Featured](#featured) · [Recently Shipped](#recently-shipped) · [Systems Library (WIP)](#systems) · [Recommendations](#recommendations)
@@ -56,14 +57,194 @@ Unity **2022** · **URP** · **XR Interaction Toolkit** · **Addressables** · *
 
 [See all projects →]({{ '/projects/' | relative_url }})
 
-## Systems Library — first public repos rolling out soon{#systems}
+## Systems Library — Preview {#systems}
 
 Production-ready Unity systems (demo scene · README · MIT).  
 
-- **Boids at scale** (DOTS; targeting 50k–200k agents) — WIP
-- **Client prediction & reconciliation** (Netcode for GameObjects) — WIP
-- **AI perception & behaviours** (Behavior Trees) — WIP
-<!-- - Save/Load & Checkpoint System — *preview coming* -->
+### Interaction System — Preview
+
+Modular, interface-driven interaction with provider-based targeting and distance/angle/LOS priority, plus swappable UI. *Full package in progress.*
+
+<!-- TODO: Clip/Gif -->
+<!--  -->
+<!-- TODO: Design notes -->
+<!-- Design notes:
+- IInteractable / IInteractor contracts; provider-based target sources (ray, proximity)
+- Priority = distance • angle • LOS with stable tiebreak
+- Decoupled from input/camera; supports KBM/pad glyphs
+-->
+<!-- TODO: Code snippets -->
+<!-- Code excerpt (Gist): Interfaces + selector priority function -->
+
+### Footstep Audio System — Preview
+
+Surface-aware footsteps with pooled one-shots and PhysicMaterial→SO mapping. Zero-GC on emit. Ground source: current raycast (sensor refactor WIP).
+
+<!-- Footstep Audio System Video -->
+{% include video id="c2SiiC7Ii_4" provider="youtube" caption="Surface-aware footsteps: pooled one-shots, PhysicMaterial→SO mapping, sprint/land variants."%}
+
+#### Design notes
+
+- **Zero-GC playback:** pooled AudioSources with PlayOneShot via a ring buffer.
+
+- **Surface-aware:** PhysicMaterial → FloorSoundSO lookup (ScriptableObject map).
+
+- **Authoring-friendly:** per-surface clips/volumes live in SOs; add a surface by adding a map entry.
+
+- **Deterministic triggers:** distance-driven steps with walk/sprint thresholds; separate jump/land cues.
+
+- **Modular:** controller signals step/land; playback isolated in FootstepAudioController.
+
+- **Safe defaults:** null/empty guards and default-surface fallback.
+
+- **WIP (next pass):** reuse cached ground hit (no extra cast), optional anim-event timing, FMOD/Wwise switches.
+
+<!-- TODO: Code snippets -->
+#### Code Excerpts
+
+##### FootstepAudioController.cs (pooled one-shots, zero-GC emit)
+
+```csharp
+[SerializeField] private AudioSource[] _audioSourcePool;
+
+private int _poolIndex;
+
+private void PlayAtFeet(AudioClip clip, float volume)
+{
+    if (clip == null) return;
+            
+    AudioSource audioSource = GetPooledSource();
+    audioSource.PlayOneShot(clip, Mathf.Clamp01(volume));
+}
+
+private AudioSource GetPooledSource()
+{
+    int count = _audioSourcePool.Length;
+
+    for (int i = 0; i < count; i++)
+    {
+        int index = (_poolIndex + i) % count;
+        AudioSource candidate = _audioSourcePool[index];
+
+        if ((candidate != null && !candidate.isPlaying))
+        {
+            _poolIndex = (index + 1) % count;
+            return candidate;
+        }
+    }
+
+    AudioSource stolenAudioSource = _audioSourcePool[_poolIndex];
+    _poolIndex = (_poolIndex + 1) % count;
+
+    return stolenAudioSource;
+}
+```
+
+##### FootstepFloorMappingController.cs (PhysicMaterial → SO map + last-hit cache)
+
+```csharp
+[SerializeField] private FloorMaterialSoundMapSO _floorMaterialSoundMap;
+[SerializeField] private FloorSoundSO _defaultSound;
+
+private PhysicMaterial _lastMaterial;
+private FloorSoundSO _lastSound;
+
+private Dictionary<PhysicMaterial, FloorSoundSO> _soundMap = new Dictionary<PhysicMaterial, FloorSoundSO>();
+
+void Start()
+{
+    foreach (MaterialSoundMap map in _floorMaterialSoundMap.MaterialSoundMaps)
+    {
+        if (!_soundMap.ContainsKey(map.Material))
+        {
+            _soundMap.Add(map.Material, map.Sound);
+        }
+    }
+}
+
+public FloorSoundSO GetSoundToUse(PhysicMaterial physicMaterial)
+{
+    if (physicMaterial == null)
+    {
+        return _defaultSound;
+    }
+
+    if (physicMaterial == _lastMaterial && _lastSound != null)
+    {
+        return _lastSound;
+    }
+
+    if (_soundMap.TryGetValue(physicMaterial, out FloorSoundSO sound))
+    {
+        _lastMaterial = physicMaterial;
+        _lastSound = sound;
+        return sound;
+    }
+
+    _lastMaterial = physicMaterial;
+    _lastSound = _defaultSound;
+    return _defaultSound;
+}
+```
+
+##### FirstPersonController.cs (deterministic step timing)
+
+```csharp
+[SerializeField] private FootstepFloorMappingController _footstepFloorMappingController;
+[SerializeField] private FootstepAudioController _footstepAudioController;
+
+private Vector3 _lastPosition;
+private float _distanceAccumulated = 0f;
+private float _stepDistanceThreshold = 0;
+[SerializeField] private float _walkStepDistanceThreshold = 1.25f;
+[SerializeField] private float _sprintStepDistanceThreshold = 2f;
+private bool _isSprinting = false;
+private FloorSoundSO _soundsToUse;
+
+private void PlayFootstepSounds()
+{
+    if(!IsGrounded) return;
+
+    // horizontal-only
+    float horizontalSpeed = new Vector3(_controller.velocity.x, 0f, _controller.velocity.z).magnitude;
+    _distanceAccumulated += horizontalSpeed * Time.deltaTime;
+
+    if (_distanceAccumulated >= _stepDistanceThreshold)
+    {
+        SetFloorType();
+        TriggerFootstepSound();
+        _distanceAccumulated = 0f;
+    }
+
+    _lastPosition = transform.position;
+}
+```
+
+##### FirstPersonController.cs (raycast origin at feet — accurate surface origin)
+
+```csharp
+[SerializeField] private Transform _playerFeetTransform;
+private float _maxRaycastDistance = 0.6f;
+
+private FloorSoundSO SetFloorType()
+{
+    Vector3 feetPositionWithOffset = _playerFeetTransform.position + Vector3.up * 0.2f;
+    if (Physics.Raycast(feetPositionWithOffset, Vector3.down, out RaycastHit hit, _maxRaycastDistance))
+    {
+        _soundsToUse = _footstepFloorMappingController.GetSoundToUse(hit.collider.sharedMaterial);
+    }
+
+    return _soundsToUse;
+}
+```
+
+### Roadmap — *Planned*
+
+- **Boids at scale (DOTS)** — greybox flock, 50–200k agents @ 60 FPS on mid-tier GPU (GTX 1060 / RX 580+), 0 allocs/frame.
+- **Client prediction & reconciliation (NGO)** — move/shoot greybox, smooth at 120 ms RTT, ≤1 correction/s, 100–200 ms rollback.
+- **AI perception & Behavior Trees (BT)** — sight/hearing → blackboard → patrol/chase/search, 0 GC/tick, ≤0.2 ms/agent @ 10 Hz.
+
+<!-- [See all systems →]({{ '/systems/' | relative_url }}) -->
 
 ## Recommendations {#recommendations}
 
