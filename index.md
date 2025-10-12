@@ -63,27 +63,121 @@ Production-ready Unity systems (demo scene · README · MIT).
 
 ### Interaction System — Preview
 
-Modular, interface-driven interaction with provider-based targeting and distance/angle/LOS priority, plus swappable UI. *Full package in progress.*
+Modular, interface-driven interaction with Press/Hold patterns, focus/LOS-aware world UI, and a single combined ray for selection + occlusion. Uses interfaces + abstract bases (composition first) to keep gameplay code swappable and testable. *Full package in progress.*
 
 <!-- TODO: Clip/Gif -->
-<!--  -->
-<!-- TODO: Design notes -->
-<!-- Design notes:
-- IInteractable / IInteractor contracts; provider-based target sources (ray, proximity)
-- Priority = distance • angle • LOS with stable tiebreak
-- Decoupled from input/camera; supports KBM/pad glyphs
--->
-<!-- TODO: Code snippets -->
-<!-- Code excerpt (Gist): Interfaces + selector priority function -->
+{% include video id="VIDEO_ID" provider="youtube" caption="Press/Hold interaction: first-hit selection (interactable(∪)occluder mask), LOS-aware world UI, focus swap + hold progress." %}
+
+#### Design Notes {#interaction-design-notes}
+
+- **Clear contracts & bases:** IInteractable → IInteractableWithUI plus InteractionWithUIBase / Press… / Hold… (composition-first) so gameplay classes stay small, swappable, and testable.
+
+- **Deterministic selection:** one forward ray with a combined (interactable ∪ occluder) mask; only accept when the first hit is an interactable—no through-walls.
+
+- **UI LOS that matches gameplay:** single combined linecast; first hit = target/child → visible, otherwise occluded; focus swaps cleanly.
+
+- **Smooth UI tick:** world-space UI updates on CinemachineCore.CameraUpdatedEvent to avoid jitter and stay in lockstep with camera updates.
+
+- **Stable frame pacing:** camera-delta + min-interval throttling for targeting work; uses MaterialPropertyBlock for visual feedback without material creations.
+
+#### Code Excerpts {#interaction-code-excerpts}
+
+##### PlayerInteractor.cs (single combined ray; first-hit must be an interactable)
+
+``` csharp
+// Uses _hitMask = _occluderMask | _interactableMask (set in Awake).
+// Accept only if the FIRST thing hit is an IInteractable (prevents through-walls).
+private bool PerformRaycast(out RaycastHit hit)
+{
+    Transform t = _interactionCamera.transform;
+
+    if (Physics.Raycast(
+            t.position,
+            t.forward,
+            out hit,
+            _interactionDistance,
+            _hitMask,
+            QueryTriggerInteraction.Ignore))
+    {
+        return hit.collider.TryGetComponent(out IInteractable _);
+    }
+
+    return false;
+}
+```
+
+##### InteractableWorldSpaceUIManager.cs (LOS that matches gameplay decision)
+
+``` csharp
+// Combined-mask linecast from camera to target; if the FIRST hit is the target (or its child), LOS is clear.
+// Anything else in front counts as occluded—UI will not show through walls.
+private bool IsObjectObstructed(Collider target)
+{
+    Vector3 origin      = _playerInteractorGameObject.transform.position;
+    Vector3 targetPoint = target.bounds.center; // more stable than transform.position
+
+    if (Physics.Linecast(
+            origin,
+            targetPoint,
+            out RaycastHit hit,
+            _playerInteractor.InteractionAndBlockingMask,
+            QueryTriggerInteraction.Ignore))
+    {
+        return !IsSameObjectOrChild(hit.collider, target); // true = obstructed
+    }
+
+    // No hit at all → nothing blocks the segment.
+    return false;
+}
+
+private static bool IsSameObjectOrChild(Collider hit, Collider target)
+{
+    // Handles multi-collider targets (child colliders on the same object).
+    return hit == target || hit.transform.IsChildOf(target.transform);
+}
+```
+
+##### PlayerInteractor.cs (cheap throttling to keep frame pacing stable)
+
+``` csharp
+// Re-ray only when the view meaningfully changes (movement/rotation) or a small time slice elapses.
+// Keeps targeting cost predictable and avoids per-frame work on still shots.
+private void Update()
+{
+    if (!_isInteractorActive) return;
+
+    // Position threshold: skip micro movements;
+    bool moved  = (_cameraTransform.position - _lastCamPos).sqrMagnitude > _camMoveThreshold;
+
+    // Rotation threshold: ignore tiny head/camera movements;
+    bool turned = Quaternion.Angle(_cameraTransform.rotation, _lastCamRot) > _camAngleThreshold;
+
+    // Minimum interval: bounds worst-case cost even when perfectly still.
+    bool timeUp = Time.unscaledTime >= _nextRayTime;
+
+    if (moved || turned || timeUp)
+    {
+        // Snapshot for next frame’s delta tests.
+        _lastCamPos = _cameraTransform.position;
+        _lastCamRot = _cameraTransform.rotation;
+
+        // Next allowed ray time
+        _nextRayTime = Time.unscaledTime + _rayMinInterval;
+
+        // Do the actual selection work (single combined-mask ray).
+        HandleRaycastInteraction();
+    }
+}
+```
 
 ### Footstep Audio System — Preview
 
 Surface-aware footsteps with pooled one-shots and PhysicMaterial→SO mapping. Zero-GC on emit. Ground source: current raycast (sensor refactor WIP).
 
-<!-- Footstep Audio System Video -->
+<!-- TODO: Footstep Audio System Video -->
 {% include video id="c2SiiC7Ii_4" provider="youtube" caption="Surface-aware footsteps: pooled one-shots, PhysicMaterial→SO mapping, sprint/land variants."%}
 
-#### Design notes
+#### Design Notes {#footstep-design-notes}
 
 - **Zero-GC playback:** pooled AudioSources with PlayOneShot via a ring buffer.
 
@@ -99,8 +193,7 @@ Surface-aware footsteps with pooled one-shots and PhysicMaterial→SO mapping. Z
 
 - **WIP (next pass):** reuse cached ground hit (no extra cast), optional anim-event timing, FMOD/Wwise switches.
 
-<!-- TODO: Code snippets -->
-#### Code Excerpts
+#### Code Excerpts {#footstep-code-excerpts}
 
 ##### FootstepAudioController.cs (pooled one-shots, zero-GC emit)
 
