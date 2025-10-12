@@ -4,7 +4,7 @@
 @import "minimal-mistakes";
 
 .mm-details { margin: 0 0 1rem 0; }
-.mm-details > summary { cursor: pointer; list-style: none; font-weight: 600; }
+.mm-details > summary { cursor: pointer; list-style: revert; cursor: pointer; font-weight: 600; }
 .mm-details__body { margin-top: .5rem; }
 
 .sidebar .author__avatar img {
