@@ -63,7 +63,9 @@ or
 
 ## Released Projects {#projects-chronological}
 
-### Cognetic Training Demo (2025)
+*This page highlights hands-on Unity work. I’ve also led project management and delivery on additional projects, plus prototypes for pitches and tenders that aren’t shown here.*
+
+### Cognetic Training Demo (Jul 2025)
 
 *Training demo for Quest; optimised from a Quest 3 prototype to run smoothly on Quest 2 and released on the Meta Quest Store.*
 
@@ -85,7 +87,7 @@ or
 
 ---
 
-### Aberwla (2025)
+### Aberwla (Mar 2025)
 
 *Welsh-language VR minigames in an explorable town for classroom practice; shipped on Quest/PICO with 72 FPS targets met and ≥99% crash-free sessions.*
 
@@ -109,7 +111,7 @@ or
 
 ---
 
-### Centrica Energy Storage (2024)
+### Centrica Energy Storage (Mar 2024)
 
 **Type:** Public release · **Platforms:** Android/iOS · **Engine:** Unity 2022 LTS · **Pipeline:** URP
 
@@ -130,7 +132,7 @@ or
 
 ---
 
-### M-SParc (2023)
+### M-SParc (Dec 2023)
 
 **Type:** Public release · **Platforms:** Android/iOS · **Engine:** Unity 2022 LTS · **Pipeline:** URP
 
@@ -152,7 +154,7 @@ or
 
 ---
 
-### Beneath The Waves – Dan Y Môr (2023)
+### Beneath The Waves – Dan Y Môr (Jul 2023)
 
 **Type:** Public release · **Platforms:** Android/iOS · **Engine:** Unity 2022 LTS · **Pipeline:** URP
 
@@ -176,7 +178,7 @@ or
 
 ---
 
-### Stori Môn (2023)
+### Stori Môn (Feb 2023)
 
 **Type:** Public release · **Platforms:** Android/iOS · **Engine:** Unity 2020 LTS · **Pipeline:** URP
 
@@ -213,7 +215,7 @@ or
 
 ## Internal Tools & Frameworks {#internal-tools}
 
-### Animated Technologies VR Framework (2025)
+### Animated Technologies VR Framework (Oct 2025)
 
 **Type:** Internal framework · **Availability:** Private · **Engine:** Unity 6 LTS · **Pipeline:** URP
 

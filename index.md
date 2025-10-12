@@ -84,6 +84,8 @@ Modular, interface-driven interaction with Press/Hold patterns, focus/LOS-aware 
 
 ##### PlayerInteractor.cs (single combined ray; first-hit must be an interactable)
 
+{% capture body %}
+
 ``` csharp
 // Uses _hitMask = _occluderMask | _interactableMask (set in Awake).
 // Accept only if the FIRST thing hit is an IInteractable (prevents through-walls).
@@ -105,6 +107,8 @@ private bool PerformRaycast(out RaycastHit hit)
     return false;
 }
 ```
+
+{% endcapture %}
 
 ##### InteractableWorldSpaceUIManager.cs (LOS that matches gameplay decision)
 

@@ -12,3 +12,5 @@ main:
   #   external: true
   # - title: "CV"
   #   url: /cv.pdf
+  - title: "Contact"
+    url: /about/#contact
