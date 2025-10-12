@@ -82,11 +82,9 @@ Modular, interface-driven interaction with Press/Hold patterns, focus/LOS-aware 
 
 #### Code Excerpts {#interaction-code-excerpts}
 
-##### PlayerInteractor.cs (single combined ray; first-hit must be an interactable)
+{% capture interactor_usage %}
 
-{% capture body %}
-
-``` csharp
+```csharp
 // Uses _hitMask = _occluderMask | _interactableMask (set in Awake).
 // Accept only if the FIRST thing hit is an IInteractable (prevents through-walls).
 private bool PerformRaycast(out RaycastHit hit)
@@ -109,10 +107,13 @@ private bool PerformRaycast(out RaycastHit hit)
 ```
 
 {% endcapture %}
+{%- include custom-details.html
+title="PlayerInteractor.cs — single-ray; first hit must be interactable"
+content=interactor_usage open=true -%}
 
-##### InteractableWorldSpaceUIManager.cs (LOS that matches gameplay decision)
+{% capture ui_manager_usage %}
 
-``` csharp
+```csharp
 // Combined-mask linecast from camera to target; if the FIRST hit is the target (or its child), LOS is clear.
 // Anything else in front counts as occluded—UI will not show through walls.
 private bool IsObjectObstructed(Collider target)
@@ -141,9 +142,14 @@ private static bool IsSameObjectOrChild(Collider hit, Collider target)
 }
 ```
 
-##### PlayerInteractor.cs (cheap throttling to keep frame pacing stable)
+{% endcapture %}
+{%- include custom-details.html
+title="InteractableWorldSpaceUIManager.cs — LOS matches gameplay"
+content=ui_manager_usage -%}
 
-``` csharp
+{% capture interactor_throttling %}
+
+```csharp
 // Re-ray only when the view meaningfully changes (movement/rotation) or a small time slice elapses.
 // Keeps targeting cost predictable and avoids per-frame work on still shots.
 private void Update()
@@ -174,6 +180,11 @@ private void Update()
 }
 ```
 
+{% endcapture %}
+{%- include custom-details.html
+title="PlayerInteractor.cs — throttled re-ray · stable frame pacing"
+content=interactor_throttling -%}
+
 ### Footstep Audio System — Preview
 
 Surface-aware footsteps with pooled one-shots and PhysicMaterial→SO mapping. Zero-GC on emit. Ground source: current raycast (sensor refactor WIP).
@@ -199,7 +210,7 @@ Surface-aware footsteps with pooled one-shots and PhysicMaterial→SO mapping. Z
 
 #### Code Excerpts {#footstep-code-excerpts}
 
-##### FootstepAudioController.cs (pooled one-shots, zero-GC emit)
+{% capture footstep_audio_controller_usage %}
 
 ```csharp
 [SerializeField] private AudioSource[] _audioSourcePool;
@@ -237,7 +248,12 @@ private AudioSource GetPooledSource()
 }
 ```
 
-##### FootstepFloorMappingController.cs (PhysicMaterial → SO map + last-hit cache)
+{% endcapture %}
+{%- include custom-details.html
+title="FootstepAudioController.cs — pooled one-shots · zero-GC emit"
+content=footstep_audio_controller_usage open=true -%}
+
+{% capture footstep_mapping_controller %}
 
 ```csharp
 [SerializeField] private FloorMaterialSoundMapSO _floorMaterialSoundMap;
@@ -284,7 +300,12 @@ public FloorSoundSO GetSoundToUse(PhysicMaterial physicMaterial)
 }
 ```
 
-##### FirstPersonController.cs (deterministic step timing)
+{% endcapture %}
+{%- include custom-details.html
+title="FootstepFloorMappingController.cs — PhysicMaterial→SO map · last-hit cache"
+content=footstep_mapping_controller -%}
+
+{% capture step_timing %}
 
 ```csharp
 [SerializeField] private FootstepFloorMappingController _footstepFloorMappingController;
@@ -317,7 +338,12 @@ private void PlayFootstepSounds()
 }
 ```
 
-##### FirstPersonController.cs (raycast origin at feet — accurate surface origin)
+{% endcapture %}
+{%- include custom-details.html
+title="FirstPersonController.cs — deterministic step timing (walk/sprint)"
+content=step_timing -%}
+
+{% capture raycast_origin_feet %}
 
 ```csharp
 [SerializeField] private Transform _playerFeetTransform;
@@ -334,6 +360,11 @@ private FloorSoundSO SetFloorType()
     return _soundsToUse;
 }
 ```
+
+{% endcapture %}
+{%- include custom-details.html
+title="FirstPersonController.cs — feet-origin ray · accurate surface"
+content=raycast_origin_feet -%}
 
 ### Roadmap — *Planned*
 
