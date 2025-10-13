@@ -65,8 +65,8 @@ Production-ready Unity systems (demo scene · README · MIT).
 
 Modular, interface-driven interaction with Press/Hold patterns, focus/LOS-aware world UI, and a single combined ray for selection + occlusion. Uses interfaces + abstract bases (composition first) to keep gameplay code swappable and testable. *Full package in progress.*
 
-<!-- TODO: Clip/Gif -->
-{% include video id="VIDEO_ID" provider="youtube" caption="Press/Hold interaction: first-hit selection (interactable(∪)occluder mask), LOS-aware world UI, focus swap + hold progress." %}
+<!-- Interaction System Video -->
+{% include video id="JrP5BR8NmR4" provider="youtube" caption="Press/Hold interaction: first-hit selection (interactable(∪)occluder mask), LOS-aware world UI, focus swap + hold progress." %}
 
 #### Design Notes {#interaction-design-notes}
 
@@ -189,8 +189,8 @@ content=interactor_throttling -%}
 
 Surface-aware footsteps with pooled one-shots and PhysicMaterial→SO mapping. Zero-GC on emit. Ground source: current raycast (sensor refactor WIP).
 
-<!-- TODO: Footstep Audio System Video -->
-{% include video id="c2SiiC7Ii_4" provider="youtube" caption="Surface-aware footsteps: pooled one-shots, PhysicMaterial→SO mapping, sprint/land variants."%}
+<!-- Footstep Audio System Video -->
+{% include video id="ZZHTq_tO-kQ" provider="youtube" caption="Surface-aware footsteps: pooled one-shots, PhysicMaterial→SO mapping, sprint/land variants."%}
 
 #### Design Notes {#footstep-design-notes}
 
