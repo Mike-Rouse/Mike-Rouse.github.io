@@ -7,7 +7,7 @@ Shipped on VR/AR & mobile · PC title in development*{: #top }
 
 {: .notice--info}
 **Now:** Currently building a small PC title; store page incoming.  
-[Watch 3:10am PC clip →](/projects/#3-10am)
+[Watch 3:10am PC clip →](/projects/#three-ten-am)
 
 <!-- TODO: Re-add showreel to nav when it exists -->
 <!-- [Showreel](#showreel) ·  -->[Featured](#featured) · [Recently Shipped](#recently-shipped) · [Systems Library (WIP)](#systems) · [Recommendations](#recommendations)

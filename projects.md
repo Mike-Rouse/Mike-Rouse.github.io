@@ -10,7 +10,7 @@ Shipped on VR/AR & mobile · PC title in development.*{: #top }
 
 ## In Development {#in-development}
 
-### 3:10am — PC (Steam) {#3-10am}
+### 3:10am — PC (Steam) {#three-ten-am}
 
 *Small, atmospheric haunted-house game to learn the full Steam release pipeline.*
 
