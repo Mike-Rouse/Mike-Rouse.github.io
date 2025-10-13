@@ -42,10 +42,14 @@ I’m a Unity/C# developer focused on clean, reliable gameplay code. I work acro
 
 When I’m not in Unity I’m usually on a hill in Gwynedd, often Yr Eifl, chasing good light for photos. I keep a tiny home gym by the desk so training actually happens: bike sessions on a HIIT / tempo / threshold rotation and a day of resistance work. I log ideas for my Steam PC title and small prototypes; most get binned. I like horror, survival, and story-driven games that reward planning, and I make room for all of it around family time.
 
-<!-- 
-![Landscape photo from X, Gwynedd](/assets/images/yr-eifl.webp){: .align-center style="max-width:720px;border-radius:12px" loading="lazy" }
-*description text*{: .text-center .small }
--->
+{% include figure
+  image_path="/assets/images/landscape-1.jpg"
+  alt="Tree on a hillside with wind-bent grass and overcast sky, Gwynedd"
+  caption="A break in the weather."
+  class="align-center"
+  width="720"
+  loading="lazy"
+%}
 
 ## Contact {#contact}
 
