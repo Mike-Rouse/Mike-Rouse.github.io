@@ -7,6 +7,12 @@
 .mm-details > summary { cursor: pointer; list-style: revert; cursor: pointer; font-weight: 600; }
 .mm-details__body { margin-top: .5rem; }
 
+.page__content figure figcaption {
+  font-family: inherit;
+  font-size: 1em;
+  font-weight: inherit;
+}
+
 .sidebar .author__avatar img {
   width: 150px;
   height: auto;     
