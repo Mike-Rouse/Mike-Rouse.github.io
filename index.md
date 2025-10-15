@@ -44,7 +44,7 @@ Shipped on VR/AR & mobile · PC title in development*{: #top }
 
 ### Tech Highlights
 
-Unity **2022** · **URP** · **XR Interaction Toolkit** · **Addressables** · **Normcore** (multiplayer)
+**Unity 2022** · **URP** · **XR Interaction Toolkit** · **Addressables** · **Normcore** (multiplayer)
 
 [Meta Quest](https://www.meta.com/en-gb/experiences/aberwla/9575081185844250/){: .btn target="_blank" rel="noopener" }
 [PICO Store](https://store-global.picoxr.com/global/detail/1/7477528258796486711){: .btn target="_blank" rel="noopener" }
