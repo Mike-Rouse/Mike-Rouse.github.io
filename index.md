@@ -1,9 +1,9 @@
 ---
 layout: single
-title: "Unity Gameplay & Tools — VR/AR Shipped · PC in Development" 
+title: "Unity Gameplay/Systems — PC · Mobile · VR"
 ---
-*C# gameplay systems · controllers & camera · AI/perception · UI/UX · save/load · performance
-Shipped on VR/AR & mobile · PC title in development*{: #top }
+*C# gameplay systems — controllers & camera, interaction, AI/perception, UI, save/load, performance.
+Shipped: iOS/Android (AR) & VR. PC/Steam in development.*{: #top }
 
 {: .notice--info}
 **Now:** Currently building a small PC title; store page incoming.  
