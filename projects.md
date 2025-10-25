@@ -3,8 +3,8 @@ title: "All Projects — Shipped & In-Progress"
 layout: single
 permalink: /projects/
 ---
-*C# gameplay systems · controllers & camera · AI/perception · UI/UX · save/load · performance
-Shipped on VR/AR & mobile · PC title in development.*{: #top }
+*C# gameplay systems — controllers & camera, interaction, AI/perception, UI, save/load, performance.  
+Shipped: iOS/Android (AR) & VR. PC/Steam in development.*{: #top }
 
 [In Development](#in-development) · [Released Projects](#projects-chronological) · [Internal Tools & Frameworks](#internal-tools)
 
@@ -23,7 +23,7 @@ Shipped on VR/AR & mobile · PC title in development.*{: #top }
 **Proof:** 20s gameplay clip above. Next: Steam “Coming Soon” page → public downloadable build → post-launch hotfix flow.
 
 **Scope:** 15–20 minutes  
-**Target milestone:** Full release **Oct 2025**  
+**Target milestone:** Full release **Nov 2025**  
 **Next:** Public “Coming Soon” page
 
 <!-- TODO: Add store page trailer + Steam Page Link -->

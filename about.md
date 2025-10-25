@@ -4,8 +4,8 @@ layout: single
 permalink: /about/
 author_profile: true
 ---
-*C# gameplay systems · controllers & camera · AI/perception · UI/UX · save/load · performance
-Shipped on VR/AR & mobile · PC title in development*{: #top }
+*C# gameplay systems — controllers & camera, interaction, AI/perception, UI, save/load, performance.  
+Shipped: iOS/Android (AR) & VR. PC/Steam in development.*{: #top }
 
 [Summary](#summary) · [Proof Points](#proof-points) · [Core Strengths](#core-strengths) · [Tech Snapshot](#tech-snapshot) · [Personal](#personal) · [Contact](#contact) · [Recommendations](#recommendations)
 
