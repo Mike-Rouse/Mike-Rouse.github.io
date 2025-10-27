@@ -3,8 +3,8 @@ title: "All Projects — Shipped & In-Progress"
 layout: single
 permalink: /projects/
 ---
-*C# gameplay systems — controllers & camera, interaction, AI/perception, UI, save/load, performance.  
-Shipped: iOS/Android (AR) & VR. PC/Steam in development.*{: #top }
+*C# gameplay systems: controls/camera · interaction · AI/perception · UI · save/load · performance.  
+Shipped VR & AR · PC/Steam title in development.*{: #top }
 
 [In Development](#in-development) · [Released Projects](#projects-chronological) · [Internal Tools & Frameworks](#internal-tools)
 

@@ -2,8 +2,8 @@
 layout: single
 title: "Unity Gameplay/Systems — PC · Mobile · VR"
 ---
-*C# gameplay systems — controllers & camera, interaction, AI/perception, UI, save/load, performance.  
-Shipped: iOS/Android (AR) & VR. PC/Steam in development.*{: #top }
+*C# gameplay systems: controls/camera · interaction · AI/perception · UI · save/load · performance.  
+Shipped VR & AR · PC/Steam title in development.*{: #top }
 
 {: .notice--info}
 **Now:** Currently building a small PC title; store page incoming.  
