@@ -40,10 +40,6 @@ sass:
 atom_feed:
   hide: true
 
-search: true
-lunr:
-  search_within_pages: true
-
 defaults:
   - scope:
       path: ""
