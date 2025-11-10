@@ -17,7 +17,7 @@ permalink: /projects/
 
 **How:** Game design (loop, encounter pacing, progression); responsive first-person controls (gamepad + KB/M); readable interaction prompts (Use/Open/Inspect); simple ability system (flashlight); single-slot save (autosave on exit); core settings (FOV/AA/audio); focused performance passes.
 
-**Proof:** 20s gameplay clip — [watch](/#three-ten-am){: .btn }.  
+**Proof:** 20s gameplay clip — [watch](/#three-ten-am){: .btn }  
 
 **Scope:** 15–20 minutes  
 **Target milestone:** Full release Coming Soon  
@@ -47,7 +47,7 @@ permalink: /projects/
 
 **Type:** Public release · **Platforms:** Meta Quest · **Engine:** Unity 2022 LTS · **Pipeline:** URP
 
-[Meta Quest](https://www.meta.com/en-gb/experiences/cognetic-training-demo/24339813342291975/){: .btn .btn--light-outline target="_blank" rel="noopener noreferrer" }
+[Meta Quest](https://www.meta.com/en-gb/experiences/cognetic-training-demo/24339813342291975/){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" }
 
 {% capture owned_cognetic %}
 
@@ -69,7 +69,7 @@ permalink: /projects/
 
 **Type:** Public release · **Platforms:** Quest/PICO · **Engine:** Unity 2022 LTS · **Pipeline:** URP
 
-[Meta Quest](https://www.meta.com/en-gb/experiences/aberwla/9575081185844250/){: .btn .btn--light-outline target="_blank" rel="noopener noreferrer" } · [PICO Store](https://store-global.picoxr.com/global/detail/1/7477528258796486711){: .btn .btn--light-outline target="_blank" rel="noopener noreferrer" }
+[Meta Quest](https://www.meta.com/en-gb/experiences/aberwla/9575081185844250/){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" } [PICO Store](https://store-global.picoxr.com/global/detail/1/7477528258796486711){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" }
 
 {%- capture owned_aberwla -%}
 
@@ -95,7 +95,7 @@ permalink: /projects/
 
 *Energy-transition app for Android/iOS; explore CES+ sites and future plans (Rough, hydrogen) with responsive menus—approved on both stores.*
 
-[Google Play](https://play.google.com/store/apps/details?id=com.AnimatedTechnologiesLtd.Centrica){: .btn .btn--light-outline target="_blank" rel="noopener noreferrer" } · [App Store](https://apps.apple.com/gb/app/centrica-energy-storage/id6473838618){: .btn .btn--light-outline target="_blank" rel="noopener noreferrer" }
+[Google Play](https://play.google.com/store/apps/details?id=com.AnimatedTechnologiesLtd.Centrica){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" } [App Store](https://apps.apple.com/gb/app/centrica-energy-storage/id6473838618){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" }
 
 {%- capture owned_centrica -%}
 
@@ -116,7 +116,7 @@ permalink: /projects/
 
 *Location-based AR app for M-SParc (Android/iOS): GPS-stabilised placement, full-scale building previews, tenant QR profiles, and a collectables trail—shipped.*
 
-[Google Play](https://play.google.com/store/apps/details?id=com.AnimatedTechnologies.spARc){: .btn .btn--light-outline target="_blank" rel="noopener noreferrer" } · [App Store](https://apps.apple.com/gb/app/m-sparc/id1643887893){: .btn .btn--light-outline target="_blank" rel="noopener noreferrer" }
+[Google Play](https://play.google.com/store/apps/details?id=com.AnimatedTechnologies.spARc){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" } [App Store](https://apps.apple.com/gb/app/m-sparc/id1643887893){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" }
 
 {%- capture owned_msparc -%}
 
@@ -138,7 +138,7 @@ permalink: /projects/
 
 *Holyhead maritime-history AR app (Android/iOS): interactive maps and self-guided trails with POIs, narrated content, and badge progression—released on both stores.*
 
-[Google Play](https://play.google.com/store/apps/details?id=com.AnimatedTechnologies.BeneathTheWaves){: .btn .btn--light-outline target="_blank" rel="noopener noreferrer" } · [App Store](https://apps.apple.com/gb/app/beneath-the-waves-dan-y-m%C3%B4r/id1660955636){: .btn .btn--light-outline target="_blank" rel="noopener noreferrer" }
+[Google Play](https://play.google.com/store/apps/details?id=com.AnimatedTechnologies.BeneathTheWaves){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" } [App Store](https://apps.apple.com/gb/app/beneath-the-waves-dan-y-m%C3%B4r/id1660955636){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" }
 
 {%- capture owned_waves -%}
 
@@ -162,7 +162,7 @@ permalink: /projects/
 
 *Anglesey location-based AR trail (Android/iOS): visit POIs across five towns, meet AR characters, collect badges—live on Play Store and App Store.*
 
-[Google Play](https://play.google.com/store/apps/details?id=com.AnimatedTechnologies.AngleseyAR){: .btn .btn--light-outline target="_blank" rel="noopener noreferrer" } · [App Store](https://apps.apple.com/gb/app/stori-m%C3%B4n/id1645310984){: .btn .btn--light-outline target="_blank" rel="noopener noreferrer" }
+[Google Play](https://play.google.com/store/apps/details?id=com.AnimatedTechnologies.AngleseyAR){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" } [App Store](https://apps.apple.com/gb/app/stori-m%C3%B4n/id1645310984){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" }
 
 {%- capture owned_storimon -%}
 

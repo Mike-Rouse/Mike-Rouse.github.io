@@ -19,6 +19,10 @@
   border-radius: 50%;
 }
 
+/* compact store-link chips */
+.btn--chip{font-size:.85rem;padding:.2rem .55rem;border-radius:9999px;line-height:1.2;vertical-align:baseline}
+
+
 @media (min-width: 1024px) 
 {
   .sidebar .author__avatar img { width: 150px; height: auto; }

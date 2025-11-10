@@ -73,15 +73,15 @@ Tight haunted-house slice (15–20 min) · Unity 6/HDRP · controller feel · re
 
 **Unity 2022** · **URP** · **XR Interaction Toolkit** · **Addressables** · **Normcore** (multiplayer)
 
-[Meta Quest](https://www.meta.com/en-gb/experiences/aberwla/9575081185844250/){: .btn .btn--light-outline target="_blank" rel="noopener noreferrer" } · [PICO Store](https://store-global.picoxr.com/global/detail/1/7477528258796486711){: .btn .btn--light-outline target="_blank" rel="noopener noreferrer" }
+[Meta Quest](https://www.meta.com/en-gb/experiences/aberwla/9575081185844250/){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" } [PICO Store](https://store-global.picoxr.com/global/detail/1/7477528258796486711){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" }
 
 [View project details →](/projects/#aberwla){: .btn }
 
 ## Recently Shipped {#recently-shipped}
 
-- **Cognetic Training Demo — Quest — Oct 2025** — [Meta Quest](https://www.meta.com/en-gb/experiences/cognetic-training-demo/24339813342291975/){: .btn .btn--light-outline target="_blank" rel="noopener noreferrer" }
-- **Aberwla — Quest/PICO — Mar 2025** — [Meta Quest](https://www.meta.com/en-gb/experiences/aberwla/9575081185844250/){: .btn .btn--light-outline target="_blank" rel="noopener noreferrer" } · [PICO Store](https://store-global.picoxr.com/global/detail/1/7477528258796486711){: .btn .btn--light-outline target="_blank" rel="noopener noreferrer" }
-- **Centrica Energy Storage — Android/iOS — Mar 2024** — [Play Store](https://play.google.com/store/apps/details?id=com.AnimatedTechnologiesLtd.Centrica){: .btn .btn--light-outline target="_blank" rel="noopener noreferrer" } · [App Store](https://apps.apple.com/gb/app/centrica-energy-storage/id6473838618){: .btn .btn--light-outline target="_blank" rel="noopener noreferrer" }
+- **Cognetic Training Demo — Quest — Oct 2025** — [Meta Quest](https://www.meta.com/en-gb/experiences/cognetic-training-demo/24339813342291975/){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" }
+- **Aberwla — Quest/PICO — Mar 2025** — [Meta Quest](https://www.meta.com/en-gb/experiences/aberwla/9575081185844250/){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" } [PICO Store](https://store-global.picoxr.com/global/detail/1/7477528258796486711){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" }
+- **Centrica Energy Storage — Android/iOS — Mar 2024** — [Play Store](https://play.google.com/store/apps/details?id=com.AnimatedTechnologiesLtd.Centrica){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" } [App Store](https://apps.apple.com/gb/app/centrica-energy-storage/id6473838618){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" }
 
 [See all projects →]({{ '/projects/' | relative_url }}){: .btn }
 
