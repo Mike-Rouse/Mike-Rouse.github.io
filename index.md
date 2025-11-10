@@ -73,8 +73,7 @@ Tight haunted-house slice (15–20 min) · Unity 6/HDRP · controller feel · re
 
 **Unity 2022** · **URP** · **XR Interaction Toolkit** · **Addressables** · **Normcore** (multiplayer)
 
-[Meta Quest](https://www.meta.com/en-gb/experiences/aberwla/9575081185844250/){: .btn .btn--light-outline target="_blank" rel="noopener noreferrer" }
-[PICO Store](https://store-global.picoxr.com/global/detail/1/7477528258796486711){: .btn .btn--light-outline target="_blank" rel="noopener noreferrer" }
+[Meta Quest](https://www.meta.com/en-gb/experiences/aberwla/9575081185844250/){: .btn .btn--light-outline target="_blank" rel="noopener noreferrer" } · [PICO Store](https://store-global.picoxr.com/global/detail/1/7477528258796486711){: .btn .btn--light-outline target="_blank" rel="noopener noreferrer" }
 
 [View project details →](/projects/#aberwla){: .btn }
 
@@ -411,6 +410,6 @@ content=raycast_origin_feet -%}
 > “I can honestly say he’s one of the best Unity developers I’ve collaborated with.”  
 **— Klaire Tanner**, Creative Director, Animated Technologies
 
-[More recommendations →](/about/#recommendations){: .btn } · [See all on LinkedIn →](https://www.linkedin.com/in/m-rouse/){: .btn .btn--light-outline target="_blank" rel="noopener noreferrer" }
+[More recommendations →](/about/#recommendations){: .btn .btn--ghost } · [See all on LinkedIn →](https://www.linkedin.com/in/m-rouse/){: .btn .btn--ghost target="_blank" rel="noopener noreferrer" }
 
 [↑ Back to top](#top)

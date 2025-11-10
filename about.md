@@ -133,6 +133,6 @@ When I’m not in Unity I’m usually on a hill in Gwynedd, often Yr Eifl, chasi
 
 [Back to highlights ↑](#highlight-recommendations)
 
-[See all on LinkedIn →](https://www.linkedin.com/in/m-rouse/){: .btn .btn--light-outline target="_blank" rel="noopener noreferrer" }
+[See all on LinkedIn →](https://www.linkedin.com/in/m-rouse/){: .btn .btn--ghost target="_blank" rel="noopener noreferrer" }
 
 [Back to top ↑](#top)
