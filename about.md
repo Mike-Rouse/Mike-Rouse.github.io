@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "About & Recommendations"
 layout: single
 permalink: /about/
 author_profile: true

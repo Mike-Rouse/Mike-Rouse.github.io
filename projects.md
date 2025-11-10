@@ -1,5 +1,5 @@
 ---
-title: "All Projects — Shipped & In-Progress"
+title: "Projects — Released & In-Development"
 layout: single
 permalink: /projects/
 ---
