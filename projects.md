@@ -8,6 +8,8 @@ Shipped VR & AR · PC/Steam title in development.*{: #top }
 
 [In Development](#in-development) · [Released Projects](#projects-chronological) · [Internal Tools & Frameworks](#internal-tools)
 
+*This page highlights hands-on Unity work. I’ve also led project management and delivery on additional projects, plus prototypes for pitches that aren’t shown here.*
+
 ## In Development {#in-development}
 
 ### 3:10 AM — PC (Steam) {#three-ten-am}
@@ -63,7 +65,7 @@ or
 
 ## Released Projects {#projects-chronological}
 
-*This page highlights hands-on Unity work. I’ve also led project management and delivery on additional projects, plus prototypes for pitches and tenders that aren’t shown here.*
+*Store-released projects, most recent first.*
 
 ### Cognetic Training Demo (Jul 2025)
 
@@ -217,7 +219,7 @@ or
 
 ### Animated Technologies VR Framework (Oct 2025)
 
-**Type:** Internal framework · **Availability:** Private · **Engine:** Unity 6 LTS · **Pipeline:** URP
+**Type:** Internal framework · **Availability:** Private · **Engine:** Unity 6 · **Pipeline:** URP
 
 *Unity 6 VR starter kit standardising interactions, input, and presets; cut new-project setup from days to hours across teams.*
 
