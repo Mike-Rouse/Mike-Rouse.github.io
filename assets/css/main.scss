@@ -19,9 +19,23 @@
   border-radius: 50%;
 }
 
-/* compact store-link chips */
-.btn--chip{font-size:.85rem;padding:.2rem .55rem;border-radius:9999px;line-height:1.2;vertical-align:baseline}
 
+.btn--chip{
+  padding:.35rem .75rem;
+  border-radius:9999px;
+  line-height:1.15;
+  vertical-align:baseline;
+}
+
+.btn--light-outline.btn--chip{
+  border-width:.8px;
+  border-color:rgba(255,255,255,.45);
+}
+
+/* true hairline on HiDPI */
+@media (min-resolution:2dppx){
+  .btn--light-outline.btn--chip{ border-width:.5px; }
+}
 
 @media (min-width: 1024px) 
 {
