@@ -5,60 +5,35 @@ permalink: /projects/
 ---
 *This page shows hands-on Unity development work. I’ve also led delivery/PM and built non-public prototypes.*{: #top }
 
-[In Development](#in-development) · [Released Projects](#projects-chronological) · [Internal Tools & Frameworks](#internal-tools)
+[In-Development](#in-development) · [Released Projects](#projects-chronological) · [Internal Tools & Frameworks](#internal-tools)
 
-## In Development {#in-development}
+## In-Development {#in-development}
 
-### 3:10 AM — PC (Steam) {#three-ten-am}
+### 3:10 AM — PC {#three-ten-am}
 
 *Small, atmospheric haunted-house game to learn the full Steam release pipeline.*
 
-{% include video id="F-aJi8AOgAU" provider="youtube" caption="3:10am — PC gameplay clip (controller + interaction + inner monologue)." %}
-
 **Goal:** Ship a small, engaging PC horror slice with a tight loop, readable interactions, and strong audio-visual atmosphere; take it through the full Steam release pipeline (capsules, depots, build updates).
 
-**How:** Responsive first-person controls (**gamepad + KBM**), clear interaction prompts (Use/Open/Inspect), a simple, flexible ability system (e.g., flashlight), single-slot save with autosave on exit, core settings (FOV/AA/audio), and focused content/performance passes for smooth frame pacing.
+**How:** Responsive first-person controls (**gamepad + KB/M**), clear interaction prompts (Use/Open/Inspect), a simple, flexible ability system (e.g., flashlight), single-slot save with autosave on exit, core settings (FOV/AA/audio), and focused content/performance passes for smooth frame pacing.
 
-**Proof:** 20s gameplay clip above. Next: Steam “Coming Soon” page → public downloadable build → post-launch hotfix flow.
+**Proof:** 20s gameplay clip — [watch](/#three-ten-am).  
 
 **Scope:** 15–20 minutes  
 **Target milestone:** Full release **Nov 2025**  
-**Next:** Public “Coming Soon” page
+**Next:** Steam “Coming Soon” page → public downloadable build → post-launch hotfix flow.
 
-<!-- TODO: Add store page trailer + Steam Page Link -->
-<!-- **Proof:** store page trailer + Steam Page Link -->
-{% comment %}
-When ready, switch the two lines above to:
-**Proof:** {% include video id="YOUTUBE_ID" provider="youtube" caption="Steam Page Trailer." %}
-or
-**Proof:** {% include button url="STEAM_URL" text="View on Steam" target="_blank" %}
-{% endcomment %}  
+<!-- TODO: Steam Page Link -->
 
 ---
 
-### Untitled Horror Game — PC (Steam)
+### ### Untitled Horror Game — PC
 
 *Evade, resist, and escape across a cursed open area; tension/stealth first.*
 
 **Scope:** ~4–5 hours  
 **Target milestone:** Demo Release **Oct 2026**  
 **Next:** Slice content lock **Jan 2026**; store assets from prototypes  
-<!-- TODO: Add store page trailer + Steam Page Link -->
-<!-- **Proof:** store page trailer + Steam Page Link -->
-
-{% comment %}
-When proof exists:
-**Proof:** {% include video id="YOUTUBE_ID" provider="youtube" caption="Steam Page Trailer." %}
-or
-**Proof:** {% include button url="STEAM_COMING_SOON_URL" text="View on Steam" target="_blank" %}
-{% endcomment %}
-
-<!-- TODO: Make VR/AR Showreel. Add to page nav -->
-<!-- ## Shipped VR/AR Showreel {#showreel} -->
-
-{% comment %}
-{% include video id="YOUTUBE_ID" provider="youtube" caption="30s showreel: VR/AR systems, tools, and perf."%}
-{% endcomment %}
 
 ## Released Projects {#projects-chronological}
 
@@ -86,7 +61,7 @@ or
 
 ---
 
-### Aberwla (Mar 2025)
+### Aberwla (Mar 2025) {#aberwla}
 
 *Welsh-language VR minigames in an explorable town for classroom practice; shipped on Quest/PICO with 72 FPS targets met and ≥99% crash-free sessions.*
 

@@ -5,22 +5,45 @@ title: "Overview — Featured, Recently Shipped, Systems"
 *C# gameplay systems: input/camera · interaction · AI/perception · UI/state · save/load · performance.  
 Shipped VR & AR — PC/Steam title in development.*{: #top }
 
+{% comment %}
 {: .notice--info}
 **Now:** Currently building a small PC title; store page incoming.  
 [Watch 3:10 AM PC clip →](/projects/#three-ten-am)
-
-<!-- TODO: Re-add showreel to nav when it exists -->
-<!-- [Showreel](#showreel) ·  -->[Featured](#featured) · [Recently Shipped](#recently-shipped) · [Systems Library (WIP)](#systems) · [Recommendations](#recommendations)
-
-<!-- TODO: Uncomment below -->
-<!-- ## Showreel {#showreel} -->
-{% comment %}
-{% include video id="c2SiiC7Ii_4" provider="youtube" caption="30s showreel: VR/AR systems, tools, and perf."%}
 {% endcomment %}
+
+<!-- Showreel here when it gets made -->
 
 ## Featured Work {#featured}
 
-### Aberwla — Welsh-language VR Minigames · Quest/PICO · 2025
+### 3:10 AM — First-Person Horror Slice · PC · In-Development {#three-ten-am}
+
+Tight haunted-house slice (15–20 min) · Unity 6/HDRP · controller feel · readable interaction · Steam pipeline.
+
+**Team & Scope** — Solo project; gameplay/systems, art integration, builds, and release prep.
+
+{% include video id="F-aJi8AOgAU" provider="youtube" caption="3:10 AM — PC gameplay clip (controller + interaction + inner monologue)." %}
+
+#### What I Own {#three-ten-am-what-i-own}
+
+- Controller feel (gamepad + KB/M parity), interaction prompts, UI/state.  
+- Saves/settings (FOV, AA, audio), safe atomic writes.  
+- Steam depots/branches with scripted build/upload; store assets “Coming Soon”.
+
+#### Targets & Status {#three-ten-am-targets}
+
+- Playable slice in polishing; stability focus (crash-free sessions ≥99% pre-ship).  
+- PC feature checklist: rebinding, graphics presets/scalability, window/fullscreen.  
+- Next: Steam “Coming Soon” page → public downloadable build.
+
+#### Tech Highlights {#three-ten-am-tech-highlights}
+
+**Unity 6** · **HDRP** · **Input System** · **Addressables** · **Steamworks SDK** · **Profiler/Frame Debugger**
+
+<!-- TODO: Add Store Page Link -->
+
+[View project details →](/projects/#three-ten-am){: .btn }
+
+### Aberwla — Welsh-language VR Minigames · Quest/PICO · Mar 2025 {#aberwla}
 
 *A Welsh-language VR release for Meta Quest and PICO: an explorable town with minigames that immerse players in spoken Welsh and meet platform performance and stability budgets.*
 *Originally commissioned by **Gwynedd Council** for Welsh Immersion Centres; later funded by **Adnodd** for public release.*
@@ -30,30 +53,31 @@ Shipped VR & AR — PC/Steam title in development.*{: #top }
 <!-- TODO: Change video to 8–12s silent loop (self-hosted <video>), plus a “Watch full trailer →” link to YouTube. -->
 {% include video id="pEuDcjNigXc" provider="youtube" caption="Aberwla gameplay trailer." %}
 
-### What I Owned
+#### What I Owned {#aberwla-what-i-owned}
 
 - **Core gameplay & minigames** — designed → greybox → production; multiplayer (Normcore); AI (FSM); baked lighting; spatial audio; UX/UI; profiled/optimised to device budgets.
 - **Quest↔PICO build-switch tooling** — Addressables + scripting defines → **~40% faster** build prep; **0** hand-switch regressions across 6 releases.
 - **Release operations end-to-end** — ratings, store assets/copy, privacy, submissions → hotfix TTR **48–72 h**.
 
-### Results
+#### Results {#aberwla-results}
 
 - **72 FPS** on Quest 2/3 & PICO (targets met)
 - **≥99% crash-free** sessions (Unity Cloud Diagnostics)
-- **Team:** 4
 
-### Tech Highlights
+#### Tech Highlights {#aberwla-tech-highlights}
 
 **Unity 2022** · **URP** · **XR Interaction Toolkit** · **Addressables** · **Normcore** (multiplayer)
 
 [Meta Quest](https://www.meta.com/en-gb/experiences/aberwla/9575081185844250/){: .btn target="_blank" rel="noopener" }
 [PICO Store](https://store-global.picoxr.com/global/detail/1/7477528258796486711){: .btn target="_blank" rel="noopener" }
 
+[View project details →](/projects/#aberwla){: .btn }
+
 ## Recently Shipped {#recently-shipped}
 
-- **Cognetic Training Demo — Quest — 2025** — [Meta Quest](https://www.meta.com/en-gb/experiences/cognetic-training-demo/24339813342291975/)
-- **Aberwla — Quest/PICO — 2025** — [Meta Quest](https://www.meta.com/en-gb/experiences/aberwla/9575081185844250/) · [PICO Store](https://store-global.picoxr.com/global/detail/1/7477528258796486711)
-- **Centrica Energy Storage — Android/iOS — 2024** — [Play Store](https://play.google.com/store/apps/details?id=com.AnimatedTechnologiesLtd.Centrica) · [App Store](https://apps.apple.com/gb/app/centrica-energy-storage/id6473838618)
+- **Cognetic Training Demo — Quest — Oct 2025** — [Meta Quest](https://www.meta.com/en-gb/experiences/cognetic-training-demo/24339813342291975/)
+- **Aberwla — Quest/PICO — Mar 2025** — [Meta Quest](https://www.meta.com/en-gb/experiences/aberwla/9575081185844250/) · [PICO Store](https://store-global.picoxr.com/global/detail/1/7477528258796486711)
+- **Centrica Energy Storage — Android/iOS — Mar 2024** — [Play Store](https://play.google.com/store/apps/details?id=com.AnimatedTechnologiesLtd.Centrica) · [App Store](https://apps.apple.com/gb/app/centrica-energy-storage/id6473838618)
 
 [See all projects →]({{ '/projects/' | relative_url }})
 

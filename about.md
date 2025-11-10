@@ -26,7 +26,7 @@ I’m a Unity/C# developer focused on clean, reliable gameplay code. I work acro
 
 ## Tech Snapshot {#tech-snapshot}
 
-**Engine:** Unity 2019 → Unity 6 LTS  
+**Engine:** Unity 2019 → Unity 6  
 **Rendering:** URP (HDRP for PC work)  
 **Gameplay/AI:** NavMesh, ScriptableObjects, state-machine style AI/perception, Behavior Trees (WIP)  
 **UI/Input:** New Input System, uGUI, settings menus  
