@@ -24,8 +24,9 @@ permalink: /projects/
 **Next:** Steam “Coming Soon” page → public downloadable build → post-launch hotfix flow.
 
 <!-- TODO: Steam Page Link -->
+![Steam — Coming Soon](https://img.shields.io/badge/Steam-Coming%20Soon-lightgrey)
 
----
+<!-- ---
 
 ### Untitled Horror Game — PC
 
@@ -33,7 +34,7 @@ permalink: /projects/
 
 **Scope:** ~4–5 hours  
 **Target milestone:** Demo Release **Oct 2026**  
-**Next:** Slice content lock **Jan 2026**; store assets from prototypes  
+**Next:** Slice content lock **Jan 2026**; store assets from prototypes   -->
 
 ## Released Projects {#projects-chronological}
 
