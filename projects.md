@@ -11,7 +11,7 @@ permalink: /projects/
 
 ### 3:10 AM — PC {#three-ten-am}
 
-*Small, atmospheric haunted-house game to learn the full Steam release pipeline.*
+*PC horror slice.* Discover three Death Facts to complete the Death Profile, then perform the Rite of Unbinding as pressure escalates into hunts. Built in **Unity 6/HDRP**; gamepad + keyboard/mouse parity; safe saves; Steam depots/branches with scripted uploads.
 
 **Goal:** Ship a small, engaging PC horror slice with a tight loop, readable interactions, and strong audio-visual atmosphere; take it through the full Steam release pipeline (capsules, depots, build updates).
 
@@ -25,9 +25,9 @@ permalink: /projects/
 
 <!-- TODO: Steam Page Link -->
 ![Steam — Coming Soon](https://img.shields.io/badge/Steam-Coming%20Soon-lightgrey)
-<!-- [Wishlist on Steam](https://store.steampowered.com/app/XXXX){: .btn .btn--primary target="_blank" rel="noopener noreferrer" } -->
 
-<!-- ---
+<!--
+---
 
 ### Untitled Horror Game — PC
 

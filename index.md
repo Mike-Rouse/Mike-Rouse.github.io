@@ -18,11 +18,13 @@ Shipped VR & AR — PC title in development.*{: #top }
 
 ### 3:10 AM — First-Person Horror Slice · PC · In-Development {#three-ten-am}
 
-Tight haunted-house slice (15–20 min) · Unity 6/HDRP · controller feel · readable interaction · Steam pipeline.
-
-**Team & Scope** — Solo project; gameplay/systems, art integration, builds, and release prep.
+**3:10 AM** is a 15–20 minute first-person haunted-house slice for PC. You’re a paranormal investigator trapped in a single home. Find three Death Facts — Location, Means Object, Manner of Death — to complete the Death Profile, then perform the Rite of Unbinding as a demonic presence raises pressure and triggers hunts. Built in **Unity 6/HDRP** with gamepad + keyboard/mouse parity, readable interaction, safe saves, and a Steam-ready pipeline (depots/branches, scripted uploads).
 
 {% include video id="F-aJi8AOgAU" provider="youtube" caption="3:10 AM — PC gameplay clip (controller + interaction + inner monologue)." %}
+
+#### Team & Scope
+
+Solo project; gameplay/systems, art integration, builds, and release prep.
 
 #### What I Own {#three-ten-am-what-i-own}
 
@@ -45,17 +47,16 @@ Tight haunted-house slice (15–20 min) · Unity 6/HDRP · controller feel · re
 ![Steam — Coming Soon](https://img.shields.io/badge/Steam-Coming%20Soon-lightgrey)
 
 [View project details →](/projects/#three-ten-am){: .btn }
-<!-- [Wishlist on Steam](https://store.steampowered.com/app/XXXX){: .btn .btn--primary target="_blank" rel="noopener noreferrer" } -->
 
 ### Aberwla — Welsh-language VR Minigames · Quest/PICO · Mar 2025 {#aberwla}
 
-*A Welsh-language VR release for Meta Quest and PICO: an explorable town with minigames that immerse players in spoken Welsh and meet platform performance and stability budgets.*
-*Originally commissioned by **Gwynedd Council** for Welsh Immersion Centres; later funded by **Adnodd** for public release.*
+*Welsh-language VR title for Quest/PICO.* Explore a small town of minigames that teach and reinforce spoken Welsh. Originally commissioned by **Gwynedd Council** for Immersion Centres and later funded by **Adnodd** for public release.
 
-**Team & Collaboration** — Lead dev; managed 1 Unity dev; coordinated 2 3D artists; partnered with the Creative Director on minigame scope & direction.
-
-<!-- TODO: Change video to 8–12s silent loop (self-hosted <video>), plus a “Watch full trailer →” link to YouTube. -->
 {% include video id="pEuDcjNigXc" provider="youtube" caption="Aberwla gameplay trailer." %}
+
+#### Team & Collaboration
+
+Lead dev; managed 1 Unity dev; coordinated 2 3D artists; partnered with the Creative Director on minigame scope & direction.
 
 #### What I Owned {#aberwla-what-i-owned}
 
