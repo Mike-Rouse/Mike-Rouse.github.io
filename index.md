@@ -9,8 +9,7 @@ Shipped VR & AR — PC title in development.*{: #top }
 
 {% comment %}
 {: .notice--info}
-**Now:** Currently building a small PC title; store page incoming.  
-[Watch 3:10 AM PC clip →](/projects/#three-ten-am)
+**Now:** Currently building a small PC title; store page incoming.
 {% endcomment %}
 
 <!-- Showreel here when it gets made -->
@@ -46,6 +45,7 @@ Tight haunted-house slice (15–20 min) · Unity 6/HDRP · controller feel · re
 ![Steam — Coming Soon](https://img.shields.io/badge/Steam-Coming%20Soon-lightgrey)
 
 [View project details →](/projects/#three-ten-am){: .btn }
+<!-- [Wishlist on Steam](https://store.steampowered.com/app/XXXX){: .btn .btn--primary target="_blank" rel="noopener noreferrer" } -->
 
 ### Aberwla — Welsh-language VR Minigames · Quest/PICO · Mar 2025 {#aberwla}
 
@@ -73,18 +73,18 @@ Tight haunted-house slice (15–20 min) · Unity 6/HDRP · controller feel · re
 
 **Unity 2022** · **URP** · **XR Interaction Toolkit** · **Addressables** · **Normcore** (multiplayer)
 
-[Meta Quest](https://www.meta.com/en-gb/experiences/aberwla/9575081185844250/){: .btn target="_blank" rel="noopener" }
-[PICO Store](https://store-global.picoxr.com/global/detail/1/7477528258796486711){: .btn target="_blank" rel="noopener" }
+[Meta Quest](https://www.meta.com/en-gb/experiences/aberwla/9575081185844250/){: .btn .btn--light-outline target="_blank" rel="noopener noreferrer" }
+[PICO Store](https://store-global.picoxr.com/global/detail/1/7477528258796486711){: .btn .btn--light-outline target="_blank" rel="noopener noreferrer" }
 
 [View project details →](/projects/#aberwla){: .btn }
 
 ## Recently Shipped {#recently-shipped}
 
-- **Cognetic Training Demo — Quest — Oct 2025** — [Meta Quest](https://www.meta.com/en-gb/experiences/cognetic-training-demo/24339813342291975/){: .btn target="_blank" rel="noopener" }
-- **Aberwla — Quest/PICO — Mar 2025** — [Meta Quest](https://www.meta.com/en-gb/experiences/aberwla/9575081185844250/) · [PICO Store](https://store-global.picoxr.com/global/detail/1/7477528258796486711){: .btn target="_blank" rel="noopener" }
-- **Centrica Energy Storage — Android/iOS — Mar 2024** — [Play Store](https://play.google.com/store/apps/details?id=com.AnimatedTechnologiesLtd.Centrica){: .btn target="_blank" rel="noopener" } · [App Store](https://apps.apple.com/gb/app/centrica-energy-storage/id6473838618){: .btn target="_blank" rel="noopener" }
+- **Cognetic Training Demo — Quest — Oct 2025** — [Meta Quest](https://www.meta.com/en-gb/experiences/cognetic-training-demo/24339813342291975/){: .btn .btn--light-outline target="_blank" rel="noopener noreferrer" }
+- **Aberwla — Quest/PICO — Mar 2025** — [Meta Quest](https://www.meta.com/en-gb/experiences/aberwla/9575081185844250/){: .btn .btn--light-outline target="_blank" rel="noopener noreferrer" } · [PICO Store](https://store-global.picoxr.com/global/detail/1/7477528258796486711){: .btn .btn--light-outline target="_blank" rel="noopener noreferrer" }
+- **Centrica Energy Storage — Android/iOS — Mar 2024** — [Play Store](https://play.google.com/store/apps/details?id=com.AnimatedTechnologiesLtd.Centrica){: .btn .btn--light-outline target="_blank" rel="noopener noreferrer" } · [App Store](https://apps.apple.com/gb/app/centrica-energy-storage/id6473838618){: .btn .btn--light-outline target="_blank" rel="noopener noreferrer" }
 
-[See all projects →]({{ '/projects/' | relative_url }})
+[See all projects →]({{ '/projects/' | relative_url }}){: .btn }
 
 ## Systems Library — Preview {#systems}
 
@@ -411,6 +411,6 @@ content=raycast_origin_feet -%}
 > “I can honestly say he’s one of the best Unity developers I’ve collaborated with.”  
 **— Klaire Tanner**, Creative Director, Animated Technologies
 
-[More recommendations →](/about/#recommendations) · [See all on LinkedIn →](https://www.linkedin.com/in/m-rouse/)
+[More recommendations →](/about/#recommendations){: .btn } · [See all on LinkedIn →](https://www.linkedin.com/in/m-rouse/){: .btn .btn--light-outline target="_blank" rel="noopener noreferrer" }
 
 [↑ Back to top](#top)

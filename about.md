@@ -52,8 +52,8 @@ When I’m not in Unity I’m usually on a hill in Gwynedd, often Yr Eifl, chasi
 
 ## Contact {#contact}
 
-- Email: [m.rouse@outlook.com](mailto:m.rouse@outlook.com)
-- LinkedIn: [linkedin.com/in/m-rouse](https://www.linkedin.com/in/m-rouse/)
+- Email: [m.rouse@outlook.com](mailto:m.rouse@outlook.com){: target="_blank" rel="noopener noreferrer" }
+- LinkedIn: [linkedin.com/in/m-rouse](https://www.linkedin.com/in/m-rouse/){: target="_blank" rel="noopener noreferrer" }
 <!-- - GitHub: [github.com/Mike-Rouse](https://github.com/Mike-Rouse) -->
 <!-- - CV: (add PDF link) -->
 
@@ -133,4 +133,6 @@ When I’m not in Unity I’m usually on a hill in Gwynedd, often Yr Eifl, chasi
 
 [Back to highlights ↑](#highlight-recommendations)
 
-[See all on LinkedIn →](https://www.linkedin.com/in/m-rouse/) · [Back to top ↑](#top)
+[See all on LinkedIn →](https://www.linkedin.com/in/m-rouse/){: .btn .btn--light-outline target="_blank" rel="noopener noreferrer" }
+
+[Back to top ↑](#top)
