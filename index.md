@@ -43,6 +43,7 @@ Tight haunted-house slice (15–20 min) · Unity 6/HDRP · controller feel · re
 **Unity 6** · **HDRP** · **Input System** · **Addressables** · **Steamworks SDK** · **Profiler/Frame Debugger**
 
 <!-- TODO: Add Store Page Link -->
+![Steam — Coming Soon](https://img.shields.io/badge/Steam-Coming%20Soon-lightgrey)
 
 [View project details →](/projects/#three-ten-am){: .btn }
 
@@ -79,9 +80,9 @@ Tight haunted-house slice (15–20 min) · Unity 6/HDRP · controller feel · re
 
 ## Recently Shipped {#recently-shipped}
 
-- **Cognetic Training Demo — Quest — Oct 2025** — [Meta Quest](https://www.meta.com/en-gb/experiences/cognetic-training-demo/24339813342291975/)
-- **Aberwla — Quest/PICO — Mar 2025** — [Meta Quest](https://www.meta.com/en-gb/experiences/aberwla/9575081185844250/) · [PICO Store](https://store-global.picoxr.com/global/detail/1/7477528258796486711)
-- **Centrica Energy Storage — Android/iOS — Mar 2024** — [Play Store](https://play.google.com/store/apps/details?id=com.AnimatedTechnologiesLtd.Centrica) · [App Store](https://apps.apple.com/gb/app/centrica-energy-storage/id6473838618)
+- **Cognetic Training Demo — Quest — Oct 2025** — [Meta Quest](https://www.meta.com/en-gb/experiences/cognetic-training-demo/24339813342291975/){: .btn target="_blank" rel="noopener" }
+- **Aberwla — Quest/PICO — Mar 2025** — [Meta Quest](https://www.meta.com/en-gb/experiences/aberwla/9575081185844250/) · [PICO Store](https://store-global.picoxr.com/global/detail/1/7477528258796486711){: .btn target="_blank" rel="noopener" }
+- **Centrica Energy Storage — Android/iOS — Mar 2024** — [Play Store](https://play.google.com/store/apps/details?id=com.AnimatedTechnologiesLtd.Centrica){: .btn target="_blank" rel="noopener" } · [App Store](https://apps.apple.com/gb/app/centrica-energy-storage/id6473838618){: .btn target="_blank" rel="noopener" }
 
 [See all projects →]({{ '/projects/' | relative_url }})
 
