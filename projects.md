@@ -3,9 +3,7 @@ title: "Projects — Released & In-Development"
 layout: single
 permalink: /projects/
 ---
-*C# gameplay systems: input/camera · interaction · AI/perception · UI/state · save/load · performance.*{: #top }
-
-*This page shows hands-on Unity development work. I’ve also led delivery/PM and built non-public prototypes.*
+*This page shows hands-on Unity development work. I’ve also led delivery/PM and built non-public prototypes.*{: #top }
 
 [In Development](#in-development) · [Released Projects](#projects-chronological) · [Internal Tools & Frameworks](#internal-tools)
 

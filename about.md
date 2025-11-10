@@ -4,7 +4,7 @@ layout: single
 permalink: /about/
 author_profile: true
 ---
-*C# gameplay systems: input/camera · interaction · AI/perception · UI/state · save/load · performance.*{: #top }
+*Profile with proof points (with numbers), a short bio, and full recommendations.*{: #top }
 
 [Summary](#summary) · [Proof Points](#proof-points) · [Core Strengths](#core-strengths) · [Tech Snapshot](#tech-snapshot) · [Personal](#personal) · [Contact](#contact) · [Recommendations](#recommendations)
 
