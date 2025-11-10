@@ -27,9 +27,10 @@ Tight haunted-house slice (15–20 min) · Unity 6/HDRP · controller feel · re
 
 #### What I Own {#three-ten-am-what-i-own}
 
-- Controller feel (gamepad + KB/M parity), interaction prompts, UI/state.  
-- Saves/settings (FOV, AA, audio), safe atomic writes.  
-- Steam depots/branches with scripted build/upload; store assets “Coming Soon”.
+- **Game design** — core loop, encounter pacing, environmental storytelling; progression gating for a 15–20 min slice.
+- **Controller feel** — gamepad + KB/M parity; interaction prompts; UI/state.
+- **Saves & settings** — FOV/AA/audio; safe, atomic writes.
+- **Steam pipeline** — depots/branches; scripted build/upload; store assets “Coming Soon”.
 
 #### Targets & Status {#three-ten-am-targets}
 
@@ -57,6 +58,7 @@ Tight haunted-house slice (15–20 min) · Unity 6/HDRP · controller feel · re
 
 #### What I Owned {#aberwla-what-i-owned}
 
+- **Game design (minigames)** — applied gamification (clear goals, feedback loops, difficulty curves) to Welsh-language practice tasks.
 - **Core gameplay & minigames** — designed → greybox → production; multiplayer (Normcore); AI (FSM); baked lighting; spatial audio; UX/UI; profiled/optimised to device budgets.
 - **Quest↔PICO build-switch tooling** — Addressables + scripting defines → **~40% faster** build prep; **0** hand-switch regressions across 6 releases.
 - **Release operations end-to-end** — ratings, store assets/copy, privacy, submissions → hotfix TTR **48–72 h**.

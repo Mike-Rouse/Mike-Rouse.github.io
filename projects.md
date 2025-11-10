@@ -15,7 +15,7 @@ permalink: /projects/
 
 **Goal:** Ship a small, engaging PC horror slice with a tight loop, readable interactions, and strong audio-visual atmosphere; take it through the full Steam release pipeline (capsules, depots, build updates).
 
-**How:** Responsive first-person controls (**gamepad + KB/M**), clear interaction prompts (Use/Open/Inspect), a simple, flexible ability system (e.g., flashlight), single-slot save with autosave on exit, core settings (FOV/AA/audio), and focused content/performance passes for smooth frame pacing.
+**How:** Game design (loop, encounter pacing, progression); responsive first-person controls (gamepad + KB/M); readable interaction prompts (Use/Open/Inspect); simple ability system (flashlight); single-slot save (autosave on exit); core settings (FOV/AA/audio); focused performance passes.
 
 **Proof:** 20s gameplay clip — [watch](/#three-ten-am).  
 
@@ -71,15 +71,17 @@ permalink: /projects/
 
 {%- capture owned_aberwla -%}
 
+- **Game design (minigames)** — applied gamification (clear goals, feedback loops, difficulty curves) to Welsh-language practice tasks.
+
 - **Core gameplay & minigames** — translated concepts into requirements/tasks; designed → greyboxed → shipped multiple minigames across the town/forest; implemented multiplayer (Normcore).
 
-- **Cross-platform build tooling** — Quest↔PICO Addressables + scripting defines → ~40% faster build prep; 0 manual platform-switch regressions across 6 releases.
+- **Quest↔PICO build-switch tooling** — Addressables + scripting defines → **~40% faster** build prep; **0** manual platform-switch regressions across **6** releases.
 
 - **Performance & content pipeline** — baked lighting/occlusion, LOD discipline, asset budgeting; profiled on Quest/PICO to meet device budgets; built a spatial audio pipeline with environment-aware routing.
 
-- **Release operations end-to-end** — age ratings, store assets/copy, privacy policy, submissions; ensured VRC compliance on both stores; hotfix TTR 48–72 h.
+- **Release operations end-to-end** — age ratings, store assets/copy, privacy policy, submissions; ensured VRC compliance on both stores; hotfix TTR **48–72 h**.
 
-- **Delivery & leadership** — owned schedule and breakdown; managed 1 Unity dev; coordinated 2 3D artists and the Creative Director; ran phased MDM (ManageXR) deployments to immersion centres.
+- **Delivery & leadership** — owned schedule and breakdown; managed **1** Unity dev; coordinated **2** 3D artists and the Creative Director; ran phased MDM (ManageXR) deployments to immersion centres.
 {%- endcapture -%}
 {%- include custom-details.html title="What I owned" content=owned_aberwla -%}
 
