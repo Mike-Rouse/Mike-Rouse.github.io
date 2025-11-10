@@ -2,8 +2,8 @@
 layout: single
 title: "Overview — Featured, Recently Shipped, Systems"
 ---
-*C# gameplay systems: controls/camera · interaction · AI/perception · UI · save/load · performance.  
-Shipped VR & AR · PC/Steam title in development.*{: #top }
+*C# gameplay systems: input/camera · interaction · AI/perception · UI/state · save/load · performance.  
+Shipped VR & AR — PC/Steam title in development.*{: #top }
 
 {: .notice--info}
 **Now:** Currently building a small PC title; store page incoming.  
