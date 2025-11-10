@@ -1,5 +1,5 @@
 ---
-title: "Projects — Released & In-Development"
+title: "Projects"
 layout: single
 permalink: /projects/
 ---
@@ -27,7 +27,7 @@ permalink: /projects/
 
 ---
 
-### ### Untitled Horror Game — PC
+### Untitled Horror Game — PC
 
 *Evade, resist, and escape across a cursed open area; tension/stealth first.*
 
