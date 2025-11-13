@@ -8,7 +8,7 @@ Shipped VR & AR — PC title in development.*{: #top }
 [Featured](#featured) · [Recently Shipped](#recently-shipped) · [Systems Library (WIP)](#systems) · [Recommendations](#recommendations)
 
 {: .notice--info}
-**Availability:** Open to remote Unity gameplay/systems roles (perm or contract, EU/US-overlap friendly).
+**Availability:** UK-based, open to remote Unity gameplay/systems roles (perm or contract, EU/US time-zone overlap).
 
 <!-- Showreel here when it gets made -->
 
