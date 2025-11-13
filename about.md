@@ -39,7 +39,7 @@ I’m a Unity/C# developer focused on clean, reliable gameplay code. I work acro
 
 ## Personal {#personal}
 
-When I’m not in Unity I’m usually on a hill in Gwynedd, often Yr Eifl, chasing good light for photos. I keep a tiny home gym by the desk so training actually happens: bike sessions on a HIIT / tempo / threshold rotation and a day of resistance work. I log ideas for my Steam PC title and small prototypes; most get binned. I like horror, survival, and story-driven games that reward planning, and I make room for all of it around family time.
+When I’m not in Unity I’m usually on a hill in Gwynedd—often Yr Eifl—chasing good light with a camera, or noting mechanic and game-design ideas for my Steam PC title and building small prototypes. For downtime I mostly play MMOs like WoW, ESO, and Black Desert Online (BDO) when I want something relaxed, and horror, survival, extraction, and story-driven games that reward planning when I want more adrenaline. I keep a tiny home gym by the desk so training actually happens (bike intervals: HIIT/tempo/threshold—and a day of resistance work). All of it fits around family time.
 
 {% include figure
   image_path="/assets/images/landscape-1.jpg"
