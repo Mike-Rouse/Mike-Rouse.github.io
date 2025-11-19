@@ -11,15 +11,16 @@ permalink: /projects/
 
 ### 3:10 AM — PC {#three-ten-am}
 
-*PC horror slice.* Discover three Death Facts to complete the Death Profile, then perform the Rite of Unbinding as pressure escalates into hunts. Built in **Unity 6/HDRP**; gamepad + keyboard/mouse parity; safe saves; Steam depots/branches with scripted uploads.
+*PC horror slice.* Discover three Death Facts to complete the Death Profile, then perform the Rite of Unbinding as pressure escalates into hunts. Built in **Unity 6/HDRP** with gamepad + keyboard/mouse parity and readable interaction. Designing safe PC-style saves and settings, and a Steam-ready pipeline (depots/branches, scripted uploads).
 
 **Goal:** Ship a small, engaging PC horror slice with a tight loop, readable interactions, and strong audio-visual atmosphere; take it through the full Steam release pipeline (capsules, depots, build updates).
 
-**How:** Game design (loop, encounter pacing, progression); responsive first-person controls (gamepad + KB/M); readable interaction prompts (Use/Open/Inspect); simple ability system (flashlight); single-slot save (autosave on exit); core settings (FOV/AA/audio); focused performance passes.
+**How:** Game design (loop, encounter pacing, progression); responsive first-person controls (gamepad + KB/M); readable interaction prompts (Use/Open/Inspect); simple ability system (flashlight); planned single-slot save (autosave on exit); planned core settings (FOV/AA/audio); focused performance passes.
 
 **Proof:** 20s gameplay clip — [watch](/#three-ten-am){: .btn }  
 
 **Scope:** 15–20 minutes  
+**Status:** First playable complete; systems (saves/settings/Steam pipeline) in development.  
 **Target milestone:** Full release Coming Soon  
 **Next:** Steam “Coming Soon” page → public downloadable build → post-launch hotfix flow.
 

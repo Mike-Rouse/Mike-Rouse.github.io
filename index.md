@@ -16,7 +16,7 @@ Shipped VR & AR — PC title in development.*{: #top }
 
 ### 3:10 AM — First-Person Horror Slice · PC · In-Development {#three-ten-am}
 
-**3:10 AM** is a 15–20 minute first-person haunted-house slice for PC. You’re a paranormal investigator trapped in a single home. Find three Death Facts — Location, Means Object, Manner of Death — to complete the Death Profile, then perform the Rite of Unbinding as a demonic presence raises pressure and triggers hunts. Built in **Unity 6/HDRP** with gamepad + keyboard/mouse parity, readable interaction, safe saves, and a Steam-ready pipeline (depots/branches, scripted uploads).
+**3:10 AM** is a 15–20 minute first-person PC haunted-house horror slice for PC. You’re a paranormal investigator trapped in a single home. Find three Death Facts — Location, Means Object, Manner of Death — to complete the Death Profile, then perform the Rite of Unbinding as a demonic presence raises pressure and triggers hunts. Built in Unity 6/HDRP with gamepad + keyboard/mouse parity and readable interaction. In progress: safe PC-style saves, settings, and a Steam-ready pipeline (depots/branches, scripted uploads).
 
 {% include video id="F-aJi8AOgAU" provider="youtube" caption="3:10 AM — PC gameplay clip (controller + interaction + inner monologue)." %}
 
@@ -28,12 +28,12 @@ Solo project; gameplay/systems, art integration, builds, and release prep.
 
 - **Game design** — core loop, encounter pacing, environmental storytelling; progression gating for a 15–20 min slice.
 - **Controller feel** — gamepad + KB/M parity; interaction prompts; UI/state.
-- **Saves & settings** — FOV/AA/audio; safe, atomic writes.
-- **Steam pipeline** — depots/branches; scripted build/upload; store assets “Coming Soon”.
+- **Saves & settings** — designing FOV/AA/audio settings with safe, atomic writes.
+- **Steam pipeline** — planning depots/branches, scripted build/upload, and ‘Coming Soon’ store assets.
 
 #### Targets & Status {#three-ten-am-targets}
 
-- Playable slice in polishing; stability focus (crash-free sessions ≥99% pre-ship).  
+- Playable slice in polishing with a strong stability focus.  
 - PC feature checklist: rebinding, graphics presets/scalability, window/fullscreen.  
 - Next: Steam “Coming Soon” page → public downloadable build.
 
