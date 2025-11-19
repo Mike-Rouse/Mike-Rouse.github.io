@@ -11,7 +11,7 @@ permalink: /projects/
 
 ### 3:10 AM — PC {#three-ten-am}
 
-*PC horror slice.* Discover three Death Facts to complete the Death Profile, then perform the Rite of Unbinding as pressure escalates into hunts. Built in **Unity 6/HDRP** with gamepad + keyboard/mouse parity and readable interaction. Designing safe PC-style saves and settings, and a Steam-ready pipeline (depots/branches, scripted uploads).
+*First-person PC haunted-house horror slice.* Discover three Death Facts to complete the Death Profile, then perform the Rite of Unbinding as pressure escalates into hunts. Built in **Unity 6/HDRP** with gamepad + keyboard/mouse parity and readable interaction. Designing safe PC-style saves and settings, and a Steam-ready pipeline (depots/branches, scripted uploads).
 
 **Goal:** Ship a small, engaging PC horror slice with a tight loop, readable interactions, and strong audio-visual atmosphere; take it through the full Steam release pipeline (capsules, depots, build updates).
 
