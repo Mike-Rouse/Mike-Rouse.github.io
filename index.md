@@ -88,9 +88,6 @@ Lead dev; managed 1 Unity dev; coordinated 2 3D artists; partnered with the Crea
 
 Production-ready Unity systems (demo scene · README · MIT).  
 
-**Note:** The Systems Library will be published as a downloadable repo / Unity package after the Steam release of *3:10 AM*. For now, the sections below are previews/snippets.
-{: .notice--info}
-
 ### Interaction System — Preview
 
 Modular, interface-driven interaction with Press/Hold patterns, focus/LOS-aware world UI, and a single combined ray for selection + occlusion. Uses interfaces + abstract bases (composition first) to keep gameplay code swappable and testable. *Full package in progress.*
