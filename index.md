@@ -86,7 +86,10 @@ Lead dev; managed 1 Unity dev; coordinated 2 3D artists; partnered with the Crea
 
 ## Systems Library — Preview {#systems}
 
-Production-ready Unity systems (demo scene · README · MIT).  
+Production-ready Unity systems (demo scene · README · MIT)  
+
+**Note:** The Systems Library will be published as a downloadable repo / Unity package after the Steam release of *3:10 AM*. For now, the sections below are previews/snippets.
+{: .notice--info}
 
 ### Interaction System — Preview
 
