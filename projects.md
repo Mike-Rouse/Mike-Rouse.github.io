@@ -13,7 +13,7 @@ permalink: /projects/
 
 *First-person PC haunted-house horror slice.* Discover three Death Facts to complete the Death Profile, then perform the Rite of Unbinding as pressure escalates into hunts. Built in **Unity 6/HDRP** with gamepad + keyboard/mouse parity and readable interaction. Designing safe PC-style saves and settings, and a Steam-ready pipeline (depots/branches, scripted uploads).
 
-**Goal:** Ship a small, engaging PC horror slice with a tight loop, readable interactions, and strong audio-visual atmosphere; take it through the full Steam publishing pipeline (capsules, depots, build updates), as a free, non-commercial portfolio release.
+**Goal:** Publish a small, engaging PC horror slice with a tight loop, readable interactions, and strong audio-visual atmosphere; take it through the full Steam publishing pipeline (capsules, depots, build updates), as a free, non-commercial portfolio release.
 
 **How:** Game design (loop, encounter pacing, progression); responsive first-person controls (gamepad + KB/M); readable interaction prompts (Use/Open/Inspect); simple ability system (flashlight); planned single-slot save (autosave on exit); planned core settings (FOV/AA/audio); focused performance passes.
 
@@ -21,8 +21,8 @@ permalink: /projects/
 
 **Scope:** 15–20 minutes  
 **Status:** First playable complete; systems (saves/settings/Steam pipeline) in development.  
-**Target milestone:** Free public release  
-**Next:** Steam “Coming Soon” page → public downloadable build → post-release hotfix flow.
+**Target milestone:** Free public Steam release  
+**Next:** Steam “Coming Soon” page → public downloadable build on Steam → post-release hotfix flow.
 
 <!-- TODO: Steam Page Link -->
 ![Steam — Coming Soon](https://img.shields.io/badge/Steam-Coming%20Soon-lightgrey)
