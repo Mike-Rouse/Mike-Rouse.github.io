@@ -2,13 +2,13 @@
 layout: single
 title: "Overview"
 ---
-*C# gameplay systems: input/camera · interaction · AI/perception · UI/state · save/load · performance.  
-Shipped VR & AR — PC title in development.*{: #top }
+*C# gameplay and systems: input/camera · interaction · AI/perception · UI/state · save/load · performance · release workflows.  
+Shipped mobile, VR, and AR titles · PC title in development.*{: #top }
 
 [Featured](#featured) · [Recently Shipped](#recently-shipped) · [Systems Library (WIP)](#systems) · [Recommendations](#recommendations)
 
 {: .notice--info}
-**Availability:** UK-based, open to remote Unity gameplay/systems roles (perm or contract, EU/US time-zone overlap).
+**Availability:** UK-based, open to remote Unity gameplay/systems roles (perm or contract, EU/US overlap).
 
 <!-- Showreel here when it gets made -->
 
@@ -18,7 +18,7 @@ Shipped VR & AR — PC title in development.*{: #top }
 
 *Free, non-commercial portfolio game on Steam.*
 
-**3:10 AM** is a 15–20 minute first-person PC haunted-house horror slice for PC. You’re a paranormal investigator trapped in a single home. Find three Death Facts — Location, Means Object, Manner of Death — to complete the Death Profile, then perform the Rite of Unbinding as a demonic presence raises pressure and triggers hunts. Built in Unity 6/HDRP with gamepad + keyboard/mouse parity and readable interaction. In progress: safe PC-style saves, settings, and a Steam-ready pipeline (depots/branches, scripted uploads).
+**3:10 AM** is a 15–20 minute first-person haunted-house horror slice for PC. You’re a paranormal investigator trapped in a single home. Find three Death Facts — Location, Means Object, Manner of Death — to complete the Death Profile, then perform the Rite of Unbinding as a demonic presence raises pressure and triggers hunts. Built in Unity 6/HDRP with gamepad + keyboard/mouse parity and readable interaction. Steam release prep in progress, including app setup, depots/branches, and a test-build upload workflow.
 
 {% include video id="F-aJi8AOgAU" provider="youtube" caption="3:10 AM — PC gameplay clip (controller + interaction + inner monologue)." %}
 
@@ -82,7 +82,7 @@ Lead dev; managed 1 Unity dev; coordinated 2 3D artists; partnered with the Crea
 
 - **Cognetic Training Demo — Quest — Oct 2025** — [Meta Quest](https://www.meta.com/en-gb/experiences/cognetic-training-demo/24339813342291975/){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" }
 - **Aberwla — Quest/PICO — Mar 2025** — [Meta Quest](https://www.meta.com/en-gb/experiences/aberwla/9575081185844250/){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" } [PICO Store](https://store-global.picoxr.com/global/detail/1/7477528258796486711){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" }
-- **Centrica Energy Storage — Android/iOS — Mar 2024** — [Play Store](https://play.google.com/store/apps/details?id=com.AnimatedTechnologiesLtd.Centrica){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" } [App Store](https://apps.apple.com/gb/app/centrica-energy-storage/id6473838618){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" }
+- **Centrica Energy Storage — Android/iOS — Mar 2024** — <!-- [Play Store](https://play.google.com/store/apps/details?id=com.AnimatedTechnologiesLtd.Centrica){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" }-->[App Store](https://apps.apple.com/gb/app/centrica-energy-storage/id6473838618){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" }
 
 [See all projects →]({{ '/projects/' | relative_url }}){: .btn }
 

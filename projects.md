@@ -20,7 +20,7 @@ permalink: /projects/
 **Proof:** 20s gameplay clip — [watch](/#three-ten-am){: .btn }  
 
 **Scope:** 15–20 minutes  
-**Status:** First playable complete; systems (saves/settings/Steam pipeline) in development.  
+**Status:** Steam release prep in progress, including app setup, depots/branches, and a test-build upload workflow.
 **Target milestone:** Free public Steam release  
 **Next:** Steam “Coming Soon” page → public downloadable build on Steam → post-release hotfix flow.
 
@@ -96,7 +96,7 @@ permalink: /projects/
 
 *Energy-transition app for Android/iOS; explore CES+ sites and future plans (Rough, hydrogen) with responsive menus—approved on both stores.*
 
-[Google Play](https://play.google.com/store/apps/details?id=com.AnimatedTechnologiesLtd.Centrica){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" } [App Store](https://apps.apple.com/gb/app/centrica-energy-storage/id6473838618){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" }
+<!-- [Google Play](https://play.google.com/store/apps/details?id=com.AnimatedTechnologiesLtd.Centrica){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" }  -->[App Store](https://apps.apple.com/gb/app/centrica-energy-storage/id6473838618){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" }
 
 {%- capture owned_centrica -%}
 
@@ -117,7 +117,7 @@ permalink: /projects/
 
 *Location-based AR app for M-SParc (Android/iOS): GPS-stabilised placement, full-scale building previews, tenant QR profiles, and a collectables trail—shipped.*
 
-[Google Play](https://play.google.com/store/apps/details?id=com.AnimatedTechnologies.spARc){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" } [App Store](https://apps.apple.com/gb/app/m-sparc/id1643887893){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" }
+<!-- [Google Play](https://play.google.com/store/apps/details?id=com.AnimatedTechnologies.spARc){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" }-->[App Store](https://apps.apple.com/gb/app/m-sparc/id1643887893){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" }
 
 {%- capture owned_msparc -%}
 
@@ -139,7 +139,7 @@ permalink: /projects/
 
 *Holyhead maritime-history AR app (Android/iOS): interactive maps and self-guided trails with POIs, narrated content, and badge progression—released on both stores.*
 
-[Google Play](https://play.google.com/store/apps/details?id=com.AnimatedTechnologies.BeneathTheWaves){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" } [App Store](https://apps.apple.com/gb/app/beneath-the-waves-dan-y-m%C3%B4r/id1660955636){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" }
+<!-- [Google Play](https://play.google.com/store/apps/details?id=com.AnimatedTechnologies.BeneathTheWaves){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" } -->[App Store](https://apps.apple.com/gb/app/beneath-the-waves-dan-y-m%C3%B4r/id1660955636){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" }
 
 {%- capture owned_waves -%}
 
@@ -163,7 +163,7 @@ permalink: /projects/
 
 *Anglesey location-based AR trail (Android/iOS): visit POIs across five towns, meet AR characters, collect badges—live on Play Store and App Store.*
 
-[Google Play](https://play.google.com/store/apps/details?id=com.AnimatedTechnologies.AngleseyAR){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" } [App Store](https://apps.apple.com/gb/app/stori-m%C3%B4n/id1645310984){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" }
+<!-- [Google Play](https://play.google.com/store/apps/details?id=com.AnimatedTechnologies.AngleseyAR){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" } -->[App Store](https://apps.apple.com/gb/app/stori-m%C3%B4n/id1645310984){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" }
 
 {%- capture owned_storimon -%}
 
