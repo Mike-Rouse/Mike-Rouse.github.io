@@ -41,7 +41,9 @@ I’m a Unity/C# developer focused on clean, reliable gameplay code. I work acro
 
 When I’m not in Unity I’m usually on a hill in Gwynedd, often Yr Eifl, chasing good light for photos. I keep a tiny home gym by the desk so training actually happens: bike sessions on a HIIT / tempo / threshold rotation and a day of resistance work. I log ideas for my Steam PC title and small prototypes; most get binned.
 
-For downtime I’ve sunk a lot of hours into MMOs like World of Warcraft and ESO in the past; these days it’s mostly Black Desert Online and extraction-style games like Escape from Tarkov, plus horror, survival and story-driven games that reward planning. I make room for all of it around family time.
+For downtime, I’ve always gravitated toward games that are easy to disappear into. In the past that meant sinking a lot of hours into MMOs like World of Warcraft, The Elder Scrolls Online, and Black Desert Online. These days it’s more Tarkov PvE, Helldivers 2, and horror, survival, or story-driven games with strong atmosphere, tension, exploration, and challenge.
+
+Some favourites: Assassin’s Creed IV: Black Flag, Valheim, God of War Ragnarök, Sea of Thieves, Visage, Alien: Isolation, Elden Ring, Silent Hill 2, Blair Witch, The Long Dark, and STALKER.
 
 {% include figure
   image_path="/assets/images/landscape-1.jpg"
