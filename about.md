@@ -41,9 +41,9 @@ I’m a Unity/C# gameplay and systems developer focused on clean, reliable code 
 
 When I’m not in Unity, I’m usually out in Gwynedd with a camera or training at home. A lot of the games I gravitate toward are horror, survival, and atmosphere-driven titles, which feeds back into the kind of PC gameplay work I like building.
 
-<!-- For downtime, I’ve always gravitated toward games that are easy to disappear into. In the past that meant sinking a lot of hours into MMOs like World of Warcraft, The Elder Scrolls Online, and Black Desert Online. These days it’s more Tarkov PvE, Helldivers 2, and horror, survival, or story-driven games with strong atmosphere, tension, exploration, and challenge.
+<!-- For downtime, I’ve always gravitated toward games that are easy to disappear into. In the past that meant sinking a lot of hours into MMOs like World of Warcraft, The Elder Scrolls Online, and Black Desert Online. These days it’s more Tarkov PvE, Helldivers 2, and horror, survival, or story-driven games with strong atmosphere, tension, exploration, and challenge. -->
 
-Some favourites: Assassin’s Creed IV: Black Flag, Valheim, God of War Ragnarök, Sea of Thieves, Visage, Alien: Isolation, Elden Ring, Silent Hill 2, Blair Witch, The Long Dark, and STALKER. -->
+Some favourite games: Assassin’s Creed IV: Black Flag, Valheim, God of War Ragnarök, Sea of Thieves, Visage, Alien: Isolation, Elden Ring, Silent Hill 2, Blair Witch, The Long Dark, and STALKER.
 
 {% include figure
   image_path="/assets/images/landscape-1.jpg"
