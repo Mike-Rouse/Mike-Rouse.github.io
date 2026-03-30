@@ -11,18 +11,18 @@ permalink: /projects/
 
 ### 3:10 AM — PC {#three-ten-am}
 
-*First-person PC haunted-house horror slice.* Discover three Death Facts to complete the Death Profile, then perform the Rite of Unbinding as pressure escalates into hunts. Built in **Unity 6/HDRP** with gamepad + keyboard/mouse parity and readable interaction. Designing safe PC-style saves and settings, and a Steam-ready pipeline (depots/branches, scripted uploads).
+*First-person PC haunted-house horror slice* built in **Unity 6/HDRP**. Discover three Death Facts to complete the Death Profile, then perform the Rite of Unbinding as pressure escalates into hunts. Built for gamepad + keyboard/mouse parity with readable interaction and a tight 15–20 minute scope.
 
-**Goal:** Publish a small, engaging PC horror slice with a tight loop, readable interactions, and strong audio-visual atmosphere; take it through the full Steam publishing pipeline (capsules, depots, build updates), as a free, non-commercial portfolio release.
+**Goal:** Ship a polished PC horror slice through the full Steam release workflow.
 
-**How:** Game design (loop, encounter pacing, progression); responsive first-person controls (gamepad + KB/M); readable interaction prompts (Use/Open/Inspect); simple ability system (flashlight); planned single-slot save (autosave on exit); planned core settings (FOV/AA/audio); focused performance passes.
+**How:** Game design and encounter pacing; responsive first-person controls; readable interaction prompts; flashlight ability; save/settings implementation; Steam depots/branches and scripted uploads.
 
 **Proof:** 20s gameplay clip — [watch](/#three-ten-am){: .btn }  
 
 **Scope:** 15–20 minutes  
-**Status:** Steam release prep in progress, including app setup, depots/branches, and a test-build upload workflow.
-**Target milestone:** Free public Steam release  
-**Next:** Steam “Coming Soon” page → public downloadable build on Steam → post-release hotfix flow.
+**Status:** Playable slice in polish. Steam app setup and test-build upload workflow underway.  
+**Release target:** Public Steam release  
+**Release path:** Coming Soon page → public playable build → post-release fixes.
 
 <!-- TODO: Steam Page Link -->
 ![Steam — Coming Soon](https://img.shields.io/badge/Steam-Coming%20Soon-lightgrey)

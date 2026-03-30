@@ -10,7 +10,7 @@ author_profile: true
 
 ## Summary {#summary}
 
-I’m a Unity/C# developer focused on clean, reliable gameplay code. I work across interaction, UI, lighting and baking, audio, performance, and release workflows for PC, mobile, and VR/AR. I’m good at turning fuzzy requirements into clear tasks or building features to a specification, and I write concise docs and small utilities that prevent integration mistakes. I collaborate with artists and PMs to keep feel and polish on track.
+I’m a Unity/C# gameplay and systems developer focused on clean, reliable code and shipping stable builds. I work across interaction, UI/state, audio, performance, and release workflows for PC, mobile, and XR. I’m comfortable turning fuzzy requirements into clear tasks, small tools, and polished features that reduce integration mistakes and help teams ship.
 
 ## Proof Points {#proof-points}
 
@@ -39,11 +39,11 @@ I’m a Unity/C# developer focused on clean, reliable gameplay code. I work acro
 
 ## Personal {#personal}
 
-When I’m not in Unity I’m usually on a hill in Gwynedd, often Yr Eifl, chasing good light for photos. I keep a tiny home gym by the desk so training actually happens: bike sessions on a HIIT / tempo / threshold rotation and a day of resistance work. I log ideas for my Steam PC title and small prototypes; most get binned.
+When I’m not in Unity, I’m usually out in Gwynedd with a camera or training at home. A lot of the games I gravitate toward are horror, survival, and atmosphere-driven titles, which feeds back into the kind of PC gameplay work I like building.
 
-For downtime, I’ve always gravitated toward games that are easy to disappear into. In the past that meant sinking a lot of hours into MMOs like World of Warcraft, The Elder Scrolls Online, and Black Desert Online. These days it’s more Tarkov PvE, Helldivers 2, and horror, survival, or story-driven games with strong atmosphere, tension, exploration, and challenge.
+<!-- For downtime, I’ve always gravitated toward games that are easy to disappear into. In the past that meant sinking a lot of hours into MMOs like World of Warcraft, The Elder Scrolls Online, and Black Desert Online. These days it’s more Tarkov PvE, Helldivers 2, and horror, survival, or story-driven games with strong atmosphere, tension, exploration, and challenge.
 
-Some favourites: Assassin’s Creed IV: Black Flag, Valheim, God of War Ragnarök, Sea of Thieves, Visage, Alien: Isolation, Elden Ring, Silent Hill 2, Blair Witch, The Long Dark, and STALKER.
+Some favourites: Assassin’s Creed IV: Black Flag, Valheim, God of War Ragnarök, Sea of Thieves, Visage, Alien: Isolation, Elden Ring, Silent Hill 2, Blair Witch, The Long Dark, and STALKER. -->
 
 {% include figure
   image_path="/assets/images/landscape-1.jpg"

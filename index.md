@@ -14,11 +14,11 @@ Shipped mobile, VR, and AR titles · PC title in development.*{: #top }
 
 ## Featured Work {#featured}
 
-### 3:10 AM — First-Person Horror Slice · PC · In-Development {#three-ten-am}
+### 3:10 AM — First-Person Horror Slice · PC · In Development {#three-ten-am}
 
-*Free, non-commercial portfolio game on Steam.*
+*Steam portfolio release in development.*
 
-**3:10 AM** is a 15–20 minute first-person haunted-house horror slice for PC. You’re a paranormal investigator trapped in a single home. Find three Death Facts — Location, Means Object, Manner of Death — to complete the Death Profile, then perform the Rite of Unbinding as a demonic presence raises pressure and triggers hunts. Built in Unity 6/HDRP with gamepad + keyboard/mouse parity and readable interaction. Steam release prep in progress, including app setup, depots/branches, and a test-build upload workflow.
+**3:10 AM** is a 15–20 minute first-person haunted-house horror slice for PC. You play a paranormal investigator trapped in a single house. Find three Death Facts — Location, Means Object, and Manner of Death — to complete the Death Profile, then perform the Rite of Unbinding as a demonic presence raises pressure and triggers hunts. Built in Unity 6/HDRP with gamepad + keyboard/mouse parity and readable interaction. Steam release prep is underway.
 
 {% include video id="F-aJi8AOgAU" provider="youtube" caption="3:10 AM — PC gameplay clip (controller + interaction + inner monologue)." %}
 
@@ -29,15 +29,15 @@ Solo project; gameplay/systems, art integration, builds, and release prep.
 #### What I Own {#three-ten-am-what-i-own}
 
 - **Game design** — core loop, encounter pacing, environmental storytelling; progression gating for a 15–20 min slice.
-- **Controller feel** — gamepad + KB/M parity; interaction prompts; UI/state.
-- **Saves & settings** — designing FOV/AA/audio settings with safe, atomic writes.
-- **Steam pipeline** — planning depots/branches, scripted build/upload, and ‘Coming Soon’ store assets.
+- **Controls & interaction** — gamepad + KB/M parity; responsive first-person feel; readable interaction prompts; UI/state support.
+- **Saves & settings** — implementing FOV/AA/audio settings with safe, atomic writes.
+- **Steam pipeline** — app setup, depots/branches, scripted build/upload workflow, and store-asset prep.
 
-#### Targets & Status {#three-ten-am-targets}
+#### Release Target {#three-ten-am-targets}
 
-- Playable slice in polishing with a strong stability focus.  
+- Playable slice in polish, with a strong focus on stability.  
 - PC feature checklist: rebinding, graphics presets/scalability, window/fullscreen.  
-- Next: Steam “Coming Soon” page → public downloadable build.
+- **Release path:** Steam Coming Soon page, then public playable build.
 
 #### Tech Highlights {#three-ten-am-tech-highlights}
 
