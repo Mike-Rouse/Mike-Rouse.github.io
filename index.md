@@ -37,7 +37,7 @@ Solo project; gameplay/systems, art integration, builds, and release prep.
 
 - Playable slice in polish, with a strong focus on stability.  
 - PC feature checklist: rebinding, graphics presets/scalability, window/fullscreen.  
-- **Release path:** Steam Coming Soon page, then public playable build.
+- Release path: Steam Coming Soon page, then public playable build.
 
 #### Tech Highlights {#three-ten-am-tech-highlights}
 
