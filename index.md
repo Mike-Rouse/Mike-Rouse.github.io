@@ -16,7 +16,7 @@ Shipped mobile, VR, and AR titles · PC title in development.*{: #top }
 
 ### 3:10 AM — First-Person Horror Slice · PC · In Development {#three-ten-am}
 
-*Steam portfolio release in development.*
+*Solo Unity 6/HDRP PC horror game in development for Steam.*
 
 **3:10 AM** is a 15–20 minute first-person haunted-house horror slice for PC. You play a paranormal investigator trapped in a single house. Find three Death Facts — Location, Means Object, and Manner of Death — to complete the Death Profile, then perform the Rite of Unbinding as a demonic presence raises pressure and triggers hunts. Built in Unity 6/HDRP with gamepad + keyboard/mouse parity and readable interaction. Steam release prep is underway.
 
@@ -88,7 +88,7 @@ Lead dev; managed 1 Unity dev; coordinated 2 3D artists; partnered with the Crea
 
 ## Systems Library — Preview {#systems}
 
-Production-ready Unity systems (demo scene · README · MIT)  
+Selected Unity gameplay systems — video demos, design notes and code excerpts.
 
 **Note:** The Systems Library will be published as a downloadable repo / Unity package after the Steam release of 3:10 AM. For now, the sections below are previews/snippets.
 {: .notice--info}
@@ -110,7 +110,7 @@ Modular, interface-driven interaction with Press/Hold patterns, focus/LOS-aware 
 
 - **Smooth UI tick:** world-space UI updates on CinemachineCore.CameraUpdatedEvent to avoid jitter and stay in lockstep with camera updates.
 
-- **Stable frame pacing:** camera-delta + min-interval throttling for targeting work; uses MaterialPropertyBlock for visual feedback without material creations.
+- **Reduced idle targeting work:** re-rays after meaningful camera movement or rotation, with periodic refresh while stationary. MaterialPropertyBlock avoids per-instance material creation.
 
 #### Code Excerpts {#interaction-code-excerpts}
 
@@ -182,8 +182,8 @@ content=ui_manager_usage -%}
 {% capture interactor_throttling %}
 
 ```csharp
-// Re-ray only when the view meaningfully changes (movement/rotation) or a small time slice elapses.
-// Keeps targeting cost predictable and avoids per-frame work on still shots.
+// Re-ray when the view meaningfully changes, or periodically while stationary.
+// Avoids per-frame targeting work on a still view.
 private void Update()
 {
     if (!_isInteractorActive) return;
@@ -194,7 +194,7 @@ private void Update()
     // Rotation threshold: ignore tiny head/camera movements;
     bool turned = Quaternion.Angle(_cameraTransform.rotation, _lastCamRot) > _camAngleThreshold;
 
-    // Minimum interval: bounds worst-case cost even when perfectly still.
+    // Periodic refresh prevents stationary targeting state becoming stale.
     bool timeUp = Time.unscaledTime >= _nextRayTime;
 
     if (moved || turned || timeUp)
@@ -214,7 +214,7 @@ private void Update()
 
 {% endcapture %}
 {%- include custom-details.html
-title="PlayerInteractor.cs — throttled re-ray · stable frame pacing"
+title="PlayerInteractor.cs — change-triggered re-ray with stationary refresh"
 content=interactor_throttling -%}
 
 ### Footstep Audio System — Preview
@@ -235,8 +235,6 @@ Surface-aware footsteps with pooled one-shots and PhysicMaterial→SO mapping. Z
 - **Deterministic triggers:** distance-driven steps with walk/sprint thresholds; separate jump/land cues.
 
 - **Modular:** controller signals step/land; playback isolated in FootstepAudioController.
-
-- **Safe defaults:** null/empty guards and default-surface fallback.
 
 - **WIP (next pass):** reuse cached ground hit (no extra cast), optional anim-event timing, FMOD/Wwise switches.
 
@@ -397,12 +395,6 @@ private FloorSoundSO SetFloorType()
 {%- include custom-details.html
 title="FirstPersonController.cs — feet-origin ray · accurate surface"
 content=raycast_origin_feet -%}
-
-### Roadmap — *Planned*
-
-- **Boids at scale (DOTS)** — greybox flock, 50–200k agents @ 60 FPS on mid-tier GPU (GTX 1060 / RX 580+), 0 allocs/frame.
-- **Client prediction & reconciliation (NGO)** — move/shoot greybox, smooth at 120 ms RTT, ≤1 correction/s, 100–200 ms rollback.
-- **AI perception & Behavior Trees (BT)** — sight/hearing → blackboard → patrol/chase/search, 0 GC/tick, ≤0.2 ms/agent @ 10 Hz.
 
 <!-- [See all systems →]({{ '/systems/' | relative_url }}) -->
 

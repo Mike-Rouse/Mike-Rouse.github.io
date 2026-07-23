@@ -28,7 +28,7 @@ I’m a Unity/C# gameplay and systems developer focused on clean, reliable code 
 
 **Engine:** Unity 2019 → Unity 6  
 **Rendering:** URP (HDRP for PC work)  
-**Gameplay/AI:** NavMesh, ScriptableObjects, state-machine style AI/perception, Behavior Trees (WIP)  
+**Gameplay/AI:** NavMesh, ScriptableObjects, state-machine AI/perception  
 **UI/Input:** New Input System, uGUI, settings menus  
 **Cameras/Flow:** Cinemachine, Timeline  
 **Assets & Loading:** Addressables, scene/asset discipline (baked lighting, LODs)  
