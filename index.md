@@ -203,8 +203,8 @@ private void Update()
         _lastCamPos = _cameraTransform.position;
         _lastCamRot = _cameraTransform.rotation;
 
-        // Next allowed ray time
-        _nextRayTime = Time.unscaledTime + _rayMinInterval;
+        // Schedule the next periodic refresh while the view remains stationary.
+        _nextRayTime = Time.unscaledTime + _stationaryRefreshInterval;
 
         // Do the actual selection work (single combined-mask ray).
         HandleRaycastInteraction();
@@ -249,9 +249,19 @@ private int _poolIndex;
 
 private void PlayAtFeet(AudioClip clip, float volume)
 {
-    if (clip == null) return;
-            
+    if (clip == null ||
+        _audioSourcePool == null ||
+        _audioSourcePool.Length == 0)
+    {
+        return;
+    }
+
     AudioSource audioSource = GetPooledSource();
+    if (audioSource == null)
+    {
+        return;
+    }
+
     audioSource.PlayOneShot(clip, Mathf.Clamp01(volume));
 }
 
@@ -280,7 +290,7 @@ private AudioSource GetPooledSource()
 
 {% endcapture %}
 {%- include custom-details.html
-title="FootstepAudioController.cs — pooled one-shots · zero-GC emit"
+title="FootstepAudioController.cs — pooled one-shots · pooled playback"
 content=footstep_audio_controller_usage open=true -%}
 
 {% capture footstep_mapping_controller %}
