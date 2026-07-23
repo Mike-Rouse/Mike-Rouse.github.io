@@ -219,14 +219,14 @@ content=interactor_throttling -%}
 
 ### Footstep Audio System — Preview
 
-Surface-aware footsteps with pooled one-shots and PhysicMaterial→SO mapping. Zero-GC on emit. Ground source: current raycast (sensor refactor WIP).
+Surface-aware footsteps with pooled one-shots and PhysicMaterial→SO mapping. Ground source: current raycast (sensor refactor WIP).
 
 <!-- Footstep Audio System Video -->
 {% include video id="ZZHTq_tO-kQ" provider="youtube" caption="Surface-aware footsteps: pooled one-shots, PhysicMaterial→SO mapping, sprint/land variants."%}
 
 #### Design Notes {#footstep-design-notes}
 
-- **Zero-GC playback:** pooled AudioSources with PlayOneShot via a ring buffer.
+- **Pooled playback:** AudioSources reused through a ring buffer.
 
 - **Surface-aware:** PhysicMaterial → FloorSoundSO lookup (ScriptableObject map).
 
