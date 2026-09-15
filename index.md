@@ -2,7 +2,7 @@
 layout: single
 title: "Overview"
 ---
-*Unity/C# gameplay and systems developer with four years of professional experience, progressing to Lead Developer and shipping projects across VR, AR and mobile.
+*Unity/C# gameplay and systems developer with four years of professional experience, progressing to Lead Developer and shipping projects across VR, AR and mobile.  
 Gameplay systems · interaction · UI/state · AI/perception · performance · release workflows · current Unity 6 PC development.*{: #top }
 
 [Featured](#featured) · [Recently Shipped](#recently-shipped) · [Selected Gameplay Systems](#systems) · [Recommendations](#recommendations)
