@@ -2,13 +2,10 @@
 layout: single
 title: "Overview"
 ---
-*C# gameplay and systems: input/camera · interaction · AI/perception · UI/state · save/load · performance · release workflows.  
-Shipped mobile, VR, and AR titles · PC title in development.*{: #top }
+*Unity/C# gameplay and systems developer with four years of professional experience, progressing to Lead Developer and shipping projects across VR, AR and mobile.
+Gameplay systems · interaction · UI/state · AI/perception · performance · release workflows · current Unity 6 PC development.*{: #top }
 
-[Featured](#featured) · [Recently Shipped](#recently-shipped) · [Systems Library (WIP)](#systems) · [Recommendations](#recommendations)
-
-{: .notice--info}
-**Availability:** UK-based, open to remote Unity gameplay/systems roles (perm or contract, EU/US overlap).
+[Featured](#featured) · [Recently Shipped](#recently-shipped) · [Selected Gameplay Systems](#systems) · [Recommendations](#recommendations)
 
 <!-- Showreel here when it gets made -->
 
@@ -86,14 +83,11 @@ Lead dev; managed 1 Unity dev; coordinated 2 3D artists; partnered with the Crea
 
 [See all projects →]({{ '/projects/' | relative_url }}){: .btn }
 
-## Systems Library — Preview {#systems}
+## Selected Gameplay Systems{#systems}
 
 Selected Unity gameplay systems — video demos, design notes and code excerpts.
 
-**Note:** The Systems Library will be published as a downloadable repo / Unity package after the Steam release of 3:10 AM. For now, the sections below are previews/snippets.
-{: .notice--info}
-
-### Interaction System — Preview
+### Interaction System
 
 Modular, interface-driven interaction with Press/Hold patterns, focus/LOS-aware world UI, and a single combined ray for selection + occlusion. Uses interfaces + abstract bases (composition first) to keep gameplay code swappable and testable. *Full package in progress.*
 
@@ -217,7 +211,7 @@ private void Update()
 title="PlayerInteractor.cs — change-triggered re-ray with stationary refresh"
 content=interactor_throttling -%}
 
-### Footstep Audio System — Preview
+### Footstep Audio System
 
 Surface-aware footsteps with pooled one-shots and PhysicMaterial→SO mapping. Ground source: current raycast (sensor refactor WIP).
 
