@@ -83,7 +83,7 @@ Lead dev; managed 1 Unity dev; coordinated 2 3D artists; partnered with the Crea
 
 [See all projects →]({{ '/projects/' | relative_url }}){: .btn }
 
-## Selected Gameplay Systems{#systems}
+## Selected Gameplay Systems {#systems}
 
 Selected Unity gameplay systems — video demos, design notes and code excerpts.
 
