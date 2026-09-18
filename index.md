@@ -214,7 +214,7 @@ content=interactor_throttling -%}
 
 ### Footstep Audio System
 
-Surface-aware footsteps with pooled one-shots and PhysicMaterial→SO mapping. Ground source: current raycast (sensor refactor WIP).
+Surface-aware footsteps with pooled one-shots and PhysicMaterial-to-ScriptableObject mapping, using a feet-origin raycast to identify the current surface.
 
 <!-- Footstep Audio System Video -->
 {% include video id="ZZHTq_tO-kQ" provider="youtube" caption="Surface-aware footsteps: pooled one-shots, PhysicMaterial→SO mapping, sprint/land variants."%}
