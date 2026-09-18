@@ -90,7 +90,7 @@ Selected Unity gameplay systems — video demos, design notes and code excerpts.
 
 ### Interaction System
 
-Modular, interface-driven interaction with Press/Hold patterns, focus/LOS-aware world UI, and a single combined ray for selection + occlusion. Uses interfaces + abstract bases (composition first) to keep gameplay code swappable and testable. *Full package in progress.*
+Modular, interface-driven interaction with Press/Hold patterns, focus/LOS-aware world UI, and a single combined ray for selection + occlusion. Uses interfaces + abstract bases (composition first) to keep gameplay code swappable and testable.
 
 <!-- Interaction System Video -->
 {% include video id="JrP5BR8NmR4" provider="youtube" caption="Press/Hold interaction: first-hit selection (interactable(∪)occluder mask), LOS-aware world UI, focus swap + hold progress." %}
@@ -230,8 +230,6 @@ Surface-aware footsteps with pooled one-shots and PhysicMaterial→SO mapping. G
 - **Deterministic triggers:** distance-driven steps with walk/sprint thresholds; separate jump/land cues.
 
 - **Modular:** controller signals step/land; playback isolated in FootstepAudioController.
-
-- **WIP (next pass):** reuse cached ground hit (no extra cast), optional anim-event timing, FMOD/Wwise switches.
 
 #### Code Excerpts {#footstep-code-excerpts}
 
