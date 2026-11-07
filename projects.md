@@ -1,79 +1,61 @@
 ---
-title: "Projects"
-layout: single
+layout: portfolio
+title: Projects
+description: "Selected Unity/C# projects: current PC gameplay development, shipped minigames and multiplayer, mobile applications and reusable internal systems."
 permalink: /projects/
 ---
-*This page shows hands-on Unity development work. I’ve also led delivery/PM and built non-public prototypes.*{: #top }
 
-[In-Development](#in-development) · [Released Projects](#projects-chronological) · [Internal Tools & Frameworks](#internal-tools)
+<h1 class="page-heading">Projects</h1>
+<nav class="section-links" aria-label="Project categories">
+  <a href="#in-development">In development</a>
+  <a href="#projects-chronological">Released projects</a>
+  <a href="#internal-tools">Internal tools &amp; frameworks</a>
+</nav>
+<section class="index-section" id="in-development" aria-labelledby="development-title">
+  <h2 id="development-title">In development</h2>
+  <article class="project-entry" id="three-ten-am">
+    <div class="project-index-row">
+      {% include portfolio-video.html key="gameplay_trailer" priority=true %}
+      <div>
+        <h3>3:10 AM</h3>
+        <p class="meta">Solo developer · Unity 6 / HDRP · Windows PC<br>Steam page live · Demo in development</p>
+        <div class="project-summary">
+          <p>A first-person horror investigation game. I’m building connected evidence/progression, contextual interaction, player-state handling and custom C# Timeline sequences.</p>
+        </div>
+        <div class="links">
+          {% include steam-link.html %}
+          {% include portfolio-trailer-links.html extended_only=true %}
+          <a href="{{ '/#three-ten-am' | relative_url }}">Technical Showcase</a>
+        </div>
+      </div>
+    </div>
+  </article>
 
-## In-Development {#in-development}
+</section>
 
-### 3:10 AM — PC {#three-ten-am}
+<section class="index-section" id="projects-chronological" aria-labelledby="released-title">
+  <h2 id="released-title">Released projects</h2>
+  <article class="project-entry" id="aberwla">
+    <div class="project-index-row">
+      {% include portfolio-video.html key="aberwla" %}
+      <div>
+        <h3>Aberwla</h3>
+        <p class="meta">Lead Unity Developer · Animated Technologies<br>Quest/PICO · Unity 2022 / URP · Released March 2025</p>
+        <div class="project-summary">
+          <p>Welsh-language minigames and multiplayer in an explorable town.</p>
+          <ul>
+            <li>Designed and programmed minigames from greybox through production, including Normcore multiplayer.</li>
+            <li>Optimised for 72 FPS on Quest 2/3 and PICO; built platform-switch tooling for approximately 40% faster build preparation. Maintained 99%+ crash-free sessions.</li>
+          </ul>
+        </div>
+        <div class="links">
+          <a href="https://www.meta.com/en-gb/experiences/aberwla/9575081185844250/" target="_blank" rel="noopener" aria-describedby="external-link-hint">Meta Quest</a>
+          <a href="https://store-global.picoxr.com/global/detail/1/7477528258796486711" target="_blank" rel="noopener" aria-describedby="external-link-hint">PICO Store</a>
+        </div>
+      </div>
+    </div>
 
-*First-person PC haunted-house horror slice* built in **Unity 6/HDRP**. Discover three Death Facts to complete the Death Profile, then perform the Rite of Unbinding as pressure escalates into hunts. Built for gamepad + keyboard/mouse parity with readable interaction and a tight 15–20 minute scope.
-
-**Goal:** Ship a polished PC horror slice through the full Steam release workflow.
-
-**How:** Game design and encounter pacing; responsive first-person controls; readable interaction prompts; flashlight ability; save/settings implementation; Steam depots/branches and scripted uploads.
-
-**Proof:** 20s gameplay clip — [watch](/#three-ten-am){: .btn }  
-
-**Scope:** 15–20 minutes  
-**Status:** Playable slice in polish. Steam app setup and test-build upload workflow underway.  
-**Release target:** Public Steam release  
-**Release path:** Coming Soon page → public playable build → post-release fixes.
-
-<!-- TODO: Steam Page Link -->
-![Steam — Coming Soon](https://img.shields.io/badge/Steam-Coming%20Soon-lightgrey)
-
-<!--
----
-
-### Untitled Horror Game — PC
-
-*Evade, resist, and escape across a cursed open area; tension/stealth first.*
-
-**Scope:** ~4–5 hours  
-**Target milestone:** Demo Release **Oct 2026**  
-**Next:** Slice content lock **Jan 2026**; store assets from prototypes   -->
-
-## Released Projects {#projects-chronological}
-
-*Store-released projects, most recent first.*
-
-### Cognetic Training Demo (Jul 2025)
-
-*Training demo for Quest; optimised from a Quest 3 prototype to run smoothly on Quest 2 and released on the Meta Quest Store.*
-
-**Type:** Public release · **Platforms:** Meta Quest · **Engine:** Unity 2022 LTS · **Pipeline:** URP
-
-[Meta Quest](https://www.meta.com/en-gb/experiences/cognetic-training-demo/24339813342291975/){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" }
-
-{% capture owned_cognetic %}
-
-- **Optimised for Quest 2** — profiled and refactored scenes/assets to meet Quest 2 performance budgets (original build targeted Quest 3 only); stabilised frame pacing and reduced spikes to shipable levels.
-
-- **Environment-adaptive audio** — implemented reverb/routing that shifts with environment state (hall → mountain → underwater) so shared FX remain convincing and spatially grounded across locations.
-
-- **Release ops** end-to-end (Meta Quest Store) — defined store asset list, gathered screenshots/art with the Creative Director, wrote initial copy, authored privacy policy, ensured VRC compliance, handled submission feedback and amendments through to approval.
-
-- **Delivery & quality** — owned the schedule and task breakdown, coordinated cross-discipline work, and drove bug triage/polish to bring the build to acceptance.
-{%- endcapture -%}
-{%- include custom-details.html title="What I owned" content=owned_cognetic -%}
-
----
-
-### Aberwla (Mar 2025) {#aberwla}
-
-*Welsh-language VR minigames in an explorable town for classroom practice; shipped on Quest/PICO with 72 FPS targets met and ≥99% crash-free sessions.*
-
-**Type:** Public release · **Platforms:** Quest/PICO · **Engine:** Unity 2022 LTS · **Pipeline:** URP
-
-[Meta Quest](https://www.meta.com/en-gb/experiences/aberwla/9575081185844250/){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" } [PICO Store](https://store-global.picoxr.com/global/detail/1/7477528258796486711){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" }
-
-{%- capture owned_aberwla -%}
-
+{% capture owned_aberwla %}
 - **Game design (minigames)** — applied gamification (clear goals, feedback loops, difficulty curves) to Welsh-language practice tasks.
 
 - **Core gameplay & minigames** — translated concepts into requirements/tasks; designed → greyboxed → shipped multiple minigames across the town/forest; implemented multiplayer (Normcore).
@@ -85,42 +67,97 @@ permalink: /projects/
 - **Release operations end-to-end** — age ratings, store assets/copy, privacy policy, submissions; ensured VRC compliance on both stores; hotfix TTR **48–72 h**.
 
 - **Delivery & leadership** — owned schedule and breakdown; managed **1** Unity dev; coordinated **2** 3D artists and the Creative Director; ran phased MDM (ManageXR) deployments to immersion centres.
-{%- endcapture -%}
-{%- include custom-details.html title="What I owned" content=owned_aberwla -%}
+{% endcapture %}
 
----
+    {% include custom-details.html title="More on my contribution" content=owned_aberwla %}
+  </article>
 
-### Centrica Energy Storage (Mar 2024)
+  <article class="project-entry" id="cognetic">
+    <div class="project-index-row">
+      <img src="{{ '/assets/images/projects/cognetic-art.webp' | relative_url }}" width="720" height="405" loading="lazy" alt="Cognetic Training Demo store artwork">
+      <div>
+        <h3>Cognetic Training Demo</h3>
+        <p class="meta">Unity optimisation &amp; audio · Animated Technologies<br>Meta Quest · Unity 2022 / URP · Released July 2025</p>
+        <div class="project-summary">
+          <p>A training demo adapted from a Quest 3 prototype for release on Quest 2.</p>
+          <ul>
+            <li>Profiled and refactored scenes/assets to meet Quest 2 performance budgets.</li>
+            <li>Implemented environment-adaptive audio routing across hall, mountain and underwater environments; handled store submission and release.</li>
+          </ul>
+        </div>
+        <div class="links">
+          <a href="https://www.meta.com/en-gb/experiences/cognetic-training-demo/24339813342291975/" target="_blank" rel="noopener" aria-describedby="external-link-hint">Meta Quest</a>
+        </div>
+      </div>
+    </div>
 
-**Type:** Public release · **Platforms:** Android/iOS · **Engine:** Unity 2022 LTS · **Pipeline:** URP
+{% capture owned_cognetic %}
+- **Optimised for Quest 2** — profiled and refactored scenes/assets to meet Quest 2 performance budgets (original build targeted Quest 3 only); stabilised frame pacing and reduced spikes to shipable levels.
 
-*Energy-transition app for Android/iOS; explore CES+ sites and future plans (Rough, hydrogen) with responsive menus—approved on both stores.*
+- **Environment-adaptive audio** — implemented reverb/routing that shifts with environment state (hall → mountain → underwater) so shared FX remain convincing and spatially grounded across locations.
 
-<!-- [Google Play](https://play.google.com/store/apps/details?id=com.AnimatedTechnologiesLtd.Centrica){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" }  -->[App Store](https://apps.apple.com/gb/app/centrica-energy-storage/id6473838618){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" }
+- **Release ops** end-to-end (Meta Quest Store) — defined store asset list, gathered screenshots/art with the Creative Director, wrote initial copy, authored privacy policy, ensured VRC compliance, handled submission feedback and amendments through to approval.
 
-{%- capture owned_centrica -%}
+- **Delivery & quality** — owned the schedule and task breakdown, coordinated cross-discipline work, and drove bug triage/polish to bring the build to acceptance.
+{% endcapture %}
 
-- **UI & menus** — authored main menu layout/flow, loading/scrolling, and navigation states; ensured smooth transitions and responsive interaction on mobile.
+    {% include custom-details.html title="More on my contribution" content=owned_cognetic %}
+  </article>
 
-- **Stability & performance** — triaged/prioritised bugs, fixed UI/runtime issues, and optimised to improve responsiveness and polish for launch.
+  <article class="project-entry" id="centrica">
+    <div class="project-identity">
+      <img class="store-icon" src="{{ '/assets/images/projects/centrica-icon.webp' | relative_url }}" width="96" height="96" loading="lazy" alt="">
+      <div>
+        <h3>Centrica Energy Storage</h3>
+        <p class="meta">Unity UI &amp; optimisation · Animated Technologies<br>Android/iOS · Unity 2022 / URP · Released March 2024</p>
+      </div>
+    </div>
+    <div class="project-summary">
+      <p>An energy-transition application for exploring CES+ sites and future plans.</p>
+      <ul>
+        <li>Built main-menu flows, navigation states and infinitely looping option carousels with responsive swipe controls.</li>
+        <li>Optimised rendering, memory and responsiveness across the whole app and device matrix; fixed runtime/UI issues and owned Android/iOS releases.</li>
+      </ul>
+    </div>
+    <div class="links">
+      <a href="https://apps.apple.com/gb/app/centrica-energy-storage/id6473838618" target="_blank" rel="noopener" aria-describedby="external-link-hint">App Store</a>
+    </div>
 
-- **Release operations (iOS/Android)** — defined store asset/copy requirements, coordinated delivery with the team, prepared builds, and handled App Store/Play Store submissions through approval.
+{% capture owned_centrica %}
+- **Touch menu navigation** — implemented swipe controls for infinitely looping option carousels.
 
-{%- endcapture -%}
-{%- include custom-details.html title="What I owned" content=owned_centrica -%}
+- **Menu flows & UI state** — implemented main-menu flows, navigation states, loading/scrolling and responsive transitions.
 
----
+- **Whole-app optimisation** — optimised rendering, memory and responsiveness across a mixed device matrix; addressed frame pacing, safe areas and asset compression (ASTC/ETC2).
 
-### M-SParc (Dec 2023)
+- **Quality & fixes** — resolved UI issues and other runtime problems across the application.
 
-**Type:** Public release · **Platforms:** Android/iOS · **Engine:** Unity 2022 LTS · **Pipeline:** URP
+- **Release operations (Android/iOS)** — owned Play/App Store submissions, including Android AAB/signing, iOS provisioning and store metadata.
+{% endcapture %}
 
-*Location-based AR app for M-SParc (Android/iOS): GPS-stabilised placement, full-scale building previews, tenant QR profiles, and a collectables trail—shipped.*
+    {% include custom-details.html title="More on my contribution" content=owned_centrica %}
+  </article>
 
-<!-- [Google Play](https://play.google.com/store/apps/details?id=com.AnimatedTechnologies.spARc){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" }-->[App Store](https://apps.apple.com/gb/app/m-sparc/id1643887893){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" }
+  <article class="project-entry" id="msparc">
+    <div class="project-identity">
+      <img class="store-icon" src="{{ '/assets/images/projects/msparc-icon.webp' | relative_url }}" width="96" height="96" loading="lazy" alt="">
+      <div>
+        <h3>M-SParc</h3>
+        <p class="meta">Unity programming · Animated Technologies<br>Android/iOS · Unity 2022 / URP · Released December 2023</p>
+      </div>
+    </div>
+    <div class="project-summary">
+      <p>A location-based AR application with building previews, tenant profiles and a collectables trail.</p>
+      <ul>
+        <li>Implemented GPS-stabilised AR placement and image-tracked video overlays with loss/reacquire handling.</li>
+        <li>Integrated localisation and runtime locale switching, optimised the project and prepared store releases.</li>
+      </ul>
+    </div>
+    <div class="links">
+      <a href="https://apps.apple.com/gb/app/m-sparc/id1643887893" target="_blank" rel="noopener" aria-describedby="external-link-hint">App Store</a>
+    </div>
 
-{%- capture owned_msparc -%}
-
+{% capture owned_msparc %}
 - **AR placement & tracking** — implemented GPS-stabilised model placement with AR Foundation; tuned origin/session handling to reduce outdoor drift and jitter.
 
 - **Image tracking overlays** — built marker detection that anchors animated video overlays (VideoPlayer/RenderTexture) with clean loss/reacquire behaviour.
@@ -128,21 +165,31 @@ permalink: /projects/
 - **Release operations (iOS/Android)** — defined store assets/copy, handled data-safety/privacy forms, prepared builds, and managed App Store/Play Store submissions through approval.
 
 - **Quality & localisation** — triaged/fixed bugs, project optimisation, and implemented string/asset localisation with runtime locale switching.
-{%- endcapture -%}
-{%- include custom-details.html title="What I owned" content=owned_msparc -%}
+{% endcapture %}
 
----
+    {% include custom-details.html title="More on my contribution" content=owned_msparc %}
+  </article>
 
-### Beneath The Waves – Dan Y Môr (Jul 2023)
+  <article class="project-entry" id="waves">
+    <div class="project-identity">
+      <img class="store-icon" src="{{ '/assets/images/projects/waves-icon.webp' | relative_url }}" width="96" height="96" loading="lazy" alt="">
+      <div>
+        <h3>Beneath the Waves / Dan Y Môr</h3>
+        <p class="meta">Unity programming · Animated Technologies<br>Android/iOS · Unity 2022 / URP · Released July 2023</p>
+      </div>
+    </div>
+    <div class="project-summary">
+      <p>A maritime-history AR application with maps, self-guided trails and badge progression.</p>
+      <ul>
+        <li>Built AR placement, a scroll/zoom map with persisted POI state, and badge conditions, persistence and UI hooks.</li>
+        <li>Implemented menus and in-scene UI; improved startup time and memory use through asset and streaming changes.</li>
+      </ul>
+    </div>
+    <div class="links">
+      <a href="https://apps.apple.com/gb/app/beneath-the-waves-dan-y-m%C3%B4r/id1660955636" target="_blank" rel="noopener" aria-describedby="external-link-hint">App Store</a>
+    </div>
 
-**Type:** Public release · **Platforms:** Android/iOS · **Engine:** Unity 2022 LTS · **Pipeline:** URP
-
-*Holyhead maritime-history AR app (Android/iOS): interactive maps and self-guided trails with POIs, narrated content, and badge progression—released on both stores.*
-
-<!-- [Google Play](https://play.google.com/store/apps/details?id=com.AnimatedTechnologies.BeneathTheWaves){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" } -->[App Store](https://apps.apple.com/gb/app/beneath-the-waves-dan-y-m%C3%B4r/id1660955636){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" }
-
-{%- capture owned_waves -%}
-
+{% capture owned_waves %}
 - **AR placement (GPS-stabilised)** — implemented outdoor model placement with AR Foundation; tuned origin/session handling to reduce drift/jitter on device.
 
 - **Map module** — built a scroll/zoom map that reveals unlocked POIs; tap-to-detail flow with persisted state across sessions.
@@ -152,21 +199,31 @@ permalink: /projects/
 - **UI functionality** — implemented menus and in-scene UI, responsive layouts, and loading to keep interactions smooth on mobile.
 
 - **Quality & optimisation** — triaged/fixed bugs; reduced startup time/memory via asset sizing and video/texture streaming tweaks.
-{%- endcapture -%}
-{%- include custom-details.html title="What I owned" content=owned_waves -%}
+{% endcapture %}
 
----
+    {% include custom-details.html title="More on my contribution" content=owned_waves %}
+  </article>
 
-### Stori Môn (Feb 2023)
+  <article class="project-entry" id="storimon">
+    <div class="project-identity">
+      <img class="store-icon" src="{{ '/assets/images/projects/storimon-icon.webp' | relative_url }}" width="96" height="96" loading="lazy" alt="">
+      <div>
+        <h3>Stori Môn</h3>
+        <p class="meta">Unity programming · Animated Technologies<br>Android/iOS · Unity 2020 / URP · Released February 2023</p>
+      </div>
+    </div>
+    <div class="project-summary">
+      <p>An Anglesey AR trail with characters, points of interest and collectable badges.</p>
+      <ul>
+        <li>Implemented audio/playlist playback with looping, fades and scene/UI integration; added runtime localisation.</li>
+        <li>Resolved diagnostics and user-reported issues, prepared builds and handled store submissions.</li>
+      </ul>
+    </div>
+    <div class="links">
+      <a href="https://apps.apple.com/gb/app/stori-m%C3%B4n/id1645310984" target="_blank" rel="noopener" aria-describedby="external-link-hint">App Store</a>
+    </div>
 
-**Type:** Public release · **Platforms:** Android/iOS · **Engine:** Unity 2020 LTS · **Pipeline:** URP
-
-*Anglesey location-based AR trail (Android/iOS): visit POIs across five towns, meet AR characters, collect badges—live on Play Store and App Store.*
-
-<!-- [Google Play](https://play.google.com/store/apps/details?id=com.AnimatedTechnologies.AngleseyAR){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" } -->[App Store](https://apps.apple.com/gb/app/stori-m%C3%B4n/id1645310984){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" }
-
-{%- capture owned_storimon -%}
-
+{% capture owned_storimon %}
 - **Audio playback pipeline** — implemented robust clip/playlist handling with controlled looping, fades, and device-safe volume; integrated with scene/UI flow.
 
 - **Release operations (iOS/Android)** — defined store assets/copy, handled privacy/data-safety forms, prepared builds, and managed App Store/Play Store submissions through approval.
@@ -174,19 +231,27 @@ permalink: /projects/
 - **Localisation** — set up string/asset localisation and integrated runtime locale switching across menus and in-scene UI.
 
 - **Quality & triage** — fixed user-reported issues and crash/error buckets from Unity Cloud Diagnostics, tightened performance and polish for launch.
-{%- endcapture -%}
-{%- include custom-details.html title="What I owned" content=owned_storimon -%}
+{% endcapture %}
 
-## Internal Tools & Frameworks {#internal-tools}
+    {% include custom-details.html title="More on my contribution" content=owned_storimon %}
+  </article>
 
-### Animated Technologies VR Framework (Oct 2025)
+</section>
 
-**Type:** Internal framework · **Availability:** Private · **Engine:** Unity 6 · **Pipeline:** URP
+<section class="index-section" id="internal-tools" aria-labelledby="internal-title">
+  <h2 id="internal-title">Internal tools &amp; frameworks</h2>
+  <article class="project-entry" id="vr-framework">
+    <h3>Animated Technologies VR Framework</h3>
+    <p class="meta">Unity programming & tooling · Animated Technologies<br>Unity 6 / URP · Internal framework · Private · October 2025</p>
+    <div class="project-summary">
+      <p>A reusable project foundation for interaction, input, UI and production setup.</p>
+      <ul>
+        <li>Authored reusable interactables with consistent APIs, plus input/controller defaults and UI modules.</li>
+        <li>Built project bootstrap, presets and validators, reducing new-project setup from days to hours.</li>
+      </ul>
+    </div>
 
-*Unity 6 VR starter kit standardising interactions, input, and presets; cut new-project setup from days to hours across teams.*
-
-{%- capture owned_vrframework -%}
-
+{% capture owned_vrframework %}
 - **Interaction library (Unity 6)** — authored a consistent set of VR interactables: doors (handle/sliding/push-to-open), drawers, levers/dials/knobs, buttons/keypads, keys/locks, turnable wheels, plus direct & distance grab—with unified APIs and physics tuning to minimise integration bugs.
 
 - **Project bootstrap & presets** — prewired Addressables + localisation, Quest Store–ready Android manifest, project settings/presets, and editor validators; cut new-project setup from days to hours and reduced rework across teams.
@@ -196,7 +261,11 @@ permalink: /projects/
 - **UI modules** — built reusable UI components including a virtual keyboard (transform-aware with validation) and common menu patterns to standardise flows across projects.
 
 - **Delivery & technical PM** — scoped features, created task breakdowns/estimates, owned timelines, and drove bug triage/polish to keep the framework shippable and ready for adoption.
-{%- endcapture -%}
-{%- include custom-details.html title="What I owned" content=owned_vrframework -%}
+{% endcapture %}
 
-[↑ Back to top](#top)
+    {% include custom-details.html title="More on my contribution" content=owned_vrframework %}
+  </article>
+
+</section>
+
+<a class="back-top" href="#top">Back to top</a>

@@ -1,0 +1,15 @@
+{% assign gameplay = site.data.media.gameplay_trailer %}
+{% assign extended = site.data.media.extended_gameplay %}
+{% unless include.extended_only %}
+  {% if gameplay.youtube_id and gameplay.youtube_id != "" %}
+    <a href="https://www.youtube.com/watch?v={{ gameplay.youtube_id }}" target="_blank" rel="noopener" aria-describedby="external-link-hint">Watch the gameplay trailer</a>
+  {% else %}
+    <span class="pending-link" data-media-placeholder="gameplay_trailer">Gameplay trailer <small>— link pending</small></span>
+  {% endif %}
+{% endunless %}
+
+{% if extended.youtube_id and extended.youtube_id != "" %}
+  <a href="https://www.youtube.com/watch?v={{ extended.youtube_id }}" target="_blank" rel="noopener" aria-describedby="external-link-hint">Watch extended gameplay</a>
+{% else %}
+  <span class="pending-link" data-media-placeholder="extended_gameplay">Extended gameplay <small>— link pending</small></span>
+{% endif %}

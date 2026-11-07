@@ -1,0 +1,31 @@
+# Video IDs, accessible player titles and fallback artwork for the shared includes.
+# Durations are reference data; the page templates do not display them.
+developer_showcase:
+  youtube_id: 3L7HYCM9Dmw
+  duration: "1:15"
+  poster: /assets/images/projects/310am-showcase.webp
+  title: "3:10 AM — Unity Gameplay & Systems Developer Showcase"
+  placeholder_label: "Developer showcase"
+  poster_alt: "3:10 AM Unity Developer Showcase poster with an evidence book"
+gameplay_trailer:
+  youtube_id: R-5R92oYuDU
+  duration: "0:49"
+  poster: /assets/images/projects/310am-gameplay-trailer.webp
+  title: "3:10 AM — gameplay trailer"
+  placeholder_label: "Gameplay trailer"
+  poster_alt: "3:10 AM gameplay trailer poster showing the house exterior"
+extended_gameplay:
+  youtube_id: Z4QiYwNdtAY
+  duration: "2:42"
+aberwla:
+  youtube_id: pEuDcjNigXc
+  poster: /assets/images/projects/aberwla.webp
+  title: "Aberwla — gameplay trailer"
+interaction:
+  youtube_id: JrP5BR8NmR4
+  poster: /assets/images/projects/interaction.webp
+  title: "Interaction system — Press/Hold, targeting and world-space prompts"
+footsteps:
+  youtube_id: ZZHTq_tO-kQ
+  poster: /assets/images/projects/footsteps.webp
+  title: "Footstep audio system — surface mapping and pooled playback"

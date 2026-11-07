@@ -1,414 +1,121 @@
 ---
-layout: single
-title: "Overview"
+layout: portfolio
+title: "Mike Rouse — Unity/C# Gameplay & Systems Developer"
+description: "Unity/C# gameplay and systems developer with four years of professional experience. Watch my current PC game showcase, shipped professional work and programming examples. UK-based."
+home: true
 ---
-Unity/C# gameplay and systems developer with four years of professional experience, progressing to Lead Developer and shipping projects across VR, AR and mobile.  
 
-**Focus:** Gameplay systems · interaction · UI/state · AI/perception · performance · release workflows · current Unity 6 PC development.
-
-[Featured](#featured) · [Recently Shipped](#recently-shipped) · [Selected Gameplay Systems](#systems) · [Recommendations](#recommendations)
-
-<!-- Showreel here when it gets made -->
-
-## Featured Work {#featured}
-
-### 3:10 AM — First-Person Horror Slice · PC · In Development {#three-ten-am}
-
-*Solo Unity 6/HDRP PC horror game in development for Steam.*
-
-**3:10 AM** is a 15–20 minute first-person haunted-house horror slice for PC. You play a paranormal investigator trapped in a single house. Find three Death Facts — Location, Means Object, and Manner of Death — to complete the Death Profile, then perform the Rite of Unbinding as a demonic presence raises pressure and triggers hunts. Built in Unity 6/HDRP with gamepad + keyboard/mouse parity and readable interaction. Steam release prep is underway.
-
-{% include video id="F-aJi8AOgAU" provider="youtube" caption="3:10 AM — PC gameplay clip (controller + interaction + inner monologue)." %}
-
-#### Team & Scope
-
-Solo project; gameplay/systems, art integration, builds, and release prep.
-
-#### What I Own {#three-ten-am-what-i-own}
-
-- **Game design** — core loop, encounter pacing, environmental storytelling; progression gating for a 15–20 min slice.
-- **Controls & interaction** — gamepad + KB/M parity; responsive first-person feel; readable interaction prompts; UI/state support.
-- **Saves & settings** — implementing FOV/AA/audio settings with safe, atomic writes.
-- **Steam pipeline** — app setup, depots/branches, scripted build/upload workflow, and store-asset prep.
-
-#### Release Target {#three-ten-am-targets}
-
-- Playable slice in polish, with a strong focus on stability.  
-- PC feature checklist: rebinding, graphics presets/scalability, window/fullscreen.  
-- Release path: Steam Coming Soon page, then public playable build.
-
-#### Tech Highlights {#three-ten-am-tech-highlights}
-
-**Unity 6** · **HDRP** · **Input System** · **Addressables** · **Steamworks SDK** · **Profiler/Frame Debugger**
-
-<!-- TODO: Add Store Page Link -->
-![Steam — Coming Soon](https://img.shields.io/badge/Steam-Coming%20Soon-lightgrey)
-
-[View project details →](/projects/#three-ten-am){: .btn }
-
-### Aberwla — Welsh-language VR Minigames · Quest/PICO · Mar 2025 {#aberwla}
-
-*Welsh-language VR title for Quest/PICO.* Explore a small town of minigames that teach and reinforce spoken Welsh. Originally commissioned by **Gwynedd Council** for Immersion Centres and later funded by **Adnodd** for public release.
-
-{% include video id="pEuDcjNigXc" provider="youtube" caption="Aberwla gameplay trailer." %}
-
-#### Team & Collaboration
-
-Lead dev; managed 1 Unity dev; coordinated 2 3D artists; partnered with the Creative Director on minigame scope & direction.
-
-#### What I Owned {#aberwla-what-i-owned}
-
-- **Game design (minigames)** — applied gamification (clear goals, feedback loops, difficulty curves) to Welsh-language practice tasks.
-- **Core gameplay & minigames** — designed → greybox → production; multiplayer (Normcore); AI (FSM); baked lighting; spatial audio; UX/UI; profiled/optimised to device budgets.
-- **Quest↔PICO build-switch tooling** — Addressables + scripting defines → **~40% faster** build prep; **0** hand-switch regressions across 6 releases.
-- **Release operations end-to-end** — ratings, store assets/copy, privacy, submissions → hotfix TTR **48–72 h**.
-
-#### Results {#aberwla-results}
-
-- **72 FPS** on Quest 2/3 & PICO (targets met)
-- **≥99% crash-free** sessions (Unity Cloud Diagnostics)
-
-#### Tech Highlights {#aberwla-tech-highlights}
-
-**Unity 2022** · **URP** · **XR Interaction Toolkit** · **Addressables** · **Normcore** (multiplayer)
-
-[Meta Quest](https://www.meta.com/en-gb/experiences/aberwla/9575081185844250/){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" } [PICO Store](https://store-global.picoxr.com/global/detail/1/7477528258796486711){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" }
-
-[View project details →](/projects/#aberwla){: .btn }
-
-## Recently Shipped {#recently-shipped}
-
-- **Cognetic Training Demo — Quest — Jul 2025** — [Meta Quest](https://www.meta.com/en-gb/experiences/cognetic-training-demo/24339813342291975/){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" }
-- **Aberwla — Quest/PICO — Mar 2025** — [Meta Quest](https://www.meta.com/en-gb/experiences/aberwla/9575081185844250/){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" } [PICO Store](https://store-global.picoxr.com/global/detail/1/7477528258796486711){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" }
-- **Centrica Energy Storage — Android/iOS — Mar 2024** — <!-- [Play Store](https://play.google.com/store/apps/details?id=com.AnimatedTechnologiesLtd.Centrica){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" }-->[App Store](https://apps.apple.com/gb/app/centrica-energy-storage/id6473838618){: .btn .btn--light-outline .btn--chip target="_blank" rel="noopener noreferrer" }
-
-[See all projects →]({{ '/projects/' | relative_url }}){: .btn }
-
-## Selected Gameplay Systems {#systems}
-
-Selected Unity gameplay systems — video demos, design notes and code excerpts.
-
-### Interaction System
-
-Modular, interface-driven interaction with Press/Hold patterns, focus/LOS-aware world UI, and a single combined ray for selection + occlusion. Uses interfaces + abstract bases (composition first) to keep gameplay code swappable and testable.
-
-<!-- Interaction System Video -->
-{% include video id="JrP5BR8NmR4" provider="youtube" caption="Press/Hold interaction: first-hit selection (interactable(∪)occluder mask), LOS-aware world UI, focus swap + hold progress." %}
-
-#### Design Notes {#interaction-design-notes}
-
-- **Clear contracts & bases:** IInteractable → IInteractableWithUI plus InteractionWithUIBase / Press… / Hold… (composition-first) so gameplay classes stay small, swappable, and testable.
-
-- **Deterministic selection:** one forward ray with a combined (interactable ∪ occluder) mask; only accept when the first hit is an interactable—no through-walls.
-
-- **UI LOS that matches gameplay:** single combined linecast; first hit = target/child → visible, otherwise occluded; focus swaps cleanly.
-
-- **Smooth UI tick:** world-space UI updates on CinemachineCore.CameraUpdatedEvent to avoid jitter and stay in lockstep with camera updates.
-
-- **Reduced idle targeting work:** re-rays after meaningful camera movement or rotation, with periodic refresh while stationary. MaterialPropertyBlock avoids per-instance material creation.
-
-#### Code Excerpts {#interaction-code-excerpts}
-
-{% capture interactor_usage %}
-
-```csharp
-// Uses _hitMask = _occluderMask | _interactableMask (set in Awake).
-// Accept only if the FIRST thing hit is an IInteractable (prevents through-walls).
-private bool PerformRaycast(out RaycastHit hit)
-{
-    Transform t = _interactionCamera.transform;
-
-    if (Physics.Raycast(
-            t.position,
-            t.forward,
-            out hit,
-            _interactionDistance,
-            _hitMask,
-            QueryTriggerInteraction.Ignore))
-    {
-        return hit.collider.TryGetComponent(out IInteractable _);
-    }
-
-    return false;
-}
-```
-
-{% endcapture %}
-{%- include custom-details.html
-title="PlayerInteractor.cs — single-ray; first hit must be interactable"
-content=interactor_usage open=true -%}
-
-{% capture ui_manager_usage %}
-
-```csharp
-// Combined-mask linecast from camera to target; if the FIRST hit is the target (or its child), LOS is clear.
-// Anything else in front counts as occluded—UI will not show through walls.
-private bool IsObjectObstructed(Collider target)
-{
-    Vector3 origin      = _playerInteractorGameObject.transform.position;
-    Vector3 targetPoint = target.bounds.center; // more stable than transform.position
-
-    if (Physics.Linecast(
-            origin,
-            targetPoint,
-            out RaycastHit hit,
-            _playerInteractor.InteractionAndBlockingMask,
-            QueryTriggerInteraction.Ignore))
-    {
-        return !IsSameObjectOrChild(hit.collider, target); // true = obstructed
-    }
-
-    // No hit at all → nothing blocks the segment.
-    return false;
-}
-
-private static bool IsSameObjectOrChild(Collider hit, Collider target)
-{
-    // Handles multi-collider targets (child colliders on the same object).
-    return hit == target || hit.transform.IsChildOf(target.transform);
-}
-```
-
-{% endcapture %}
-{%- include custom-details.html
-title="InteractableWorldSpaceUIManager.cs — LOS matches gameplay"
-content=ui_manager_usage -%}
-
-{% capture interactor_throttling %}
-
-```csharp
-// Re-ray when the view meaningfully changes, or periodically while stationary.
-// Avoids per-frame targeting work on a still view.
-private void Update()
-{
-    if (!_isInteractorActive) return;
-
-    // Position threshold: skip micro movements;
-    bool moved  = (_cameraTransform.position - _lastCamPos).sqrMagnitude > _camMoveThreshold;
-
-    // Rotation threshold: ignore tiny head/camera movements;
-    bool turned = Quaternion.Angle(_cameraTransform.rotation, _lastCamRot) > _camAngleThreshold;
-
-    // Periodic refresh prevents stationary targeting state becoming stale.
-    bool timeUp = Time.unscaledTime >= _nextRayTime;
-
-    if (moved || turned || timeUp)
-    {
-        // Snapshot for next frame’s delta tests.
-        _lastCamPos = _cameraTransform.position;
-        _lastCamRot = _cameraTransform.rotation;
-
-        // Schedule the next periodic refresh while the view remains stationary.
-        _nextRayTime = Time.unscaledTime + _stationaryRefreshInterval;
-
-        // Do the actual selection work (single combined-mask ray).
-        HandleRaycastInteraction();
-    }
-}
-```
-
-{% endcapture %}
-{%- include custom-details.html
-title="PlayerInteractor.cs — change-triggered re-ray with stationary refresh"
-content=interactor_throttling -%}
-
-### Footstep Audio System
-
-Surface-aware footsteps with pooled one-shots and PhysicMaterial-to-ScriptableObject mapping, using a feet-origin raycast to identify the current surface.
-
-<!-- Footstep Audio System Video -->
-{% include video id="ZZHTq_tO-kQ" provider="youtube" caption="Surface-aware footsteps: pooled one-shots, PhysicMaterial→SO mapping, sprint/land variants."%}
-
-#### Design Notes {#footstep-design-notes}
-
-- **Pooled playback:** AudioSources reused through a ring buffer.
-
-- **Surface-aware:** PhysicMaterial → FloorSoundSO lookup (ScriptableObject map).
-
-- **Authoring-friendly:** per-surface clips/volumes live in SOs; add a surface by adding a map entry.
-
-- **Deterministic triggers:** distance-driven steps with walk/sprint thresholds; separate jump/land cues.
-
-- **Modular:** controller signals step/land; playback isolated in FootstepAudioController.
-
-#### Code Excerpts {#footstep-code-excerpts}
-
-{% capture footstep_audio_controller_usage %}
-
-```csharp
-[SerializeField] private AudioSource[] _audioSourcePool;
-
-private int _poolIndex;
-
-private void PlayAtFeet(AudioClip clip, float volume)
-{
-    if (clip == null ||
-        _audioSourcePool == null ||
-        _audioSourcePool.Length == 0)
-    {
-        return;
-    }
-
-    AudioSource audioSource = GetPooledSource();
-    if (audioSource == null)
-    {
-        return;
-    }
-
-    audioSource.PlayOneShot(clip, Mathf.Clamp01(volume));
-}
-
-private AudioSource GetPooledSource()
-{
-    int count = _audioSourcePool.Length;
-
-    for (int i = 0; i < count; i++)
-    {
-        int index = (_poolIndex + i) % count;
-        AudioSource candidate = _audioSourcePool[index];
-
-        if ((candidate != null && !candidate.isPlaying))
-        {
-            _poolIndex = (index + 1) % count;
-            return candidate;
-        }
-    }
-
-    AudioSource stolenAudioSource = _audioSourcePool[_poolIndex];
-    _poolIndex = (_poolIndex + 1) % count;
-
-    return stolenAudioSource;
-}
-```
-
-{% endcapture %}
-{%- include custom-details.html
-title="FootstepAudioController.cs — pooled one-shots · pooled playback"
-content=footstep_audio_controller_usage open=true -%}
-
-{% capture footstep_mapping_controller %}
-
-```csharp
-[SerializeField] private FloorMaterialSoundMapSO _floorMaterialSoundMap;
-[SerializeField] private FloorSoundSO _defaultSound;
-
-private PhysicMaterial _lastMaterial;
-private FloorSoundSO _lastSound;
-
-private Dictionary<PhysicMaterial, FloorSoundSO> _soundMap = new Dictionary<PhysicMaterial, FloorSoundSO>();
-
-void Start()
-{
-    foreach (MaterialSoundMap map in _floorMaterialSoundMap.MaterialSoundMaps)
-    {
-        if (!_soundMap.ContainsKey(map.Material))
-        {
-            _soundMap.Add(map.Material, map.Sound);
-        }
-    }
-}
-
-public FloorSoundSO GetSoundToUse(PhysicMaterial physicMaterial)
-{
-    if (physicMaterial == null)
-    {
-        return _defaultSound;
-    }
-
-    if (physicMaterial == _lastMaterial && _lastSound != null)
-    {
-        return _lastSound;
-    }
-
-    if (_soundMap.TryGetValue(physicMaterial, out FloorSoundSO sound))
-    {
-        _lastMaterial = physicMaterial;
-        _lastSound = sound;
-        return sound;
-    }
-
-    _lastMaterial = physicMaterial;
-    _lastSound = _defaultSound;
-    return _defaultSound;
-}
-```
-
-{% endcapture %}
-{%- include custom-details.html
-title="FootstepFloorMappingController.cs — PhysicMaterial→SO map · last-hit cache"
-content=footstep_mapping_controller -%}
-
-{% capture step_timing %}
-
-```csharp
-[SerializeField] private FootstepFloorMappingController _footstepFloorMappingController;
-[SerializeField] private FootstepAudioController _footstepAudioController;
-
-private Vector3 _lastPosition;
-private float _distanceAccumulated = 0f;
-private float _stepDistanceThreshold = 0;
-[SerializeField] private float _walkStepDistanceThreshold = 1.25f;
-[SerializeField] private float _sprintStepDistanceThreshold = 2f;
-private bool _isSprinting = false;
-private FloorSoundSO _soundsToUse;
-
-private void PlayFootstepSounds()
-{
-    if(!IsGrounded) return;
-
-    // horizontal-only
-    float horizontalSpeed = new Vector3(_controller.velocity.x, 0f, _controller.velocity.z).magnitude;
-    _distanceAccumulated += horizontalSpeed * Time.deltaTime;
-
-    if (_distanceAccumulated >= _stepDistanceThreshold)
-    {
-        SetFloorType();
-        TriggerFootstepSound();
-        _distanceAccumulated = 0f;
-    }
-
-    _lastPosition = transform.position;
-}
-```
-
-{% endcapture %}
-{%- include custom-details.html
-title="FirstPersonController.cs — deterministic step timing (walk/sprint)"
-content=step_timing -%}
-
-{% capture raycast_origin_feet %}
-
-```csharp
-[SerializeField] private Transform _playerFeetTransform;
-private float _maxRaycastDistance = 0.6f;
-
-private FloorSoundSO SetFloorType()
-{
-    Vector3 feetPositionWithOffset = _playerFeetTransform.position + Vector3.up * 0.2f;
-    if (Physics.Raycast(feetPositionWithOffset, Vector3.down, out RaycastHit hit, _maxRaycastDistance))
-    {
-        _soundsToUse = _footstepFloorMappingController.GetSoundToUse(hit.collider.sharedMaterial);
-    }
-
-    return _soundsToUse;
-}
-```
-
-{% endcapture %}
-{%- include custom-details.html
-title="FirstPersonController.cs — feet-origin ray · accurate surface"
-content=raycast_origin_feet -%}
-
-<!-- [See all systems →]({{ '/systems/' | relative_url }}) -->
-
-## Recommendations {#recommendations}
-
-> “His technical expertise and leadership were crucial in building our capabilities from the ground up.”  
-**— Anna Burke**, Managing Director, Animated Technologies
-
-> “I can honestly say he’s one of the best Unity developers I’ve collaborated with.”  
-**— Klaire Tanner**, Creative Director, Animated Technologies
-
-[More recommendations →](/about/#recommendations){: .btn .btn--ghost } · [See all on LinkedIn →](https://www.linkedin.com/in/m-rouse/){: .btn .btn--ghost target="_blank" rel="noopener noreferrer" }
-
-[↑ Back to top](#top)
+<section class="intro" aria-labelledby="intro-title">
+  <h1 id="intro-title">Unity / C# Gameplay &amp; Systems Developer</h1>
+  <p>Four years of professional Unity development, including gameplay systems, multiplayer and optimisation for shipped projects. I’m currently building <strong>3:10 AM</strong>, a first-person PC horror investigation game.</p>
+</section>
+
+<nav class="section-links" aria-label="Home sections">
+  <a href="#three-ten-am">Technical Showcase</a>
+  <a href="#professional-work">Professional work</a>
+  <a href="#systems">Gameplay systems</a>
+</nav>
+<span id="featured" class="anchor-alias" aria-hidden="true"></span>
+<section id="three-ten-am" aria-labelledby="showcase-title">
+  <div class="showcase-heading">
+    <h2 id="showcase-title">3:10 AM — Technical Showcase</h2>
+    <div class="showcase-meta meta">
+      <span id="three-ten-am-tech-highlights">Solo developer · Unity 6 / HDRP · Windows PC</span>
+      <span class="status" id="three-ten-am-targets">Steam page live · Demo in development</span>
+    </div>
+  </div>
+  {% include portfolio-video.html key="developer_showcase" priority=true %}
+  <ul class="contributions" id="three-ten-am-what-i-own">
+    <li><strong>Connected investigation systems:</strong> Built EMF, radio and book behaviours feeding one evidence/progression tracker, with confirmed clues updating objectives and HUD feedback.</li>
+    <li><strong>Interaction and player state:</strong> Built contextual interaction feedback and overlapping control restrictions for UI, pause and directed sequences. Controls resume only when all restrictions clear.</li>
+    <li><strong>Custom Timeline integration:</strong> Built custom C# Timeline tracks to coordinate camera direction, scripted attacks and player-control handoffs.</li>
+  </ul>
+  <div class="links">
+    {% include steam-link.html %}
+    {% include portfolio-trailer-links.html %}
+  </div>
+</section>
+
+<span id="recently-shipped" class="anchor-alias" aria-hidden="true"></span>
+<section class="professional" id="professional-work" aria-labelledby="professional-title">
+  <h2 id="professional-title">Featured professional project</h2>
+  <article class="project" id="aberwla">
+    {% include portfolio-video.html key="aberwla" %}
+    <div>
+      <h3>Aberwla</h3>
+      <p class="meta" id="aberwla-tech-highlights">Lead Unity Developer · Animated Technologies<br>Quest/PICO · Released March 2025</p>
+      <p>Welsh-language minigames in an explorable town, built with a small multidisciplinary team. I also supported another Unity developer.</p>
+      <ul id="aberwla-what-i-owned">
+        <li>Designed and implemented minigames from greybox through production, including Normcore multiplayer.</li>
+        <li>Profiled and optimised for target devices, and built tooling for Quest/PICO build preparation and releases.</li>
+      </ul>
+      <div class="results" id="aberwla-results">
+        <span><b>72 FPS</b> on Quest 2/3 and PICO</span>
+        <span>Approximately <b>40% faster</b> build preparation</span>
+      </div>
+      <div class="links">
+        <a href="https://www.meta.com/en-gb/experiences/aberwla/9575081185844250/" target="_blank" rel="noopener" aria-describedby="external-link-hint">Meta Quest</a>
+        <a href="https://store-global.picoxr.com/global/detail/1/7477528258796486711" target="_blank" rel="noopener" aria-describedby="external-link-hint">PICO Store</a>
+        <a href="{{ '/projects/#aberwla' | relative_url }}">Project details</a>
+      </div>
+    </div>
+  </article>
+
+  <div class="links more-projects">
+    <a href="{{ '/projects/#projects-chronological' | relative_url }}">More professional projects</a>
+  </div>
+</section>
+
+<section class="systems" id="systems" aria-labelledby="systems-title">
+  <h2 id="systems-title">Gameplay systems</h2>
+  <article class="system-example" id="interaction-system">
+    <div class="system-overview">
+      {% include portfolio-video.html key="interaction" %}
+      <div>
+        <h3>Interaction system</h3>
+        <p>Interface-driven Press/Hold interaction with line-of-sight checks and world-space prompts. A shared selection path keeps targeting and occlusion consistent.</p>
+      </div>
+    </div>
+    <details class="system-details">
+      <summary>Interaction system — design notes and source excerpts</summary>
+      <div class="details-body">
+
+{% capture interaction_notes %}{% include examples/interaction.md %}{% endcapture %}
+
+{{ interaction_notes | markdownify }}
+
+      </div>
+    </details>
+  </article>
+
+  <article class="system-example" id="footstep-audio-system">
+    <div class="system-overview">
+      {% include portfolio-video.html key="footsteps" %}
+      <div>
+        <h3>Footstep audio system</h3>
+        <p>Surface-aware footsteps using PhysicMaterial-to-ScriptableObject mapping, pooled one-shot playback, and variants for sprinting and landing.</p>
+      </div>
+    </div>
+    <details class="system-details">
+      <summary>Footstep audio — design notes and source excerpts</summary>
+      <div class="details-body">
+
+{% capture footstep_notes %}{% include examples/footsteps.md %}{% endcapture %}
+
+{{ footstep_notes | markdownify }}
+
+      </div>
+    </details>
+  </article>
+
+</section>
+
+<section class="home-recommendation" id="recommendations" aria-label="Professional recommendation">
+  <blockquote>
+    <p>“He also consistently delivered reliable gameplay systems, editor tools, and performance-optimised builds.”</p>
+  </blockquote>
+  <p class="attribution"><strong>Josef Roberts</strong> · Head of Operations, Animated Technologies · Cross-functional peer</p>
+  <div class="links">
+    <a href="{{ '/about/#recommendations' | relative_url }}">Read the recommendations</a>
+  </div>
+</section>

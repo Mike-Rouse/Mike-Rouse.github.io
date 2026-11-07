@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include seo.html %}
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    {% include head/custom.html %}
+    <script src="{{ '/assets/js/portfolio.js' | relative_url }}" defer></script>
+  </head>
+  <body class="layout--portfolio{% if page.home %} home-body{% endif %}">
+    <span id="external-link-hint" class="visually-hidden">Opens in a new tab</span>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="masthead">
+      <div class="shell">
+        <a class="brand" href="{{ '/' | relative_url }}">Mike Rouse</a>
+        <nav class="nav" aria-label="Main navigation">
+          {% for item in site.data.navigation.main %}
+          <a href="{{ item.url | relative_url }}"{% if item.url == page.url %} aria-current="page"{% endif %}>{{ item.title }}</a>
+          {% endfor %}
+        </nav>
+      </div>
+    </header>
+    <main id="main" tabindex="-1">
+      <span id="top" class="anchor-alias" aria-hidden="true"></span>
+      {{ content }}
+    </main>
+    <footer class="footer">
+      <span>Mike Rouse</span>
+      <div class="footer-links">
+        <a href="mailto:m.rouse@outlook.com">Email</a>
+        <a href="https://www.linkedin.com/in/m-rouse/" target="_blank" rel="noopener" aria-describedby="external-link-hint">LinkedIn</a>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+{% assign media = site.data.media[include.key] %}
+<div class="video-component">
+  {% if media.youtube_id and media.youtube_id != "" %}
+  <div class="poster video-player">
+    <iframe
+      src="https://www.youtube-nocookie.com/embed/{{ media.youtube_id | escape }}?rel=0"
+      title="{{ media.title | escape }}"
+      width="960"
+      height="540"
+      loading="{% if include.priority %}eager{% else %}lazy{% endif %}"
+      allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+      allowfullscreen
+      referrerpolicy="strict-origin-when-cross-origin"
+    ></iframe>
+  </div>
+  {% else %}
+  <div class="poster video-placeholder" data-media-placeholder="{{ include.key }}">
+    <img
+      src="{{ media.poster | relative_url }}"
+      width="1440"
+      height="810"
+      alt="{{ media.poster_alt | escape }}"
+      {% if include.priority %}fetchpriority="high"{% else %}loading="lazy"{% endif %}
+    >
+    <div class="placeholder-label">
+      <span>{{ media.placeholder_label | default: media.title | escape }}</span>
+      <small>Preview placeholder · YouTube link needed</small>
+    </div>
+  </div>
+  {% endif %}
+</div>
