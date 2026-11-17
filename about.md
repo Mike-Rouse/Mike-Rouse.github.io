@@ -6,6 +6,22 @@ permalink: /about/
 ---
 
 <h1 class="about-title">About</h1>
+<nav class="section-links" aria-label="About sections">
+  <a href="#experience-title">Experience</a>
+  <a href="#tech-snapshot">Skills &amp; education</a>
+  <a href="#recommendations">Recommendations</a>
+  <a href="#personal">A bit about me</a>
+</nav>
+
+<span id="summary" class="anchor-alias" aria-hidden="true"></span>
+<section class="bio" aria-label="Biography">
+  <div class="bio-copy">
+    <p>I build gameplay and reusable systems in Unity/C#. My four years of professional work include minigames, interaction, multiplayer, optimisation and release delivery for shipped VR and mobile AR projects. I’m currently developing <strong>3:10 AM</strong>, a first-person PC horror investigation game.</p>
+    <p>I work in existing codebases and turn briefs into maintainable features, collaborating with designers and artists through implementation, profiling and release.</p>
+  </div>
+  <img class="portrait" src="{{ '/assets/images/headshot.webp' | relative_url }}" width="108" height="108" alt="Mike Rouse">
+</section>
+
 <section id="contact" class="contact" aria-labelledby="contact-title">
   <h2 id="contact-title">Contact</h2>
   <div class="contact-links">
@@ -18,21 +34,6 @@ permalink: /about/
   </div>
 </section>
 
-<span id="summary" class="anchor-alias" aria-hidden="true"></span>
-<section class="bio" aria-label="Biography">
-  <div class="bio-copy">
-    <p>I build gameplay and reusable systems in Unity/C#. My four years of professional work include minigames, interaction, multiplayer, optimisation and release delivery for shipped VR and mobile AR projects. I’m currently developing <strong>3:10 AM</strong>, a first-person PC horror investigation game.</p>
-    <p>I work in existing codebases and turn briefs into maintainable features, collaborating with designers and artists through implementation, profiling and release.</p>
-  </div>
-  <img class="portrait" src="{{ '/assets/images/headshot.webp' | relative_url }}" width="108" height="108" alt="Mike Rouse">
-</section>
-
-<nav class="section-links" aria-label="About sections">
-  <a href="#experience-title">Experience</a>
-  <a href="#tech-snapshot">Skills &amp; education</a>
-  <a href="#recommendations">Recommendations</a>
-  <a href="#personal">A bit about me</a>
-</nav>
 <section class="experience" aria-labelledby="experience-title">
   <h2 id="experience-title">Experience</h2>
   <article class="job">
